@@ -1,0 +1,359 @@
+.financials-section {
+  background: linear-gradient(135deg, #fef5f5 0%, #FFF8F6 100%);
+}
+
+.projections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.projection-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(90, 59, 102, 0.1);
+  border: 2px solid var(--pink);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.projection-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--purple) 0%, var(--coral) 100%);
+  border-radius: 20px 20px 0 0;
+}
+
+.projection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(232, 155, 170, 0.2);
+}
+
+.projection-card.year-2 {
+  border-color: var(--coral);
+  border-width: 3px;
+}
+
+.projection-card.year-3 {
+  background: linear-gradient(135deg, #ffffff 0%, rgba(246, 199, 206, 0.05) 100%);
+}
+
+.card-year {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--purple);
+  text-align: center;
+  margin: 0 0 25px 0;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(246, 199, 206, 0.3);
+}
+
+.main-stats-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.stat-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: linear-gradient(135deg, rgba(246, 199, 206, 0.1) 0%, rgba(255, 248, 246, 0.5) 100%);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  background: linear-gradient(135deg, rgba(246, 199, 206, 0.2) 0%, rgba(255, 248, 246, 0.7) 100%);
+  transform: translateY(-2px);
+}
+
+.stat-item.revenue {
+  background: linear-gradient(135deg, rgba(90, 59, 102, 0.08) 0%, rgba(232, 155, 170, 0.12) 100%);
+  border: 2px solid var(--coral);
+}
+
+.stat-icon {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--coral);
+  flex-shrink: 0;
+}
+
+.stat-item.revenue .stat-icon {
+  color: var(--purple);
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--purple) 0%, var(--coral) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.stat-item.revenue .stat-value {
+  font-size: 28px;
+}
+
+.stat-label {
+  font-size: 10px;
+  color: var(--lilac);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.highlight-text {
+  font-size: 13px;
+  color: var(--purple);
+  font-weight: 500;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+.financial-breakdown {
+  background: white;
+  padding: 50px;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  box-shadow: 0 10px 40px rgba(90, 59, 102, 0.1);
+}
+
+.financial-breakdown h3 {
+  font-size: 32px;
+  color: var(--purple);
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.revenue-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.revenue-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.revenue-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.revenue-name {
+  font-size: 18px;
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.revenue-percentage {
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--purple) 0%, var(--coral) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.revenue-bar-container {
+  width: 100%;
+  height: 50px;
+  background: rgba(246, 199, 206, 0.2);
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.revenue-bar {
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  box-shadow: 0 5px 20px rgba(90, 59, 102, 0.2);
+  transition: all 0.3s ease;
+}
+
+.revenue-item:hover .revenue-bar {
+  box-shadow: 0 8px 30px rgba(90, 59, 102, 0.3);
+}
+
+.roi-section {
+  background: linear-gradient(135deg, var(--purple) 0%, var(--coral) 100%);
+  padding: 50px;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+}
+
+.roi-section h3 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.roi-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.roi-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.roi-number {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.roi-label {
+  font-size: 16px;
+  opacity: 0.95;
+  font-weight: 600;
+}
+
+.roi-description {
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.95;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .projections-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .projection-card.year-2 {
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projection-card {
+    padding: 25px 20px;
+  }
+
+  .card-year {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+  }
+
+  .main-stats-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stat-item {
+    padding: 12px;
+  }
+
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .stat-value {
+    font-size: 20px;
+  }
+
+  .stat-item.revenue .stat-value {
+    font-size: 24px;
+  }
+
+  .stat-label {
+    font-size: 9px;
+  }
+
+  .highlight-text {
+    font-size: 12px;
+  }
+
+  .financial-breakdown {
+    padding: 30px 20px;
+  }
+
+  .financial-breakdown h3 {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .revenue-name {
+    font-size: 16px;
+  }
+
+  .revenue-percentage {
+    font-size: 20px;
+  }
+
+  .revenue-bar-container {
+    height: 45px;
+  }
+
+  .roi-section {
+    padding: 30px 20px;
+  }
+
+  .roi-section h3 {
+    font-size: 28px;
+  }
+
+  .roi-stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .roi-number {
+    font-size: 42px;
+  }
+
+  .roi-description {
+    font-size: 16px;
+  }
+}
+

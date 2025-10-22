@@ -1,0 +1,248 @@
+.market-section {
+  background: linear-gradient(135deg, #fef5f5 0%, #FFF8F6 100%);
+}
+
+.market-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.market-stat-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(90, 59, 102, 0.1);
+  border: 2px solid var(--pink);
+  transition: all 0.3s ease;
+}
+
+.market-stat-card:hover {
+  box-shadow: 0 20px 60px rgba(232, 155, 170, 0.25);
+}
+
+.market-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, var(--purple) 0%, var(--coral) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.market-stat-card h3 {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--purple) 0%, var(--coral) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+}
+
+.market-stat-card p {
+  font-size: 16px;
+  color: var(--purple);
+  font-weight: 500;
+}
+
+.market-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.target-section {
+  background: linear-gradient(135deg, rgba(90, 59, 102, 0.05) 0%, rgba(246, 199, 206, 0.1) 100%);
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid var(--pink);
+}
+
+.target-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--purple) 0%, var(--coral) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.target-section h3 {
+  font-size: 32px;
+  color: var(--purple);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.target-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.target-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--purple);
+  font-weight: 500;
+}
+
+.check-mark {
+  width: 28px;
+  height: 28px;
+  background: var(--coral);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.opportunity-section {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(90, 59, 102, 0.1);
+}
+
+.opportunity-section h3 {
+  font-size: 32px;
+  color: var(--purple);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.opportunity-points {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.opportunity-point h4 {
+  font-size: 20px;
+  color: var(--purple);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.opportunity-point p {
+  font-size: 15px;
+  color: var(--lilac);
+  line-height: 1.6;
+}
+
+.market-conclusion {
+  background: linear-gradient(135deg, var(--purple) 0%, var(--coral) 100%);
+  padding: 50px;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+}
+
+.market-conclusion h3 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.market-conclusion p {
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.95;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .market-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .market-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .market-stats {
+    gap: 25px;
+  }
+
+  .market-stat-card {
+    padding: 35px 25px;
+  }
+
+  .market-stat-card h3 {
+    font-size: 42px;
+  }
+
+  .market-stat-card p {
+    font-size: 15px;
+  }
+
+  .target-section,
+  .opportunity-section {
+    padding: 35px 25px;
+  }
+
+  .target-section h3,
+  .opportunity-section h3 {
+    font-size: 28px;
+  }
+
+  .target-item {
+    font-size: 15px;
+  }
+
+  .opportunity-point h4 {
+    font-size: 18px;
+  }
+
+  .opportunity-point p {
+    font-size: 14px;
+  }
+
+  .market-conclusion {
+    padding: 35px 20px;
+  }
+
+  .market-conclusion h3 {
+    font-size: 30px;
+  }
+
+  .market-conclusion p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .market-stat-card h3 {
+    font-size: 36px;
+  }
+
+  .target-section h3,
+  .opportunity-section h3 {
+    font-size: 24px;
+  }
+
+  .market-conclusion h3 {
+    font-size: 26px;
+  }
+}
+
+

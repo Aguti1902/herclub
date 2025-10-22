@@ -1,0 +1,166 @@
+.problem-section {
+  background: linear-gradient(135deg, #FFF8F6 0%, #fef5f5 100%);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 48px;
+  color: var(--purple);
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: var(--lilac);
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.problem-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(90, 59, 102, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.problem-card:hover {
+  border-color: var(--coral);
+  box-shadow: 0 20px 60px rgba(232, 155, 170, 0.2);
+}
+
+.problem-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, var(--pink) 0%, var(--coral) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.problem-card h3 {
+  font-size: 24px;
+  color: var(--purple);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.problem-card p {
+  font-size: 16px;
+  color: var(--lilac);
+  line-height: 1.6;
+}
+
+.problem-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  background: rgba(246, 199, 206, 0.2);
+  border-radius: 20px;
+  border: 2px solid var(--pink);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--purple) 0%, var(--coral) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 16px;
+  color: var(--purple);
+  font-weight: 500;
+  max-width: 200px;
+}
+
+@media (max-width: 1024px) {
+  .problems-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .problems-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .problem-card {
+    padding: 35px 25px;
+  }
+
+  .problem-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .problem-card h3 {
+    font-size: 22px;
+  }
+
+  .problem-stats {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .stat h3 {
+    font-size: 42px;
+  }
+
+  .stat p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .problem-card {
+    padding: 30px 20px;
+  }
+}
+
+
