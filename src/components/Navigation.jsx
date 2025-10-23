@@ -1,7 +1,26 @@
 import { motion, AnimatePresence } from 'framer-motion'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Navigation.css'
 
 function Navigation({ sections, currentSection, setCurrentSection, show }) {
+  const { language } = useLanguage()
+  const t = translations[language].nav
+  
+  const sectionTitles = {
+    hero: t.inicio,
+    problem: t.problema,
+    solution: t.solucion,
+    features: t.funcionalidades,
+    market: t.mercado,
+    business: t.modelo,
+    investment: t.inversion,
+    roadmap: t.roadmap,
+    financials: t.financiero,
+    branding: t.branding,
+    mockups: t.mockups,
+    cta: t.cta
+  }
   return (
     <AnimatePresence>
       {show && (
@@ -23,7 +42,7 @@ function Navigation({ sections, currentSection, setCurrentSection, show }) {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  {section.title}
+                  {sectionTitles[section.id]}
                 </motion.button>
               ))}
             </div>

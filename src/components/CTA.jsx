@@ -1,14 +1,12 @@
 import { motion } from 'framer-motion'
 import { Heart, Mail, Euro, Rocket, ArrowRight, TrendingUp } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './CTA.css'
 
 function CTA() {
-  const benefits = [
-    'Únete a un movimiento que transformará la vida de millones de mujeres',
-    'Sé parte de una de las comunidades digitales más innovadoras',
-    'ROI proyectado de 5X en 3 años',
-    'Impacto social medible y sostenible'
-  ]
+  const { language } = useLanguage()
+  const t = translations[language].cta
 
   const handleDonation = () => {
     // Aquí se integraría con Stripe, PayPal o la pasarela de pago
@@ -51,7 +49,7 @@ function CTA() {
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Invierte en el Futuro de la Conexión Femenina
+            {t.title}
           </motion.h2>
 
           <motion.p
@@ -61,7 +59,7 @@ function CTA() {
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Juntos podemos crear la comunidad femenina más exclusiva y positiva del mundo digital
+            {t.description}
           </motion.p>
 
           <motion.div
@@ -71,7 +69,7 @@ function CTA() {
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            {benefits.map((benefit, index) => (
+            {t.benefits.map((benefit, index) => (
               <motion.div
                 key={index}
                 className="benefit-item"
@@ -96,24 +94,24 @@ function CTA() {
             <div className="summary-item">
               <Euro size={30} />
               <div>
-                <div className="summary-label">Inversión Inicial</div>
-                <div className="summary-value">50K - 60K€</div>
+                <div className="summary-label">{t.summary.investment}</div>
+                <div className="summary-value">{t.summary.investmentValue}</div>
               </div>
             </div>
             <div className="summary-divider"></div>
             <div className="summary-item">
               <Rocket size={30} />
               <div>
-                <div className="summary-label">Plazo de Lanzamiento</div>
-                <div className="summary-value">6 Meses</div>
+                <div className="summary-label">{t.summary.launch}</div>
+                <div className="summary-value">{t.summary.launchValue}</div>
               </div>
             </div>
             <div className="summary-divider"></div>
             <div className="summary-item">
               <TrendingUp size={30} />
               <div>
-                <div className="summary-label">ROI Proyectado</div>
-                <div className="summary-value">5X en 3 años</div>
+                <div className="summary-label">{t.summary.roi}</div>
+                <div className="summary-value">{t.summary.roiValue}</div>
               </div>
             </div>
           </motion.div>
@@ -127,7 +125,7 @@ function CTA() {
           >
             <button className="btn-primary" onClick={handleDonation}>
               <Euro size={24} />
-              <span>Apoya el Lanzamiento de HERCLUB</span>
+              <span>{t.button}</span>
               <ArrowRight size={20} />
             </button>
           </motion.div>
@@ -139,7 +137,7 @@ function CTA() {
             viewport={{ once: true }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            <p className="tagline">Forma parte del cambio. Invierte en HERCLUB.</p>
+            <p className="tagline">{t.tagline}</p>
           </motion.div>
 
           {/* Decoración de fondo */}
@@ -158,8 +156,8 @@ function CTA() {
           transition={{ delay: 1.2, duration: 0.6 }}
         >
           <Heart size={40} fill="currentColor" />
-          <h3>Gracias por tu Tiempo e Interés</h3>
-          <p>Estamos emocionadas de compartir esta visión contigo y esperamos poder construir el futuro juntos.</p>
+          <h3>{t.thanks.title}</h3>
+          <p>{t.thanks.description}</p>
         </motion.div>
       </div>
     </div>

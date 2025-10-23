@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion'
 import { Heart, Sparkles } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Hero.css'
 
 function Hero() {
+  const { language } = useLanguage()
+  const t = translations[language].hero
   return (
     <div className="section hero-section">
       <div className="container">
@@ -23,7 +27,7 @@ function Hero() {
               <Heart className="heart heart-1" />
               <Heart className="heart heart-2" />
             </div>
-            <h1 className="logo-text">HERCLUB</h1>
+            <h1 className="logo-text">{t.title}</h1>
           </motion.div>
 
           {/* Tagline */}
@@ -33,7 +37,7 @@ function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            La comunidad femenina más exclusiva del mundo digital
+            {t.tagline}
           </motion.h2>
 
           <motion.p
@@ -42,7 +46,7 @@ function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            Donde las mujeres se conectan, crecen y se empoderan juntas
+            {t.description}
           </motion.p>
 
           {/* Características principales */}
@@ -54,19 +58,19 @@ function Hero() {
           >
             <div className="feature-badge">
               <Sparkles size={18} />
-              <span>Match de Amistad</span>
+              <span>{t.features.match}</span>
             </div>
             <div className="feature-badge">
               <Sparkles size={18} />
-              <span>Bienestar Mental</span>
+              <span>{t.features.wellness}</span>
             </div>
             <div className="feature-badge">
               <Sparkles size={18} />
-              <span>Eventos & Viajes</span>
+              <span>{t.features.events}</span>
             </div>
             <div className="feature-badge">
               <Sparkles size={18} />
-              <span>Coaching & IA</span>
+              <span>{t.features.coaching}</span>
             </div>
           </motion.div>
 
@@ -77,7 +81,7 @@ function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            <h3>Propuesta para Inversores</h3>
+            <h3>{t.cta}</h3>
           </motion.div>
 
           {/* Decoración */}

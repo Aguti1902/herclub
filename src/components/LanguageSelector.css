@@ -1,0 +1,125 @@
+.language-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.15);
+  border: 2px solid rgba(139, 92, 246, 0.1);
+  transition: all 0.3s ease;
+}
+
+.language-selector:hover {
+  box-shadow: 0 6px 30px rgba(139, 92, 246, 0.25);
+  transform: translateY(-2px);
+}
+
+.language-icon {
+  color: #8b5cf6;
+  display: flex;
+  align-items: center;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.language-selector:hover .language-icon {
+  animation-play-state: paused;
+}
+
+.language-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.lang-btn:hover {
+  background: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+  transform: scale(1.05);
+}
+
+.lang-btn.active {
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  color: white;
+  border-color: #8b5cf6;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.lang-btn .flag {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.lang-btn .label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .language-selector {
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    gap: 8px;
+  }
+
+  .language-icon {
+    display: none;
+  }
+
+  .language-buttons {
+    gap: 4px;
+  }
+
+  .lang-btn {
+    padding: 5px 8px;
+    gap: 4px;
+  }
+
+  .lang-btn .flag {
+    font-size: 16px;
+  }
+
+  .lang-btn .label {
+    display: none;
+  }
+}
+
+/* Ajuste para que no tape la navegación */
+@media (min-width: 769px) {
+  .language-selector {
+    top: 30px;
+  }
+}
+

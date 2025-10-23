@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navigation from './components/Navigation'
+import LanguageSelector from './components/LanguageSelector'
 import Hero from './components/Hero'
 import Problem from './components/Problem'
 import Solution from './components/Solution'
@@ -54,6 +55,7 @@ function App() {
 
   return (
     <div className="app">
+      <LanguageSelector />
       <Navigation 
         sections={sections} 
         currentSection={currentSection} 
