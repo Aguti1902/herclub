@@ -1852,37 +1852,78 @@ export const translations = {
     // Features
     features: {
       title: 'Funzionalità Principali',
-      subtitle: 'Un\'esperienza completa per ogni aspetto della vita di una donna',
-      list: [
-        { title: 'Match di Amicizia', description: 'Trova la tua nuova migliore amica.', benefits: ['Basato su IA', 'Profili verificati'] },
-        { title: 'Eventi & Meetups', description: 'Brunch, yoga, networking.', benefits: ['Eventi settimanali', 'Crea eventi'] },
-        { title: 'Viaggi & Esperienze', description: 'Viaggi in gruppo solo per donne.', benefits: ['Organizzazione completa'] },
-        { title: 'Psicologia & Benessere', description: 'Accesso a psicologi via chat.', benefits: ['Chat con professionisti'] },
-        { title: 'Chat & Community', description: 'Gruppi tematici e messaggistica.', benefits: ['Chat di gruppo'] },
-        { title: 'Punto Lilla', description: 'Risorse e supporto in situazioni di vulnerabilità.', benefits: ['Supporto 24/7'] }
-      ]
+      subtitle: 'Tutto ciò di cui una donna ha bisogno in un\'unica app',
+      list: {
+        match: {
+          title: 'Match di Amicizia',
+          description: 'Algoritmo intelligente per connetterti con donne affini secondo interessi, valori e obiettivi.'
+        },
+        wellness: {
+          title: 'Centro di Benessere',
+          description: 'Meditazioni guidate, monitoraggio emotivo, risorse di salute mentale e comunità di supporto.'
+        },
+        events: {
+          title: 'Eventi & Meetups',
+          description: 'Crea e partecipa a eventi locali: da caffè a workshop e attività sportive.'
+        },
+        travel: {
+          title: 'Viaggi in Gruppo',
+          description: 'Organizza o unisciti a viaggi con altre donne. Sicurezza, divertimento e nuove amicizie.'
+        },
+        coaching: {
+          title: 'Coaching con IA',
+          description: 'Assistente personale potenziato da IA per sviluppo personale, carriera ed empowerment.'
+        },
+        safety: {
+          title: 'Punto Lilla',
+          description: 'Sistema di emergenza, verifica dell\'identità e protocollo di sicurezza 24/7.'
+        }
+      }
     },
     // Market
     market: {
       title: 'Opportunità di Mercato',
-      subtitle: 'Un mercato globale in crescita',
-      stats: [
-        { number: '1.8B', label: 'Donne con accesso a internet' },
-        { number: '€8.5B', label: 'Mercato di app sociali per donne' },
-        { number: '42%', label: 'Crescita annuale wellness' }
-      ],
+      subtitle: 'Un mercato milionario in crescita con domanda insoddisfatta',
+      stats: {
+        women: '+50% del pubblico digitale attivo sono donne',
+        market: '20B€ mercato di app di benessere in Europa',
+        demand: 'Domanda globale di spazi femminili sicuri'
+      },
       target: {
-        title: 'Pubblico Target',
-        description: 'Donne urbane interessate alla crescita personale',
-        demographics: [
-          { label: 'Età', value: '18 a 60 anni' },
-          { label: 'Ubicazione', value: 'Zone urbane globali' },
-          { label: 'Potere d\'acquisto', value: 'Medio-alto' }
+        title: 'Target Principale',
+        audience: [
+          'Donne dai 18 ai 60 anni',
+          'Urbane e digitali',
+          'Socialmente attive',
+          'Interessate al benessere',
+          'Cercano connessioni reali',
+          'Apprezzano la sicurezza'
         ]
       },
-      whyNow: {
-        title: 'Perché Adesso',
-        reasons: ['Solitudine post-pandemia', 'Rifiuto reti sociali tossiche', 'Movimento benessere mentale']
+      why: {
+        title: 'Perché adesso?',
+        points: {
+          demand: {
+            title: 'Domanda crescente',
+            description: 'Le donne cercano spazi sicuri per connettersi al di fuori dell\'ambito romantico.'
+          },
+          fragmentation: {
+            title: 'Frammentazione del mercato',
+            description: 'Le utenti hanno bisogno di multiple app. HERCLUB unifica tutto.'
+          },
+          mentalHealth: {
+            title: 'Crisi di salute mentale',
+            description: 'Aumento del 40% nella domanda di servizi di benessere emotivo.'
+          },
+          communities: {
+            title: 'Comunità esclusive',
+            description: 'Crescita del modello di membership e club privati digitali.'
+          }
+        }
+      },
+      conclusion: {
+        title: 'L\'Opportunità',
+        description: 'HERCLUB unisce comunità, salute mentale, viaggi ed empowerment in un\'unica piattaforma, rivolta a un mercato di milioni di donne che cercano connessioni autentiche e crescita personale.'
       }
     },
     // Business Model
@@ -1956,7 +1997,58 @@ export const translations = {
           quality: { value: '100%', label: 'Controllo qualità' }
         }
       },
-      phases: { current: { title: 'Fase Attuale', period: 'Adesso', items: ['Ricerca investimenti', 'Validazione concetto', 'Design UX/UI', 'Primi contatti utenti'] } }
+      phases: {
+        current: {
+          title: 'Fase Attuale',
+          period: 'Adesso',
+          items: [
+            'Ricerca investimenti',
+            'Validazione concetto',
+            'Design UX/UI completo',
+            'Primi contatti con potenziali utenti'
+          ]
+        },
+        phase1: {
+          title: 'Fase 1',
+          period: 'Mesi 1-4',
+          items: [
+            'Sviluppo del MVP',
+            'Implementazione del sistema di match',
+            'Beta chiusa con 100 utenti',
+            'Aggiustamenti secondo feedback'
+          ]
+        },
+        phase2: {
+          title: 'Fase 2',
+          period: 'Mesi 5-8',
+          items: [
+            'Lancio a Madrid',
+            'Marketing digitale aggressivo',
+            'Primi eventi presenziali',
+            'Implementazione funzionalità premium'
+          ]
+        },
+        phase3: {
+          title: 'Fase 3',
+          period: 'Mesi 9-12',
+          items: [
+            'Espansione a Barcellona e Valencia',
+            'Sistema di viaggi in gruppo',
+            'Partnership con marchi',
+            '5.000+ utenti attivi'
+          ]
+        },
+        phase4: {
+          title: 'Fase 4',
+          period: 'Anno 2',
+          items: [
+            'Espansione internazionale (UK, Germania)',
+            'Coaching IA avanzato',
+            'Marketplace di servizi',
+            'Serie A per scalare globalmente'
+          ]
+        }
+      }
     },
     // Financials
     financials: {
