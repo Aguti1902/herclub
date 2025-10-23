@@ -7,44 +7,7 @@ import './Financials.css'
 function Financials() {
   const { language } = useLanguage()
   const t = translations[language].financials
-  const projections = [
-    {
-      year: 'Año 1',
-      users: '10K',
-      revenue: '200K€',
-      growth: '+100%',
-      highlights: [
-        'Lanzamiento oficial',
-        '10% conversión a premium',
-        'Primera campaña de marketing',
-        'Primeras colaboraciones'
-      ]
-    },
-    {
-      year: 'Año 2',
-      users: '50K',
-      revenue: '1.2M€',
-      growth: '+500%',
-      highlights: [
-        'Expansión internacional',
-        '15% conversión a premium',
-        'Marketplace activo',
-        'Ingresos por eventos y viajes'
-      ]
-    },
-    {
-      year: 'Año 3',
-      users: '150K',
-      revenue: '4.5M€',
-      growth: '+300%',
-      highlights: [
-        'Líder en el mercado',
-        '20% conversión a premium',
-        'Múltiples fuentes de ingreso',
-        'Break-even alcanzado'
-      ]
-    }
-  ]
+  const projections = t.projections
 
   return (
     <div className="section financials-section">
@@ -82,7 +45,7 @@ function Financials() {
                   </div>
                   <div className="stat-info">
                     <div className="stat-value">{proj.users}</div>
-                    <div className="stat-label">Usuarias</div>
+                    <div className="stat-label">{t.labels.users}</div>
                   </div>
                 </div>
                 
@@ -92,7 +55,7 @@ function Financials() {
                   </div>
                   <div className="stat-info">
                     <div className="stat-value">{proj.revenue}</div>
-                    <div className="stat-label">Ingresos</div>
+                    <div className="stat-label">{t.labels.revenue}</div>
                   </div>
                 </div>
                 
@@ -102,7 +65,7 @@ function Financials() {
                   </div>
                   <div className="stat-info">
                     <div className="stat-value">{proj.growth}</div>
-                    <div className="stat-label">Crecimiento</div>
+                    <div className="stat-label">{t.labels.growth}</div>
                   </div>
                 </div>
               </div>

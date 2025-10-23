@@ -432,34 +432,48 @@ export const translations = {
     financials: {
       title: 'Proyección Financiera',
       subtitle: 'Crecimiento sostenible y escalable',
-      years: {
-        year1: 'Año 1',
-        year2: 'Año 2',
-        year3: 'Año 3'
-      },
-      metrics: {
+      projections: [
+        {
+          year: 'Año 1',
+          users: '10K',
+          revenue: '200K€',
+          growth: '+100%',
+          highlights: [
+            'Lanzamiento oficial',
+            '10% conversión a premium',
+            'Primera campaña de marketing',
+            'Primeras colaboraciones'
+          ]
+        },
+        {
+          year: 'Año 2',
+          users: '50K',
+          revenue: '1.2M€',
+          growth: '+500%',
+          highlights: [
+            'Expansión internacional',
+            '15% conversión a premium',
+            'Marketplace activo',
+            'Ingresos por eventos y viajes'
+          ]
+        },
+        {
+          year: 'Año 3',
+          users: '150K',
+          revenue: '4.5M€',
+          growth: '+300%',
+          highlights: [
+            'Líder en el mercado',
+            '20% conversión a premium',
+            'Múltiples fuentes de ingreso',
+            'Break-even alcanzado'
+          ]
+        }
+      ],
+      labels: {
         users: 'Usuarias',
         revenue: 'Ingresos',
         growth: 'Crecimiento'
-      },
-      highlights: {
-        title: 'Highlights',
-        breakeven: 'Break-even en 18 meses',
-        margin: '60% margen bruto',
-        retention: '75% tasa de retención'
-      },
-      breakdown: {
-        title: 'Desglose de Ingresos',
-        subscriptions: 'Suscripciones',
-        travel: 'Viajes',
-        events: 'Eventos',
-        partnerships: 'Partnerships'
-      },
-      roi: {
-        title: 'ROI Proyectado',
-        year2: 'Año 2',
-        year3: 'Año 3',
-        description: 'Retorno de inversión estimado basado en valoración de mercado y crecimiento proyectado.'
       }
     },
     // Branding
