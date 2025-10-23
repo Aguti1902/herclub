@@ -1802,51 +1802,71 @@ export const translations = {
     problem: {
       title: 'Il Problema',
       subtitle: 'Le donne hanno bisogno di uno spazio digitale sicuro ed esclusivo',
-      issues: [
-        {
-          title: 'Solitudine Sociale',
-          description: 'Difficoltà nel creare connessioni autentiche e durature nel mondo digitale'
+      issues: {
+        isolation: {
+          title: 'Isolamento Sociale',
+          description: 'Difficoltà nel creare connessioni significative al di fuori dell\'ambito romantico o lavorativo.'
         },
-        {
+        safety: {
           title: 'Mancanza di Spazi Sicuri',
-          description: 'Pochi spazi digitali pensati esclusivamente per donne dove possano essere se stesse'
+          description: 'Le piattaforme generaliste non offrono la sicurezza e privacy di cui le donne hanno bisogno.'
         },
-        {
+        fragmentation: {
           title: 'Frammentazione',
-          description: 'Le funzionalità sono disperse in più app diverse senza coesione'
+          description: 'Hanno bisogno di multiple app: una per viaggiare, un\'altra per il benessere, un\'altra per eventi.'
+        },
+        mentalHealth: {
+          title: 'Crisi di Salute Mentale',
+          description: 'Mancanza di strumenti accessibili per l\'autocura emotiva e mentale.'
         }
-      ],
-      stats: {
-        title: 'La Realtà delle Donne Digitali',
-        data: [
-          { number: '67%', label: 'Si sentono sole nelle reti sociali' },
-          { number: '82%', label: 'Cercano connessioni più autentiche' },
-          { number: '74%', label: 'Vogliono uno spazio sicuro ed esclusivo' }
-        ]
       },
       impact: {
-        title: 'L\'Impatto della Disconnessione',
-        points: [
-          'Salute mentale compromessa',
-          'Mancanza di supporto emotivo',
-          'Opportunità perse di crescita personale',
-          'Isolamento in momenti critici'
-        ]
+        title: 'L\'Impatto',
+        stat1: {
+          number: '67%',
+          text: 'delle donne si sentono sole'
+        },
+        stat2: {
+          number: '82%',
+          text: 'cercano spazi esclusivi femminili'
+        },
+        stat3: {
+          number: '3-5',
+          text: 'app usano in media per coprire le loro necessità'
+        }
       }
     },
     // Solution
     solution: {
       title: 'La Soluzione',
-      subtitle: 'HERCLUB: L\'app all-in-one per donne',
-      pillars: [
-        { title: 'Match di Amicizia Intelligente', description: 'Algoritmo basato su IA per connettere donne con interessi, valori e obiettivi simili.' },
-        { title: 'Eventi e Viaggi Esclusivi', description: 'Meetup, ritiri e viaggi organizzati solo per membri.' },
-        { title: 'Benessere e Crescita', description: 'Accesso a psicologia, coaching, astrologia e strumenti.' },
-        { title: 'Comunità Sicura', description: 'Spazio moderato e protetto per donne.' }
-      ],
-      differentiators: {
-        title: 'Perché HERCLUB è Diverso',
-        points: ['Esclusivo per donne', 'Focus sul benessere mentale', 'Connessioni autentiche', 'Comunità supportata']
+      subtitle: 'Una piattaforma all-in-one progettata esclusivamente per donne',
+      description: 'HERCLUB è più di un\'app, è un ecosistema completo che combina comunità, benessere, viaggi e crescita personale in uno spazio sicuro ed esclusivo.',
+      pillars: {
+        community: {
+          title: 'Comunità',
+          description: 'Connessioni reali con donne che condividono i tuoi interessi'
+        },
+        safety: {
+          title: 'Sicurezza',
+          description: 'Spazio 100% femminile con verifica e protocolli di sicurezza'
+        },
+        growth: {
+          title: 'Crescita',
+          description: 'Strumenti di benessere, coaching con IA e sviluppo personale'
+        },
+        experiences: {
+          title: 'Esperienze',
+          description: 'Eventi, viaggi e attività progettate per creare legami'
+        }
+      },
+      difference: {
+        title: 'Cosa ci rende diversi',
+        points: {
+          exclusive: 'Prima piattaforma 100% femminile che unifica comunità, benessere ed esperienze',
+          ai: 'Coaching potenziato da IA specializzata nell\'empowerment femminile',
+          safety: 'Sistema di verifica e protocollo "Punto Lilla" per massima sicurezza',
+          holistic: 'Approccio olistico: non solo connettere, ma crescere insieme'
+        }
       }
     },
     // Features
