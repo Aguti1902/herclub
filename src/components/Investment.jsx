@@ -7,47 +7,11 @@ import './Investment.css'
 function Investment() {
   const { language } = useLanguage()
   const t = translations[language].investment
-  const investmentBreakdown = [
-    {
-      icon: Code,
-      category: 'Desarrollo de la App',
-      amount: '35.000€',
-      percentage: 58,
-      items: [
-        'Frontend y Backend completo',
-        'Integración de IA (psicología, astrología)',
-        'Sistema de pagos y suscripciones',
-        'API de matching y eventos',
-        'Base de datos y seguridad'
-      ]
-    },
-    {
-      icon: Palette,
-      category: 'Diseño y Branding',
-      amount: '10.000€',
-      percentage: 17,
-      items: [
-        'Diseño UX/UI completo',
-        'Identidad de marca',
-        'Material gráfico',
-        'Lanzamiento en App Store y Google Play',
-        'Website y landing page'
-      ]
-    },
-    {
-      icon: TrendingUp,
-      category: 'Marketing y Lanzamiento',
-      amount: '15.000€',
-      percentage: 25,
-      items: [
-        'Campañas de ads (Instagram, TikTok, Facebook)',
-        'Colaboraciones con influencers',
-        'Evento de lanzamiento',
-        'Community management',
-        'Primeras 10.000 usuarias'
-      ]
-    }
-  ]
+  const icons = [Code, Palette, TrendingUp]
+  const investmentBreakdown = t.breakdown.map((item, index) => ({
+    ...item,
+    icon: icons[index]
+  }))
 
   return (
     <div className="section investment-section">
@@ -73,9 +37,9 @@ function Investment() {
           transition={{ duration: 0.6 }}
         >
           <Euro size={60} />
-          <h3>Inversión Inicial</h3>
-          <div className="total-amount">50.000€ - 60.000€</div>
-          <p>Capital necesario para desarrollar y lanzar HERCLUB en 6 meses</p>
+          <h3>{t.totalTitle}</h3>
+          <div className="total-amount">{t.totalAmount}</div>
+          <p>{t.totalDescription}</p>
         </motion.div>
 
         <div className="breakdown-grid">
@@ -135,24 +99,14 @@ function Investment() {
           transition={{ delay: 0.3, duration: 0.6 }}
         >
           <PieChart size={50} />
-          <h3>Objetivos de la Inversión</h3>
+          <h3>{t.goalsTitle}</h3>
           <div className="goals-grid">
-            <div className="goal-item">
-              <div className="goal-number">6</div>
-              <div className="goal-label">Meses para MVP completo</div>
-            </div>
-            <div className="goal-item">
-              <div className="goal-number">10K</div>
-              <div className="goal-label">Usuarias primer año</div>
-            </div>
-            <div className="goal-item">
-              <div className="goal-number">200K€</div>
-              <div className="goal-label">Ingresos proyectados año 1</div>
-            </div>
-            <div className="goal-item">
-              <div className="goal-number">5X</div>
-              <div className="goal-label">ROI proyectado a 3 años</div>
-            </div>
+            {t.goals.map((goal, idx) => (
+              <div key={idx} className="goal-item">
+                <div className="goal-number">{goal.number}</div>
+                <div className="goal-label">{goal.label}</div>
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>

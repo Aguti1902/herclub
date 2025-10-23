@@ -268,51 +268,54 @@ export const translations = {
     investment: {
       title: 'Detalles de la Inversión',
       subtitle: 'Usa tu inversión de forma estratégica y transparente',
-      ask: {
-        title: 'Inversión Solicitada',
-        amount: '50.000€ - 60.000€',
-        equity: '15-20% equity',
-        description: 'Para desarrollar el MVP y lanzar en mercado español'
-      },
-      useOfFunds: {
-        title: 'Uso de Fondos',
-        items: {
-          development: {
-            title: 'Desarrollo',
-            percentage: '40%',
-            description: 'App iOS/Android + Backend + IA'
-          },
-          marketing: {
-            title: 'Marketing',
-            percentage: '30%',
-            description: 'Adquisición de usuarias iniciales'
-          },
-          operations: {
-            title: 'Operaciones',
-            percentage: '20%',
-            description: 'Legal, servidores, equipo'
-          },
-          reserve: {
-            title: 'Reserva',
-            percentage: '10%',
-            description: 'Contingencia y ajustes'
-          }
+      totalTitle: 'Inversión Inicial',
+      totalAmount: '50.000€ - 60.000€',
+      totalDescription: 'Capital necesario para desarrollar y lanzar HERCLUB en 6 meses',
+      breakdown: [
+        {
+          category: 'Desarrollo de la App',
+          amount: '35.000€',
+          percentage: 58,
+          items: [
+            'Frontend y Backend completo',
+            'Integración de IA (psicología, astrología)',
+            'Sistema de pagos y suscripciones',
+            'API de matching y eventos',
+            'Base de datos y seguridad'
+          ]
+        },
+        {
+          category: 'Diseño y Branding',
+          amount: '10.000€',
+          percentage: 17,
+          items: [
+            'Diseño UX/UI completo',
+            'Identidad de marca',
+            'Material gráfico',
+            'Lanzamiento en App Store y Google Play',
+            'Website y landing page'
+          ]
+        },
+        {
+          category: 'Marketing y Lanzamiento',
+          amount: '15.000€',
+          percentage: 25,
+          items: [
+            'Campañas de ads (Instagram, TikTok, Facebook)',
+            'Colaboraciones con influencers',
+            'Evento de lanzamiento',
+            'Community management',
+            'Primeras 10.000 usuarias'
+          ]
         }
-      },
-      milestones: {
-        title: 'Hitos con esta Inversión',
-        items: [
-          'MVP funcional en 4-5 meses',
-          '1,000 usuarias en los primeros 6 meses',
-          'Validación del modelo freemium/premium',
-          'Primer evento presencial en Madrid',
-          'Métricas para Serie A'
-        ]
-      },
-      returns: {
-        title: 'Retorno Esperado',
-        description: 'Con una valoración conservadora de 5M€ en 3 años, la inversión inicial podría multiplicarse por 8-10x.'
-      }
+      ],
+      goalsTitle: 'Objetivos de la Inversión',
+      goals: [
+        { number: '6', label: 'Meses para MVP completo' },
+        { number: '10K', label: 'Usuarias primer año' },
+        { number: '200K€', label: 'Ingresos proyectados año 1' },
+        { number: '5X', label: 'ROI proyectado a 3 años' }
+      ]
     },
     // Roadmap
     roadmap: {
