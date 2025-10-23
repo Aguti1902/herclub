@@ -370,27 +370,27 @@ function Mockups() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          <h3>Diseño Pensado para Mujeres</h3>
+          <h3>{t.designs.title}</h3>
           <div className="design-features">
             <div className="design-feature">
               <span className="feature-icon">🎨</span>
-              <h4>Colores Suaves</h4>
-              <p>Paleta femenina y moderna</p>
+              <h4>{t.designs.features[0].title}</h4>
+              <p>{t.designs.features[0].description}</p>
             </div>
             <div className="design-feature">
               <span className="feature-icon">✨</span>
-              <h4>Interfaz Intuitiva</h4>
-              <p>Navegación simple y clara</p>
+              <h4>{t.designs.features[1].title}</h4>
+              <p>{t.designs.features[1].description}</p>
             </div>
             <div className="design-feature">
               <span className="feature-icon">💫</span>
-              <h4>Experiencia Fluida</h4>
-              <p>Animaciones suaves</p>
+              <h4>{t.designs.features[2].title}</h4>
+              <p>{t.designs.features[2].description}</p>
             </div>
             <div className="design-feature">
               <span className="feature-icon">🔒</span>
-              <h4>Privacidad</h4>
-              <p>Datos seguros y protegidos</p>
+              <h4>{t.designs.features[3].title}</h4>
+              <p>{t.designs.features[3].description}</p>
             </div>
           </div>
         </motion.div>

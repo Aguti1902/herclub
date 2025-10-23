@@ -152,23 +152,22 @@ function Roadmap() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          <h3>Estrategia de Lanzamiento</h3>
+          <h3>{t.launchStrategy.title}</h3>
           <p>
-            Desarrollo ágil con sprints de 2 semanas, testing continuo y feedback de usuarias beta. 
-            Lanzamiento gradual por fases para garantizar calidad y escalabilidad.
+            {t.launchStrategy.description}
           </p>
           <div className="launch-stats">
             <div className="launch-stat">
-              <span className="stat-number">6</span>
-              <span className="stat-label">Meses de desarrollo</span>
+              <span className="stat-number">{t.launchStrategy.stats.months.value}</span>
+              <span className="stat-label">{t.launchStrategy.stats.months.label}</span>
             </div>
             <div className="launch-stat">
-              <span className="stat-number">3</span>
-              <span className="stat-label">Fases incrementales</span>
+              <span className="stat-number">{t.launchStrategy.stats.phases.value}</span>
+              <span className="stat-label">{t.launchStrategy.stats.phases.label}</span>
             </div>
             <div className="launch-stat">
-              <span className="stat-number">100%</span>
-              <span className="stat-label">Control de calidad</span>
+              <span className="stat-number">{t.launchStrategy.stats.quality.value}</span>
+              <span className="stat-label">{t.launchStrategy.stats.quality.label}</span>
             </div>
           </div>
         </motion.div>

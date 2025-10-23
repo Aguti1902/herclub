@@ -91,21 +91,21 @@ function Branding() {
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          <h3>Tipografía</h3>
+          <h3>{t.typographyTitle}</h3>
           <div className="typography-samples">
             <div className="typo-sample">
-              <div className="typo-name">Quicksand</div>
+              <div className="typo-name">{t.typography.quicksand.name}</div>
               <div className="typo-display" style={{ fontFamily: 'Quicksand' }}>
                 AaBbCc 123
               </div>
-              <div className="typo-usage">Títulos y Logotipo</div>
+              <div className="typo-usage">{t.typography.quicksand.usage}</div>
             </div>
             <div className="typo-sample">
-              <div className="typo-name">Poppins</div>
+              <div className="typo-name">{t.typography.poppins.name}</div>
               <div className="typo-display" style={{ fontFamily: 'Poppins' }}>
                 AaBbCc 123
               </div>
-              <div className="typo-usage">Cuerpo de texto</div>
+              <div className="typo-usage">{t.typography.poppins.usage}</div>
             </div>
           </div>
         </motion.div>
@@ -144,11 +144,9 @@ function Branding() {
           viewport={{ once: true }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          <h3>Personalidad de Marca</h3>
+          <h3>{t.personalityTitle}</h3>
           <p>
-            HERCLUB es moderna, inclusiva, sofisticada y empoderadora. Hablamos con voz auténtica, 
-            cercana y motivadora. Somos un espacio seguro donde las mujeres pueden ser ellas mismas, 
-            crecer y conectar con otras que comparten sus valores.
+            {t.personalityDescription}
           </p>
         </motion.div>
       </div>

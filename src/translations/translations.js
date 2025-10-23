@@ -375,6 +375,15 @@ export const translations = {
         { month: 'Mes 5', goal: 'Funcionalidades completas y testeo' },
         { month: 'Mes 6', goal: 'Lanzamiento oficial en stores' }
       ],
+      launchStrategy: {
+        title: 'Estrategia de Lanzamiento',
+        description: 'Desarrollo ágil con sprints de 2 semanas, testing continuo y feedback de usuarias beta. Lanzamiento gradual por fases para garantizar calidad y escalabilidad.',
+        stats: {
+          months: { value: '6', label: 'Meses de desarrollo' },
+          phases: { value: '3', label: 'Fases incrementales' },
+          quality: { value: '100%', label: 'Control de calidad' }
+        }
+      },
       phases: {
         current: {
           title: 'Fase Actual',
@@ -432,6 +441,20 @@ export const translations = {
     financials: {
       title: 'Proyección Financiera',
       subtitle: 'Crecimiento sostenible y escalable',
+      revenueBreakdownTitle: 'Desglose de Ingresos (Año 3)',
+      revenueCategories: {
+        subscriptions: 'Suscripciones',
+        travel: 'Viajes',
+        marketplace: 'Marketplace',
+        others: 'Otros'
+      },
+      roiTitle: 'Retorno de Inversión',
+      roiStats: {
+        roi: { value: '5X', label: 'ROI a 3 años' },
+        breakeven: { value: '18-24', label: 'Meses para break-even' },
+        margin: { value: '35%', label: 'Margen proyectado' }
+      },
+      roiDescription: 'Con una inversión inicial de 50-60K€, proyectamos alcanzar el punto de equilibrio en 18-24 meses y generar un retorno de 5X en 3 años, con múltiples fuentes de ingresos recurrentes y escalables.',
       projections: [
         {
           year: 'Año 1',
@@ -482,6 +505,13 @@ export const translations = {
       subtitle: 'Una marca que empodera y conecta',
       logoDescription: 'Dos corazones entrelazados simbolizan la conexión y amistad entre mujeres',
       colorsTitle: 'Paleta de Colores',
+      typographyTitle: 'Tipografía',
+      typography: {
+        quicksand: { name: 'Quicksand', usage: 'Títulos y Logotipo' },
+        poppins: { name: 'Poppins', usage: 'Cuerpo de texto' }
+      },
+      personalityTitle: 'Personalidad de Marca',
+      personalityDescription: 'HERCLUB es moderna, inclusiva, sofisticada y empoderadora. Hablamos con voz auténtica, cercana y motivadora. Somos un espacio seguro donde las mujeres pueden ser ellas mismas, crecer y conectar con otras que comparten sus valores.',
       colors: [
         { name: 'Púrpura Profundo', hex: '#5A3B66', description: 'Elegancia y exclusividad' },
         { name: 'Rosa Suave', hex: '#F6C7CE', description: 'Feminidad y calidez' },
@@ -515,10 +545,10 @@ export const translations = {
       designs: {
         title: 'Diseño Pensado para Mujeres',
         features: [
-          'Interfaz intuitiva y amigable',
-          'Colores cálidos y acogedores',
-          'Navegación simple y clara',
-          'Enfoque en la seguridad'
+          { title: 'Colores Suaves', description: 'Paleta femenina y moderna' },
+          { title: 'Interfaz Intuitiva', description: 'Navegación simple y clara' },
+          { title: 'Experiencia Fluida', description: 'Animaciones suaves' },
+          { title: 'Privacidad', description: 'Datos seguros y protegidos' }
         ]
       }
     },
@@ -923,6 +953,15 @@ export const translations = {
         { month: 'Month 5', goal: 'Complete features and testing' },
         { month: 'Month 6', goal: 'Official launch in stores' }
       ],
+      launchStrategy: {
+        title: 'Launch Strategy',
+        description: 'Agile development with 2-week sprints, continuous testing and beta user feedback. Gradual phased launch to ensure quality and scalability.',
+        stats: {
+          months: { value: '6', label: 'Development months' },
+          phases: { value: '3', label: 'Incremental phases' },
+          quality: { value: '100%', label: 'Quality control' }
+        }
+      },
       phases: {
         current: {
           title: 'Current Phase',
@@ -980,6 +1019,20 @@ export const translations = {
     financials: {
       title: 'Financial Projection',
       subtitle: 'Sustainable and scalable growth',
+      revenueBreakdownTitle: 'Revenue Breakdown (Year 3)',
+      revenueCategories: {
+        subscriptions: 'Subscriptions',
+        travel: 'Travel',
+        marketplace: 'Marketplace',
+        others: 'Others'
+      },
+      roiTitle: 'Return on Investment',
+      roiStats: {
+        roi: { value: '5X', label: '3-year ROI' },
+        breakeven: { value: '18-24', label: 'Months to break-even' },
+        margin: { value: '35%', label: 'Projected margin' }
+      },
+      roiDescription: 'With an initial investment of €50-60K, we project to reach break-even in 18-24 months and generate a 5X return in 3 years, with multiple recurring and scalable revenue streams.',
       projections: [
         {
           year: 'Year 1',
@@ -1030,6 +1083,13 @@ export const translations = {
       subtitle: 'A brand that empowers and connects',
       logoDescription: 'Two intertwined hearts symbolize connection and friendship between women',
       colorsTitle: 'Color Palette',
+      typographyTitle: 'Typography',
+      typography: {
+        quicksand: { name: 'Quicksand', usage: 'Titles and Logo' },
+        poppins: { name: 'Poppins', usage: 'Body text' }
+      },
+      personalityTitle: 'Brand Personality',
+      personalityDescription: 'HERCLUB is modern, inclusive, sophisticated and empowering. We speak with an authentic, warm and motivating voice. We are a safe space where women can be themselves, grow and connect with others who share their values.',
       colors: [
         { name: 'Deep Purple', hex: '#5A3B66', description: 'Elegance and exclusivity' },
         { name: 'Soft Pink', hex: '#F6C7CE', description: 'Femininity and warmth' },
@@ -1063,10 +1123,10 @@ export const translations = {
       designs: {
         title: 'Design Crafted for Women',
         features: [
-          'Intuitive and friendly interface',
-          'Warm and welcoming colors',
-          'Simple and clear navigation',
-          'Focus on safety'
+          { title: 'Soft Colors', description: 'Feminine and modern palette' },
+          { title: 'Intuitive Interface', description: 'Simple and clear navigation' },
+          { title: 'Fluid Experience', description: 'Smooth animations' },
+          { title: 'Privacy', description: 'Secure and protected data' }
         ]
       }
     },
@@ -1472,6 +1532,15 @@ export const translations = {
         { month: 'Monat 5', goal: 'Vollständige Funktionen und Tests' },
         { month: 'Monat 6', goal: 'Offizieller Start in den Stores' }
       ],
+      launchStrategy: {
+        title: 'Launch-Strategie',
+        description: 'Agile Entwicklung mit 2-Wochen-Sprints, kontinuierlichem Testing und Feedback von Beta-Nutzern. Schrittweiser Launch in Phasen zur Sicherstellung von Qualität und Skalierbarkeit.',
+        stats: {
+          months: { value: '6', label: 'Entwicklungsmonate' },
+          phases: { value: '3', label: 'Inkrementelle Phasen' },
+          quality: { value: '100%', label: 'Qualitätskontrolle' }
+        }
+      },
       phases: {
         current: {
           title: 'Aktuelle Phase',
@@ -1529,6 +1598,20 @@ export const translations = {
     financials: {
       title: 'Finanzprognose',
       subtitle: 'Nachhaltiges und skalierbares Wachstum',
+      revenueBreakdownTitle: 'Umsatzaufschlüsselung (Jahr 3)',
+      revenueCategories: {
+        subscriptions: 'Abonnements',
+        travel: 'Reisen',
+        marketplace: 'Marktplatz',
+        others: 'Andere'
+      },
+      roiTitle: 'Return on Investment',
+      roiStats: {
+        roi: { value: '5X', label: 'ROI in 3 Jahren' },
+        breakeven: { value: '18-24', label: 'Monate bis Break-even' },
+        margin: { value: '35%', label: 'Prognostizierte Marge' }
+      },
+      roiDescription: 'Mit einer Anfangsinvestition von 50-60.000€ projizieren wir, den Break-even in 18-24 Monaten zu erreichen und eine 5X-Rendite in 3 Jahren zu generieren, mit mehreren wiederkehrenden und skalierbaren Einnahmequellen.',
       projections: [
         {
           year: 'Jahr 1',
@@ -1579,6 +1662,13 @@ export const translations = {
       subtitle: 'Eine Marke, die stärkt und verbindet',
       logoDescription: 'Zwei verwobene Herzen symbolisieren Verbindung und Freundschaft zwischen Frauen',
       colorsTitle: 'Farbpalette',
+      typographyTitle: 'Typografie',
+      typography: {
+        quicksand: { name: 'Quicksand', usage: 'Titel und Logo' },
+        poppins: { name: 'Poppins', usage: 'Fließtext' }
+      },
+      personalityTitle: 'Markenpersönlichkeit',
+      personalityDescription: 'HERCLUB ist modern, inklusiv, raffiniert und stärkend. Wir sprechen mit authentischer, warmer und motivierender Stimme. Wir sind ein sicherer Raum, wo Frauen sie selbst sein können, wachsen und sich mit anderen verbinden können, die ihre Werte teilen.',
       colors: [
         { name: 'Tiefes Lila', hex: '#5A3B66', description: 'Eleganz und Exklusivität' },
         { name: 'Sanftes Rosa', hex: '#F6C7CE', description: 'Weiblichkeit und Wärme' },
@@ -1612,10 +1702,10 @@ export const translations = {
       designs: {
         title: 'Design für Frauen entwickelt',
         features: [
-          'Intuitive und freundliche Oberfläche',
-          'Warme und einladende Farben',
-          'Einfache und klare Navigation',
-          'Fokus auf Sicherheit'
+          { title: 'Sanfte Farben', description: 'Feminine und moderne Palette' },
+          { title: 'Intuitive Oberfläche', description: 'Einfache und klare Navigation' },
+          { title: 'Fließende Erfahrung', description: 'Sanfte Animationen' },
+          { title: 'Privatsphäre', description: 'Sichere und geschützte Daten' }
         ]
       }
     },
