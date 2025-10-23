@@ -1,16 +1,18 @@
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import { Heart, Mail, Euro, Rocket, ArrowRight, TrendingUp } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 import { translations } from '../translations/translations'
+import DonationModal from './DonationModal'
 import './CTA.css'
 
 function CTA() {
   const { language } = useLanguage()
   const t = translations[language].cta
+  const [isDonationModalOpen, setIsDonationModalOpen] = useState(false)
 
   const handleDonation = () => {
-    // Aquí se integraría con Stripe, PayPal o la pasarela de pago
-    alert('Redirigiendo a la pasarela de pago...')
+    setIsDonationModalOpen(true)
   }
 
   const handleContact = () => {
@@ -160,6 +162,11 @@ function CTA() {
           <p>{t.thanks.description}</p>
         </motion.div>
       </div>
+
+      <DonationModal 
+        isOpen={isDonationModalOpen} 
+        onClose={() => setIsDonationModalOpen(false)} 
+      />
     </div>
   )
 }

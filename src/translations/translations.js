@@ -552,6 +552,16 @@ export const translations = {
         ]
       }
     },
+    // Donation Modal
+    donationModal: {
+      title: 'Apoya HERCLUB',
+      subtitle: 'Tu apoyo nos ayuda a construir la mejor comunidad femenina digital',
+      accountHolder: 'Titular de la cuenta',
+      accountNumber: 'Número de cuenta (IBAN)',
+      bankName: 'Banco',
+      copy: 'Copiar',
+      thanks: '¡Gracias por tu apoyo! Cada contribución nos acerca más a nuestro objetivo.'
+    },
     // CTA
     cta: {
       title: 'Invierte en el Futuro de la Conexión Femenina',
@@ -1129,6 +1139,16 @@ export const translations = {
           { title: 'Privacy', description: 'Secure and protected data' }
         ]
       }
+    },
+    // Donation Modal
+    donationModal: {
+      title: 'Support HERCLUB',
+      subtitle: 'Your support helps us build the best digital women\'s community',
+      accountHolder: 'Account holder',
+      accountNumber: 'Account number (IBAN)',
+      bankName: 'Bank',
+      copy: 'Copy',
+      thanks: 'Thank you for your support! Every contribution brings us closer to our goal.'
     },
     // CTA
     cta: {
@@ -1709,6 +1729,16 @@ export const translations = {
         ]
       }
     },
+    // Donation Modal
+    donationModal: {
+      title: 'Unterstützen Sie HERCLUB',
+      subtitle: 'Ihre Unterstützung hilft uns, die beste digitale Frauengemeinschaft aufzubauen',
+      accountHolder: 'Kontoinhaber',
+      accountNumber: 'Kontonummer (IBAN)',
+      bankName: 'Bank',
+      copy: 'Kopieren',
+      thanks: 'Vielen Dank für Ihre Unterstützung! Jeder Beitrag bringt uns unserem Ziel näher.'
+    },
     // CTA
     cta: {
       title: 'Investieren Sie in die Zukunft der Frauenverbindung',
@@ -1733,6 +1763,284 @@ export const translations = {
         title: 'Vielen Dank für Ihre Zeit und Ihr Interesse',
         description: 'Wir freuen uns, diese Vision mit Ihnen zu teilen und freuen uns darauf, gemeinsam die Zukunft aufzubauen.'
       }
+    }
+  },
+  
+  // ========================================
+  // ITALIANO (IT)
+  // ========================================
+  it: {
+    // Navigation
+    nav: {
+      inicio: 'Inizio',
+      problema: 'Il Problema',
+      solucion: 'La Soluzione',
+      funcionalidades: 'Funzionalità',
+      mercado: 'Mercato',
+      modelo: 'Modello di Business',
+      inversion: 'Investimento',
+      roadmap: 'Roadmap',
+      financiero: 'Proiezione',
+      branding: 'Branding',
+      mockups: 'Mockups',
+      cta: 'Unisciti'
+    },
+    // Hero
+    hero: {
+      title: 'HERCLUB',
+      tagline: 'La comunità femminile più esclusiva del mondo digitale',
+      description: 'Dove le donne si connettono, crescono e si potenziano insieme',
+      features: {
+        match: 'Match di Amicizia',
+        wellness: 'Benessere Mentale',
+        events: 'Eventi & Viaggi',
+        coaching: 'Coaching & IA'
+      },
+      cta: 'Proposta per Investitori'
+    },
+    // Problem
+    problem: {
+      title: 'Il Problema',
+      subtitle: 'Le donne hanno bisogno di uno spazio digitale sicuro ed esclusivo',
+      issues: [
+        {
+          title: 'Solitudine Sociale',
+          description: 'Difficoltà nel creare connessioni autentiche e durature nel mondo digitale'
+        },
+        {
+          title: 'Mancanza di Spazi Sicuri',
+          description: 'Pochi spazi digitali pensati esclusivamente per donne dove possano essere se stesse'
+        },
+        {
+          title: 'Frammentazione',
+          description: 'Le funzionalità sono disperse in più app diverse senza coesione'
+        }
+      ],
+      stats: {
+        title: 'La Realtà delle Donne Digitali',
+        data: [
+          { number: '67%', label: 'Si sentono sole nelle reti sociali' },
+          { number: '82%', label: 'Cercano connessioni più autentiche' },
+          { number: '74%', label: 'Vogliono uno spazio sicuro ed esclusivo' }
+        ]
+      },
+      impact: {
+        title: 'L\'Impatto della Disconnessione',
+        points: [
+          'Salute mentale compromessa',
+          'Mancanza di supporto emotivo',
+          'Opportunità perse di crescita personale',
+          'Isolamento in momenti critici'
+        ]
+      }
+    },
+    // Solution
+    solution: {
+      title: 'La Soluzione',
+      subtitle: 'HERCLUB: L\'app all-in-one per donne',
+      pillars: [
+        { title: 'Match di Amicizia Intelligente', description: 'Algoritmo basato su IA per connettere donne con interessi, valori e obiettivi simili.' },
+        { title: 'Eventi e Viaggi Esclusivi', description: 'Meetup, ritiri e viaggi organizzati solo per membri.' },
+        { title: 'Benessere e Crescita', description: 'Accesso a psicologia, coaching, astrologia e strumenti.' },
+        { title: 'Comunità Sicura', description: 'Spazio moderato e protetto per donne.' }
+      ],
+      differentiators: {
+        title: 'Perché HERCLUB è Diverso',
+        points: ['Esclusivo per donne', 'Focus sul benessere mentale', 'Connessioni autentiche', 'Comunità supportata']
+      }
+    },
+    // Features
+    features: {
+      title: 'Funzionalità Principali',
+      subtitle: 'Un\'esperienza completa per ogni aspetto della vita di una donna',
+      list: [
+        { title: 'Match di Amicizia', description: 'Trova la tua nuova migliore amica.', benefits: ['Basato su IA', 'Profili verificati'] },
+        { title: 'Eventi & Meetups', description: 'Brunch, yoga, networking.', benefits: ['Eventi settimanali', 'Crea eventi'] },
+        { title: 'Viaggi & Esperienze', description: 'Viaggi in gruppo solo per donne.', benefits: ['Organizzazione completa'] },
+        { title: 'Psicologia & Benessere', description: 'Accesso a psicologi via chat.', benefits: ['Chat con professionisti'] },
+        { title: 'Chat & Community', description: 'Gruppi tematici e messaggistica.', benefits: ['Chat di gruppo'] },
+        { title: 'Punto Lilla', description: 'Risorse e supporto in situazioni di vulnerabilità.', benefits: ['Supporto 24/7'] }
+      ]
+    },
+    // Market
+    market: {
+      title: 'Opportunità di Mercato',
+      subtitle: 'Un mercato globale in crescita',
+      stats: [
+        { number: '1.8B', label: 'Donne con accesso a internet' },
+        { number: '€8.5B', label: 'Mercato di app sociali per donne' },
+        { number: '42%', label: 'Crescita annuale wellness' }
+      ],
+      target: {
+        title: 'Pubblico Target',
+        description: 'Donne urbane interessate alla crescita personale',
+        demographics: [
+          { label: 'Età', value: '18 a 60 anni' },
+          { label: 'Ubicazione', value: 'Zone urbane globali' },
+          { label: 'Potere d\'acquisto', value: 'Medio-alto' }
+        ]
+      },
+      whyNow: {
+        title: 'Perché Adesso',
+        reasons: ['Solitudine post-pandemia', 'Rifiuto reti sociali tossiche', 'Movimento benessere mentale']
+      }
+    },
+    // Business Model
+    businessModel: {
+      title: 'Modello di Business',
+      subtitle: 'Fonti di reddito scalabili',
+      revenueStreams: [
+        { title: 'Abbonamenti Premium', description: 'Sottoscrizioni mensili con accesso esclusivo.', potential: 'Alto' },
+        { title: 'Commissioni sui Viaggi', description: 'Percentuale sulle prenotazioni.', potential: 'Alto' },
+        { title: 'Marketplace di Servizi', description: 'Commissione per servizi.', potential: 'Medio-Alto' },
+        { title: 'Pubblicità Selettiva', description: 'Campagne di marchi affini.', potential: 'Medio' },
+        { title: 'Corsi ed Eventi', description: 'Formazioni a pagamento.', potential: 'Medio-Alto' }
+      ],
+      pricingTitle: 'Struttura dei Prezzi',
+      tiers: {
+        basic: { name: 'Basico', price: 'Gratis', features: ['Match limitati', 'Eventi pubblici', 'Chat IA base'] },
+        premium: { name: 'Premium', price: '19,99€', period: '/mese', badge: 'Popolare', features: ['Match illimitati', 'Eventi esclusivi', 'Psicologia', 'Carta astrale', 'Sconti viaggi'] },
+        vip: { name: 'VIP', price: '49,99€', period: '/mese', features: ['Tutto Premium', 'Sessioni 1-1', 'Viaggi VIP', 'Consulenza personalizzata'] }
+      },
+      projectionTitle: 'Proiezione delle Entrate',
+      projectionData: [
+        { label: 'Anno 1', users: '10.000 utenti', revenue: '~200.000€' },
+        { label: 'Anno 2', users: '50.000 utenti', revenue: '~1,2M€' },
+        { label: 'Anno 3', users: '150.000 utenti', revenue: '~4,5M€' }
+      ],
+      potential: 'Potenziale'
+    },
+    // Investment
+    investment: {
+      title: 'Dettagli dell\'Investimento',
+      subtitle: 'Uso strategico e trasparente del tuo investimento',
+      totalTitle: 'Investimento Iniziale',
+      totalAmount: '50.000€ - 60.000€',
+      totalDescription: 'Capitale necessario per sviluppare e lanciare HERCLUB in 6 mesi',
+      breakdown: [
+        { category: 'Sviluppo App', amount: '35.000€', percentage: 58, items: ['Frontend e Backend completo', 'Integrazione IA', 'Sistema pagamenti', 'API matching', 'Database e sicurezza'] },
+        { category: 'Design e Branding', amount: '10.000€', percentage: 17, items: ['Design UX/UI completo', 'Identità di marca', 'Materiale grafico', 'Lancio stores', 'Website'] },
+        { category: 'Marketing e Lancio', amount: '15.000€', percentage: 25, items: ['Campagne ads', 'Collaborazioni influencer', 'Evento di lancio', 'Community management', 'Prime 10.000 utenti'] }
+      ],
+      goalsTitle: 'Obiettivi dell\'Investimento',
+      goals: [
+        { number: '6', label: 'Mesi per MVP completo' },
+        { number: '10K', label: 'Utenti primo anno' },
+        { number: '200K€', label: 'Entrate previste anno 1' },
+        { number: '5X', label: 'ROI previsto in 3 anni' }
+      ]
+    },
+    // Roadmap
+    roadmap: {
+      title: 'Roadmap',
+      subtitle: 'Percorso chiaro verso il successo',
+      phasesList: [
+        { phase: 'Fase 1', timeline: '0-2 mesi', status: 'pending', title: 'MVP e Funzionalità Core', items: ['Design UX/UI completo', 'Sistema di match', 'Integrazione eventi', 'Sistema di registrazione', 'Chat in tempo reale', 'Pannello admin base'] },
+        { phase: 'Fase 2', timeline: '2-4 mesi', status: 'pending', title: 'IA e Funzionalità Premium', items: ['Psicologia con IA', 'Carta astrale IA', 'Sistema viaggi', 'Marketplace', 'Integrazione pagamenti', 'Coaching'] },
+        { phase: 'Fase 3', timeline: '4-6 mesi', status: 'pending', title: 'Espansione e Lancio Globale', items: ['Multilingua', 'DJ streaming', 'Punto Lilla', 'Consulenza immagine', 'Sport e salute', 'Corsi influencer', 'Lancio stores', 'Campagna marketing'] }
+      ],
+      milestones: [
+        { month: 'Mese 1', goal: 'Design completato e sviluppo avviato' },
+        { month: 'Mese 2', goal: 'MVP funzionale con match ed eventi' },
+        { month: 'Mese 3', goal: 'IA integrata e sistema pagamenti' },
+        { month: 'Mese 4', goal: 'Beta privata con 500 utenti' },
+        { month: 'Mese 5', goal: 'Funzionalità complete e testing' },
+        { month: 'Mese 6', goal: 'Lancio ufficiale negli stores' }
+      ],
+      launchStrategy: {
+        title: 'Strategia di Lancio',
+        description: 'Sviluppo agile con sprint di 2 settimane, testing continuo e feedback utenti beta. Lancio graduale per fasi per garantire qualità e scalabilità.',
+        stats: {
+          months: { value: '6', label: 'Mesi di sviluppo' },
+          phases: { value: '3', label: 'Fasi incrementali' },
+          quality: { value: '100%', label: 'Controllo qualità' }
+        }
+      },
+      phases: { current: { title: 'Fase Attuale', period: 'Adesso', items: ['Ricerca investimenti', 'Validazione concetto', 'Design UX/UI', 'Primi contatti utenti'] } }
+    },
+    // Financials
+    financials: {
+      title: 'Proiezione Finanziaria',
+      subtitle: 'Crescita sostenibile e scalabile',
+      revenueBreakdownTitle: 'Ripartizione Entrate (Anno 3)',
+      revenueCategories: { subscriptions: 'Abbonamenti', travel: 'Viaggi', marketplace: 'Marketplace', others: 'Altri' },
+      roiTitle: 'Ritorno sull\'Investimento',
+      roiStats: {
+        roi: { value: '5X', label: 'ROI a 3 anni' },
+        breakeven: { value: '18-24', label: 'Mesi per break-even' },
+        margin: { value: '35%', label: 'Margine previsto' }
+      },
+      roiDescription: 'Con un investimento iniziale di 50-60K€, prevediamo di raggiungere il break-even in 18-24 mesi e generare un ritorno di 5X in 3 anni.',
+      projections: [
+        { year: 'Anno 1', users: '10K', revenue: '200K€', growth: '+100%', highlights: ['Lancio ufficiale', '10% conversione premium', 'Prima campagna marketing', 'Prime collaborazioni'] },
+        { year: 'Anno 2', users: '50K', revenue: '1,2M€', growth: '+500%', highlights: ['Espansione internazionale', '15% conversione premium', 'Marketplace attivo', 'Entrate da eventi e viaggi'] },
+        { year: 'Anno 3', users: '150K', revenue: '4,5M€', growth: '+300%', highlights: ['Leader di mercato', '20% conversione premium', 'Molteplici fonti di entrate', 'Break-even raggiunto'] }
+      ],
+      labels: { users: 'Utenti', revenue: 'Entrate', growth: 'Crescita' }
+    },
+    // Branding
+    branding: {
+      title: 'Identità di Marca',
+      subtitle: 'Un marchio che potenzia e connette',
+      logoDescription: 'Due cuori intrecciati simbolizzano connessione e amicizia tra donne',
+      colorsTitle: 'Palette di Colori',
+      typographyTitle: 'Tipografia',
+      typography: {
+        quicksand: { name: 'Quicksand', usage: 'Titoli e Logo' },
+        poppins: { name: 'Poppins', usage: 'Corpo del testo' }
+      },
+      personalityTitle: 'Personalità del Marchio',
+      personalityDescription: 'HERCLUB è moderna, inclusiva, sofisticata e potenziante. Parliamo con voce autentica, vicina e motivante. Siamo uno spazio sicuro dove le donne possono essere se stesse, crescere e connettersi.',
+      colors: [
+        { name: 'Viola Profondo', hex: '#5A3B66', description: 'Eleganza ed esclusività' },
+        { name: 'Rosa Tenue', hex: '#F6C7CE', description: 'Femminilità e calore' },
+        { name: 'Corallo Polveroso', hex: '#E89BAA', description: 'Energia e vitalità' },
+        { name: 'Bianco Crema', hex: '#FFF8F6', description: 'Purezza e chiarezza' },
+        { name: 'Grigio Lilla', hex: '#A08DA5', description: 'Sofisticazione e equilibrio' }
+      ],
+      valuesTitle: 'Valori del Marchio',
+      values: ['Connessione Autentica', 'Empowerment Femminile', 'Sicurezza e Fiducia', 'Crescita Personale', 'Comunità Inclusiva', 'Innovazione con Scopo']
+    },
+    // Mockups
+    mockups: {
+      title: 'Mockups dell\'App',
+      subtitle: 'Design pensato per le donne',
+      scrollHint: 'Scorri per vedere altro →',
+      labels: { match: 'Match di Amicizia', events: 'Eventi & Meetups', wellness: 'Benessere Mentale', travel: 'Viaggi', messages: 'Messaggi', puntoLila: 'Punto Lilla' },
+      designs: {
+        title: 'Design Pensato per le Donne',
+        features: [
+          { title: 'Colori Tenui', description: 'Palette femminile e moderna' },
+          { title: 'Interfaccia Intuitiva', description: 'Navigazione semplice e chiara' },
+          { title: 'Esperienza Fluida', description: 'Animazioni morbide' },
+          { title: 'Privacy', description: 'Dati sicuri e protetti' }
+        ]
+      }
+    },
+    // Donation Modal
+    donationModal: {
+      title: 'Sostieni HERCLUB',
+      subtitle: 'Il tuo sostegno ci aiuta a costruire la migliore comunità femminile digitale',
+      accountHolder: 'Titolare del conto',
+      accountNumber: 'Numero di conto (IBAN)',
+      bankName: 'Banca',
+      copy: 'Copia',
+      thanks: 'Grazie per il tuo sostegno! Ogni contributo ci avvicina al nostro obiettivo.'
+    },
+    // CTA
+    cta: {
+      title: 'Investi nel Futuro della Connessione Femminile',
+      description: 'Insieme possiamo creare la comunità femminile più esclusiva e positiva del mondo digitale',
+      benefits: [
+        'Unisciti a un movimento che trasformerà la vita di milioni di donne',
+        'Fai parte di una delle comunità digitali più innovative',
+        'ROI previsto di 5X in 3 anni',
+        'Impatto sociale misurabile e sostenibile'
+      ],
+      summary: { investment: 'Investimento', investmentValue: '50-60K€', launch: 'Lancio', launchValue: '6 mesi', roi: 'ROI Previsto', roiValue: '5X in 3 anni' },
+      button: 'Sostieni il Lancio di HERCLUB',
+      tagline: 'Fai parte del cambiamento. Investi in HERCLUB.',
+      thanks: { title: 'Grazie per il tuo tempo e interesse', description: 'Siamo entusiasti di condividere questa visione con te e non vediamo l\'ora di costruire il futuro insieme.' }
     }
   }
 }
