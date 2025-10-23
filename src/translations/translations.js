@@ -380,23 +380,38 @@ const translations = {
     },
     problem: {
       title: 'The Problem',
-      subtitle: 'Women face unique challenges in the digital world',
-      card1Title: 'Unsafe Spaces',
-      card1Text: 'Traditional social media lacks exclusive and safe spaces for women.',
-      card2Title: 'Superficial Connections',
-      card2Text: 'Friendship apps fail to create deep and meaningful bonds.',
-      card3Title: 'Fragmentation',
-      card3Text: 'Women need multiple apps for wellness, friendship, events and personal development.'
+      subtitle: 'A generation of women more connected than ever... but lonelier',
+      card1Title: 'Digital Loneliness',
+      card1Text: 'Women have hundreds of online "friends" but few real and meaningful friendships.',
+      card2Title: 'Disconnection',
+      card2Text: 'Lack of safe and exclusive spaces to connect with other women without romantic purposes.',
+      card3Title: 'Mental Health',
+      card3Text: 'Growing need for emotional support, mental wellness and female personal development.',
+      card4Title: 'Fragmentation',
+      card4Text: 'Women must use multiple apps for wellness, networking, travel and events.',
+      stat1: '70%',
+      stat1Label: 'of women report feeling lonely',
+      stat2: '+50%',
+      stat2Label: 'of active digital audience',
+      stat3: '€20B',
+      stat3Label: 'wellness app market in Europe'
     },
     solution: {
       title: 'The Solution: HERCLUB',
-      subtitle: 'A comprehensive platform designed exclusively for women',
+      subtitle: 'The first female super-app that merges connection, wellness and experiences',
       card1Title: 'Exclusive Community',
-      card1Text: 'A 100% female, verified and safe space where women can be themselves.',
-      card2Title: 'All-in-One',
-      card2Text: 'Friendship matching, mental wellness, travel, events and marketplace in one app.',
-      card3Title: 'Personalized AI',
-      card3Text: 'AI assistant that understands the emotional and social needs of each user.'
+      card1Text: 'A private club just for women where to create real and lasting friendships.',
+      card2Title: 'Safe Space',
+      card2Text: 'Protected and verified environment where women can be authentic.',
+      card3Title: 'All-in-One',
+      card3Text: 'Friendship + Wellness + Events + Travel + Coaching in one platform.',
+      card4Title: 'Empowerment',
+      card4Text: 'Tools and resources for personal and professional growth.',
+      conceptTitle: 'The Concept',
+      conceptDescription: '= A unique experience designed exclusively for women',
+      visionTitle: 'Our Vision',
+      visionText1: 'To create the most exclusive and positive female community in the digital world, where women can connect, support each other and grow together.',
+      visionText2: 'HERCLUB will be more than an app: it will be a global movement of connection, safety and female empowerment.'
     },
     features: {
       title: 'Key Features',
@@ -674,10 +689,22 @@ const translations = {
       design3Text: 'Total control over your information and connections'
     },
     cta: {
-      title: 'Ready to be part of HERCLUB?',
-      subtitle: 'Join the most exclusive women\'s community in the digital world',
-      tagline: 'Together, unstoppable.',
-      button: 'Support the Project'
+      title: 'Invest in the Future of Female Connection',
+      subtitle: 'Together we can create the most exclusive and positive female community in the digital world',
+      benefit1: 'Join a movement that will transform the lives of millions of women',
+      benefit2: 'Be part of one of the most innovative digital communities',
+      benefit3: 'Projected ROI of 5X in 3 years',
+      benefit4: 'Measurable and sustainable social impact',
+      investmentLabel: 'Initial Investment',
+      investmentValue: '€50K - €60K',
+      launchLabel: 'Launch Timeline',
+      launchValue: '6 Months',
+      roiLabel: 'Projected ROI',
+      roiValue: '5X in 3 years',
+      button: 'Support the Launch of HERCLUB',
+      tagline: 'Be part of the change. Invest in HERCLUB.',
+      thanksTitle: 'Thank You for Your Time and Interest',
+      thanksText: 'We are excited to share this vision with you and look forward to building the future together.'
     }
   },
   de: {
@@ -707,23 +734,38 @@ const translations = {
     },
     problem: {
       title: 'Das Problem',
-      subtitle: 'Frauen stehen vor einzigartigen Herausforderungen in der digitalen Welt',
-      card1Title: 'Unsichere Räume',
-      card1Text: 'Traditionelle soziale Medien fehlen exklusive und sichere Räume für Frauen.',
-      card2Title: 'Oberflächliche Verbindungen',
-      card2Text: 'Freundschafts-Apps schaffen es nicht, tiefe und bedeutungsvolle Bindungen zu schaffen.',
-      card3Title: 'Fragmentierung',
-      card3Text: 'Frauen benötigen mehrere Apps für Wellness, Freundschaft, Events und persönliche Entwicklung.'
+      subtitle: 'Eine Generation von Frauen, die vernetzter als je zuvor ist... aber einsamer',
+      card1Title: 'Digitale Einsamkeit',
+      card1Text: 'Frauen haben Hunderte von Online-"Freunden", aber wenige echte und bedeutungsvolle Freundschaften.',
+      card2Title: 'Trennung',
+      card2Text: 'Mangel an sicheren und exklusiven Räumen, um sich mit anderen Frauen ohne romantische Absichten zu verbinden.',
+      card3Title: 'Psychische Gesundheit',
+      card3Text: 'Wachsender Bedarf an emotionaler Unterstützung, mentalem Wohlbefinden und weiblicher persönlicher Entwicklung.',
+      card4Title: 'Fragmentierung',
+      card4Text: 'Frauen müssen mehrere Apps für Wellness, Networking, Reisen und Events verwenden.',
+      stat1: '70%',
+      stat1Label: 'der Frauen berichten, sich einsam zu fühlen',
+      stat2: '+50%',
+      stat2Label: 'des aktiven digitalen Publikums',
+      stat3: '20Mrd€',
+      stat3Label: 'Wellness-App-Markt in Europa'
     },
     solution: {
       title: 'Die Lösung: HERCLUB',
-      subtitle: 'Eine umfassende Plattform, die exklusiv für Frauen entwickelt wurde',
+      subtitle: 'Die erste weibliche Super-App, die Verbindung, Wellness und Erlebnisse vereint',
       card1Title: 'Exklusive Community',
-      card1Text: 'Ein 100% weiblicher, verifizierter und sicherer Raum, in dem Frauen sie selbst sein können.',
-      card2Title: 'Alles in Einem',
-      card2Text: 'Freundschafts-Matching, mentales Wohlbefinden, Reisen, Events und Marktplatz in einer App.',
-      card3Title: 'Personalisierte KI',
-      card3Text: 'KI-Assistent, der die emotionalen und sozialen Bedürfnisse jeder Benutzerin versteht.'
+      card1Text: 'Ein privater Club nur für Frauen, um echte und dauerhafte Freundschaften zu schließen.',
+      card2Title: 'Sicherer Raum',
+      card2Text: 'Geschützte und verifizierte Umgebung, in der Frauen authentisch sein können.',
+      card3Title: 'Alles in Einem',
+      card3Text: 'Freundschaft + Wellness + Events + Reisen + Coaching auf einer Plattform.',
+      card4Title: 'Empowerment',
+      card4Text: 'Werkzeuge und Ressourcen für persönliches und berufliches Wachstum.',
+      conceptTitle: 'Das Konzept',
+      conceptDescription: '= Ein einzigartiges Erlebnis, das exklusiv für Frauen entwickelt wurde',
+      visionTitle: 'Unsere Vision',
+      visionText1: 'Die exklusivste und positivste weibliche Community in der digitalen Welt zu schaffen, in der Frauen sich verbinden, unterstützen und gemeinsam wachsen können.',
+      visionText2: 'HERCLUB wird mehr als eine App sein: Es wird eine globale Bewegung von Verbindung, Sicherheit und weiblichem Empowerment sein.'
     },
     features: {
       title: 'Hauptfunktionen',
@@ -1001,10 +1043,22 @@ const translations = {
       design3Text: 'Volle Kontrolle über Ihre Informationen und Verbindungen'
     },
     cta: {
-      title: 'Bereit, Teil von HERCLUB zu sein?',
-      subtitle: 'Treten Sie der exklusivsten Frauen-Community in der digitalen Welt bei',
-      tagline: 'Zusammen, unaufhaltsam.',
-      button: 'Projekt unterstützen'
+      title: 'Investieren Sie in die Zukunft der weiblichen Verbindung',
+      subtitle: 'Gemeinsam können wir die exklusivste und positivste weibliche Community in der digitalen Welt schaffen',
+      benefit1: 'Werden Sie Teil einer Bewegung, die das Leben von Millionen von Frauen verändern wird',
+      benefit2: 'Seien Sie Teil einer der innovativsten digitalen Communities',
+      benefit3: 'Prognostizierter ROI von 5X in 3 Jahren',
+      benefit4: 'Messbarer und nachhaltiger sozialer Einfluss',
+      investmentLabel: 'Anfangsinvestition',
+      investmentValue: '50K€ - 60K€',
+      launchLabel: 'Launch-Zeitplan',
+      launchValue: '6 Monate',
+      roiLabel: 'Prognostizierter ROI',
+      roiValue: '5X in 3 Jahren',
+      button: 'Den Launch von HERCLUB unterstützen',
+      tagline: 'Seien Sie Teil des Wandels. Investieren Sie in HERCLUB.',
+      thanksTitle: 'Vielen Dank für Ihre Zeit und Ihr Interesse',
+      thanksText: 'Wir freuen uns, diese Vision mit Ihnen zu teilen und freuen uns darauf, gemeinsam die Zukunft aufzubauen.'
     }
   }
 }
