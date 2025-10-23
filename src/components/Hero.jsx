@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion'
 import { Heart, Sparkles } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
 import './Hero.css'
 
 function Hero() {
+  const { t } = useLanguage()
+
   return (
     <div className="section hero-section">
       <div className="container">
@@ -23,7 +26,7 @@ function Hero() {
               <Heart className="heart heart-1" />
               <Heart className="heart heart-2" />
             </div>
-            <h1 className="logo-text">HERCLUB</h1>
+            <h1 className="logo-text">{t('hero.title')}</h1>
           </motion.div>
 
           {/* Tagline */}
@@ -33,7 +36,7 @@ function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            La comunidad femenina más exclusiva del mundo digital
+            {t('hero.tagline')}
           </motion.h2>
 
           <motion.p
@@ -42,7 +45,7 @@ function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            Donde las mujeres se conectan, crecen y se empoderan juntas
+            {t('hero.description')}
           </motion.p>
 
           {/* Características principales */}
@@ -54,19 +57,19 @@ function Hero() {
           >
             <div className="feature-badge">
               <Sparkles size={18} />
-              <span>Match de Amistad</span>
+              <span>{t('hero.feature1')}</span>
             </div>
             <div className="feature-badge">
               <Sparkles size={18} />
-              <span>Bienestar Mental</span>
+              <span>{t('hero.feature2')}</span>
             </div>
             <div className="feature-badge">
               <Sparkles size={18} />
-              <span>Eventos & Viajes</span>
+              <span>{t('hero.feature3')}</span>
             </div>
             <div className="feature-badge">
               <Sparkles size={18} />
-              <span>Coaching & IA</span>
+              <span>{t('hero.feature4')}</span>
             </div>
           </motion.div>
 
@@ -77,8 +80,7 @@ function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            <h3>Propuesta para Inversores</h3>
-            <p className="investment-amount">Inversión inicial: 50.000€ - 60.000€</p>
+            <h3>{t('hero.cta')}</h3>
           </motion.div>
 
           {/* Decoración */}

@@ -1,40 +1,10 @@
 import { motion } from 'framer-motion'
-import { CreditCard, Plane, ShoppingBag, Megaphone, GraduationCap, DollarSign } from 'lucide-react'
+import { Check } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
 import './BusinessModel.css'
 
 function BusinessModel() {
-  const revenueStreams = [
-    {
-      icon: CreditCard,
-      title: 'Membresías Premium',
-      description: 'Suscripciones mensuales con acceso a funciones exclusivas y eventos privados.',
-      potential: 'Alto'
-    },
-    {
-      icon: Plane,
-      title: 'Comisiones de Viajes',
-      description: 'Porcentaje sobre reservas de viajes, experiencias y alojamientos.',
-      potential: 'Alto'
-    },
-    {
-      icon: ShoppingBag,
-      title: 'Marketplace de Servicios',
-      description: 'Comisión por servicios de coaching, psicología, astrología e imagen.',
-      potential: 'Medio-Alto'
-    },
-    {
-      icon: Megaphone,
-      title: 'Publicidad Selectiva',
-      description: 'Campañas de marcas afines al público femenino (belleza, wellness, moda).',
-      potential: 'Medio'
-    },
-    {
-      icon: GraduationCap,
-      title: 'Cursos y Eventos',
-      description: 'Formaciones presenciales y digitales de pago para emprendedoras.',
-      potential: 'Medio-Alto'
-    }
-  ]
+  const { t } = useLanguage()
 
   return (
     <div className="section business-section">
@@ -46,106 +16,82 @@ function BusinessModel() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Modelo de Negocio</h2>
+          <h2 className="section-title">{t('business.title')}</h2>
           <p className="section-subtitle">
-            Múltiples fuentes de ingresos diversificadas y escalables
+            {t('business.subtitle')}
           </p>
         </motion.div>
 
-        <div className="revenue-grid">
-          {revenueStreams.map((stream, index) => (
+        <div className="pricing-section">
+          <div className="pricing-tiers">
             <motion.div
-              key={index}
-              className="revenue-card"
+              className="pricing-card basic"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              whileHover={{ y: -10 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
             >
-              <div className="revenue-icon">
-                <stream.icon size={32} />
-              </div>
-              <h3>{stream.title}</h3>
-              <p>{stream.description}</p>
-              <div className={`potential-badge ${stream.potential.toLowerCase().replace('-', '')}`}>
-                Potencial: {stream.potential}
+              <div className="tier-name">{t('business.freemium.title')}</div>
+              <div className="tier-price">{t('business.freemium.price')}</div>
+              <div className="tier-features">
+                <div className="feature"><Check size={18} /> {t('business.freemium.f1')}</div>
+                <div className="feature"><Check size={18} /> {t('business.freemium.f2')}</div>
+                <div className="feature"><Check size={18} /> {t('business.freemium.f3')}</div>
+                <div className="feature"><Check size={18} /> {t('business.freemium.f4')}</div>
               </div>
             </motion.div>
-          ))}
+
+            <motion.div
+              className="pricing-card premium"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              <div className="popular-badge">{t('business.premium.popular')}</div>
+              <div className="tier-name">{t('business.premium.title')}</div>
+              <div className="tier-price">{t('business.premium.price')}</div>
+              <div className="tier-features">
+                <div className="feature"><Check size={18} /> {t('business.premium.f1')}</div>
+                <div className="feature"><Check size={18} /> {t('business.premium.f2')}</div>
+                <div className="feature"><Check size={18} /> {t('business.premium.f3')}</div>
+                <div className="feature"><Check size={18} /> {t('business.premium.f4')}</div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="pricing-card vip"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
+              <div className="tier-name">{t('business.vip.title')}</div>
+              <div className="tier-price">{t('business.vip.price')}</div>
+              <div className="tier-features">
+                <div className="feature"><Check size={18} /> {t('business.vip.f1')}</div>
+                <div className="feature"><Check size={18} /> {t('business.vip.f2')}</div>
+                <div className="feature"><Check size={18} /> {t('business.vip.f3')}</div>
+                <div className="feature"><Check size={18} /> {t('business.vip.f4')}</div>
+                <div className="feature"><Check size={18} /> {t('business.vip.f5')}</div>
+              </div>
+            </motion.div>
+          </div>
         </div>
 
         <motion.div
-          className="pricing-section"
+          className="additional-revenue"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 0.6 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
         >
-          <h3>Estructura de Precios</h3>
-          <div className="pricing-tiers">
-            <div className="pricing-card basic">
-              <div className="tier-name">Básica</div>
-              <div className="tier-price">Gratis</div>
-              <div className="tier-features">
-                <div className="feature">✓ Match de amistad limitado</div>
-                <div className="feature">✓ Acceso a eventos públicos</div>
-                <div className="feature">✓ Chat IA básico</div>
-              </div>
-            </div>
-            
-            <div className="pricing-card premium">
-              <div className="badge-popular">Popular</div>
-              <div className="tier-name">Premium</div>
-              <div className="tier-price">19.99€<span>/mes</span></div>
-              <div className="tier-features">
-                <div className="feature">✓ Match ilimitado</div>
-                <div className="feature">✓ Eventos exclusivos</div>
-                <div className="feature">✓ Psicología y coaching</div>
-                <div className="feature">✓ Carta astral completa</div>
-                <div className="feature">✓ Descuentos en viajes</div>
-              </div>
-            </div>
-            
-            <div className="pricing-card vip">
-              <div className="tier-name">VIP</div>
-              <div className="tier-price">49.99€<span>/mes</span></div>
-              <div className="tier-features">
-                <div className="feature">✓ Todo Premium</div>
-                <div className="feature">✓ Sesiones 1-on-1</div>
-                <div className="feature">✓ Viajes VIP</div>
-                <div className="feature">✓ Asesoría personalizada</div>
-                <div className="feature">✓ Acceso anticipado</div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="business-projection"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.6 }}
-        >
-          <DollarSign size={60} />
-          <h3>Proyección de Ingresos</h3>
-          <div className="projection-stats">
-            <div className="projection-item">
-              <span className="projection-label">Año 1</span>
-              <span className="projection-value">10.000 usuarios</span>
-              <span className="projection-revenue">~200.000€</span>
-            </div>
-            <div className="projection-item">
-              <span className="projection-label">Año 2</span>
-              <span className="projection-value">50.000 usuarios</span>
-              <span className="projection-revenue">~1.2M€</span>
-            </div>
-            <div className="projection-item">
-              <span className="projection-label">Año 3</span>
-              <span className="projection-value">150.000 usuarios</span>
-              <span className="projection-revenue">~4.5M€</span>
-            </div>
+          <h3>{t('business.additional.title')}</h3>
+          <div className="revenue-list">
+            <div className="revenue-item">• {t('business.additional.travel')}</div>
+            <div className="revenue-item">• {t('business.additional.marketplace')}</div>
+            <div className="revenue-item">• {t('business.additional.events')}</div>
+            <div className="revenue-item">• {t('business.additional.partnerships')}</div>
           </div>
         </motion.div>
       </div>
@@ -154,6 +100,3 @@ function BusinessModel() {
 }
 
 export default BusinessModel
-
-
-

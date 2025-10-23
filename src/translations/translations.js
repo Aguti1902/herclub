@@ -1,0 +1,1013 @@
+const translations = {
+  es: {
+    nav: {
+      home: 'Inicio',
+      problem: 'El Problema',
+      solution: 'La Solución',
+      features: 'Funcionalidades',
+      market: 'Mercado',
+      business: 'Modelo de Negocio',
+      investment: 'Inversión',
+      roadmap: 'Roadmap',
+      financials: 'Proyección',
+      branding: 'Branding',
+      mockups: 'Mockups',
+      cta: 'Únete'
+    },
+    hero: {
+      title: 'HERCLUB',
+      tagline: 'La comunidad femenina más exclusiva del mundo digital',
+      description: 'Donde las mujeres se conectan, crecen y se empoderan juntas',
+      feature1: 'Match de Amistad',
+      feature2: 'Bienestar Mental',
+      feature3: 'Eventos & Viajes',
+      feature4: 'Coaching & IA',
+      cta: 'Propuesta para Inversores'
+    },
+    problem: {
+      title: 'El Problema',
+      subtitle: 'Una generación de mujeres más conectadas que nunca... pero más solas',
+      card1Title: 'Soledad Digital',
+      card1Text: 'Las mujeres tienen cientos de "amigos" online pero pocas amistades reales y significativas.',
+      card2Title: 'Desconexión',
+      card2Text: 'Falta de espacios seguros y exclusivos para conectar con otras mujeres sin propósitos románticos.',
+      card3Title: 'Salud Mental',
+      card3Text: 'Creciente necesidad de apoyo emocional, bienestar mental y desarrollo personal femenino.',
+      card4Title: 'Fragmentación',
+      card4Text: 'Las mujeres deben usar múltiples apps para bienestar, networking, viajes y eventos.',
+      stat1: '70%',
+      stat1Label: 'de mujeres reportan sentirse solas',
+      stat2: '+50%',
+      stat2Label: 'del público digital activo',
+      stat3: '20B€',
+      stat3Label: 'mercado de apps de bienestar en Europa'
+    },
+    solution: {
+      title: 'La Solución: HERCLUB',
+      subtitle: 'La primera super-app femenina que fusiona conexión, bienestar y experiencias',
+      card1Title: 'Comunidad Exclusiva',
+      card1Text: 'Un club privado solo para mujeres donde crear amistades reales y duraderas.',
+      card2Title: 'Espacio Seguro',
+      card2Text: 'Entorno protegido y verificado donde las mujeres pueden ser auténticas.',
+      card3Title: 'Todo en Uno',
+      card3Text: 'Amistad + Bienestar + Eventos + Viajes + Coaching en una sola plataforma.',
+      card4Title: 'Empoderamiento',
+      card4Text: 'Herramientas y recursos para el crecimiento personal y profesional.',
+      conceptTitle: 'El Concepto',
+      conceptDescription: '= Una experiencia única diseñada exclusivamente para mujeres',
+      visionTitle: 'Nuestra Visión',
+      visionText1: 'Crear la comunidad femenina más exclusiva y positiva del mundo digital, donde las mujeres puedan conectarse, apoyarse y crecer juntas.',
+      visionText2: 'HERCLUB será más que una app: será un movimiento global de conexión, seguridad y empoderamiento femenino.'
+    },
+    features: {
+      title: 'Funcionalidades Clave',
+      subtitle: 'Diseñadas específicamente para el bienestar y empoderamiento femenino',
+      friendship: {
+        title: 'Match de Amistad',
+        desc: 'Algoritmo inteligente',
+        p1: 'Match basado en intereses, valores y ubicación',
+        p2: 'Verificación de perfiles para mayor seguridad',
+        p3: 'Grupos de amistad temáticos',
+        p4: 'Sistema de reputación y confianza'
+      },
+      wellness: {
+        title: 'Bienestar Mental',
+        desc: 'Salud emocional',
+        p1: 'Meditaciones guiadas y mindfulness',
+        p2: 'Diario emocional con IA',
+        p3: 'Círculos de apoyo y grupos de terapia',
+        p4: 'Recursos de salud mental profesional'
+      },
+      travel: {
+        title: 'Viajes & Eventos',
+        desc: 'Experiencias únicas',
+        p1: 'Viajes organizados solo para mujeres',
+        p2: 'Eventos locales y networking',
+        p3: 'Workshops y talleres de desarrollo',
+        p4: 'Experiencias de bienestar y crecimiento'
+      },
+      coaching: {
+        title: 'Coaching & IA',
+        desc: 'Desarrollo personal',
+        p1: 'Coach virtual personalizado con IA',
+        p2: 'Planes de crecimiento personal',
+        p3: 'Mentorías entre mujeres',
+        p4: 'Contenido educativo exclusivo'
+      },
+      safety: {
+        title: 'Punto Lila',
+        desc: 'Espacio seguro',
+        p1: 'Línea de ayuda 24/7',
+        p2: 'Asesoría legal gratuita',
+        p3: 'Red de apoyo contra la violencia',
+        p4: 'Recursos y guías de seguridad'
+      },
+      marketplace: {
+        title: 'Marketplace',
+        desc: 'Economía femenina',
+        p1: 'Compra/venta entre usuarias',
+        p2: 'Servicios de mujeres emprendedoras',
+        p3: 'Colaboraciones y partnerships',
+        p4: 'Sistema de valoraciones confiable'
+      }
+    },
+    market: {
+      title: 'Oportunidad de Mercado',
+      subtitle: 'Un mercado millonario en crecimiento con demanda insatisfecha',
+      stat1: '+50%',
+      stat1Label: 'del público digital activo son mujeres',
+      stat2: '20B€',
+      stat2Label: 'mercado de apps de bienestar en Europa',
+      stat3: 'Global',
+      stat3Label: 'demanda de espacios femeninos seguros',
+      targetTitle: 'Target Principal',
+      target1: 'Mujeres de 18 a 60 años',
+      target2: 'Urbanas y digitales',
+      target3: 'Activas socialmente',
+      target4: 'Interesadas en bienestar',
+      target5: 'Buscan conexiones reales',
+      target6: 'Valoran la seguridad',
+      whyTitle: '¿Por qué ahora?',
+      why1Title: 'Creciente demanda',
+      why1Text: 'Las mujeres buscan espacios seguros para conectar fuera del ámbito romántico.',
+      why2Title: 'Fragmentación del mercado',
+      why2Text: 'Las usuarias necesitan múltiples apps. HERCLUB lo unifica todo.',
+      why3Title: 'Crisis de salud mental',
+      why3Text: 'Aumento del 40% en la demanda de servicios de bienestar emocional.',
+      why4Title: 'Comunidades exclusivas',
+      why4Text: 'Crecimiento del modelo de membresías y clubes privados digitales.',
+      conclusionTitle: 'La Oportunidad',
+      conclusionText: 'HERCLUB une comunidad, salud mental, viajes y empoderamiento en una sola plataforma, dirigida a un mercado de millones de mujeres que buscan conexiones auténticas y crecimiento personal.'
+    },
+    business: {
+      title: 'Modelo de Negocio',
+      subtitle: 'Múltiples fuentes de ingresos recurrentes y escalables',
+      freemium: {
+        title: 'Freemium',
+        price: 'Gratis',
+        f1: 'Perfil básico',
+        f2: 'Matches limitados',
+        f3: 'Acceso a eventos gratuitos',
+        f4: 'Contenido básico'
+      },
+      premium: {
+        title: 'Premium',
+        price: '9.99€/mes',
+        f1: 'Matches ilimitados',
+        f2: 'Acceso completo a bienestar',
+        f3: 'Chat con coach IA',
+        f4: 'Descuentos en eventos',
+        popular: 'Más Popular'
+      },
+      vip: {
+        title: 'VIP Club',
+        price: '29.99€/mes',
+        f1: 'Todo lo Premium',
+        f2: 'Eventos VIP exclusivos',
+        f3: 'Mentorías grupales',
+        f4: 'Acceso prioritario a viajes',
+        f5: 'Comunidad VIP privada'
+      },
+      additional: {
+        title: 'Ingresos Adicionales',
+        travel: 'Comisión en viajes y experiencias (15-20%)',
+        marketplace: 'Comisión en marketplace (10%)',
+        events: 'Venta de tickets para eventos premium',
+        partnerships: 'Partnerships con marcas de wellness'
+      }
+    },
+    investment: {
+      title: 'Uso de la Inversión',
+      subtitle: 'Inversión inicial: 50.000€ - 60.000€',
+      dev: {
+        title: 'Desarrollo',
+        amount: '25K€',
+        desc: 'App móvil (iOS + Android)',
+        d1: 'Desarrollo frontend y backend',
+        d2: 'Integración de IA y algoritmos',
+        d3: 'Sistema de pagos y seguridad',
+        d4: 'Testing y optimización'
+      },
+      marketing: {
+        title: 'Marketing',
+        amount: '15K€',
+        desc: 'Campaña de lanzamiento',
+        d1: 'Marketing digital y RRSS',
+        d2: 'Influencer marketing',
+        d3: 'Campañas de adquisición',
+        d4: 'Branding y contenido'
+      },
+      operations: {
+        title: 'Operaciones',
+        amount: '12K€',
+        desc: 'Infraestructura y team',
+        d1: 'Servidores y hosting',
+        d2: 'Herramientas y licencias',
+        d3: 'Atención al cliente',
+        d4: 'Legal y administrativo'
+      },
+      reserve: {
+        title: 'Reserva',
+        amount: '8K€',
+        desc: 'Buffer operativo',
+        d1: 'Contingencias',
+        d2: 'Oportunidades emergentes',
+        d3: 'Iteraciones del producto',
+        d4: 'Expansión acelerada'
+      }
+    },
+    roadmap: {
+      title: 'Roadmap',
+      subtitle: 'Plan de lanzamiento y crecimiento a 18 meses',
+      phase1: {
+        title: 'FASE 1: MVP',
+        time: 'Meses 1-3',
+        m1: 'Desarrollo del MVP',
+        m2: 'Beta cerrada con 100 usuarias',
+        m3: 'Feedback y ajustes',
+        m4: 'Preparación del lanzamiento'
+      },
+      phase2: {
+        title: 'FASE 2: Lanzamiento',
+        time: 'Meses 4-6',
+        m1: 'Lanzamiento oficial',
+        m2: 'Campaña de marketing',
+        m3: 'Primeros 1.000 usuarios',
+        m4: 'Primeros eventos presenciales'
+      },
+      phase3: {
+        title: 'FASE 3: Crecimiento',
+        time: 'Meses 7-12',
+        m1: 'Expansión a 10.000 usuarias',
+        m2: 'Lanzamiento marketplace',
+        m3: 'Primeros viajes organizados',
+        m4: 'Partnerships con marcas'
+      },
+      phase4: {
+        title: 'FASE 4: Escalado',
+        time: 'Meses 13-18',
+        m1: 'Expansión internacional',
+        m2: '50.000+ usuarias',
+        m3: 'Serie A de inversión',
+        m4: 'Nuevas features premium'
+      }
+    },
+    financials: {
+      title: 'Proyección Financiera',
+      subtitle: 'Crecimiento proyectado a 3 años con modelo escalable',
+      year1: 'Año 1',
+      year2: 'Año 2',
+      year3: 'Año 3',
+      users: 'Usuarias',
+      revenue: 'Ingresos',
+      growth: 'Crecimiento',
+      highlights: {
+        y1_1: 'Lanzamiento oficial',
+        y1_2: '10% conversión a premium',
+        y1_3: 'Primera campaña de marketing',
+        y1_4: 'Primeras colaboraciones',
+        y2_1: 'Expansión internacional',
+        y2_2: '15% conversión a premium',
+        y2_3: 'Marketplace activo',
+        y2_4: 'Ingresos por eventos y viajes',
+        y3_1: 'Líder en el mercado',
+        y3_2: '20% conversión a premium',
+        y3_3: 'Múltiples fuentes de ingreso',
+        y3_4: 'Break-even alcanzado'
+      },
+      breakdownTitle: 'Desglose de Ingresos (Año 3)',
+      subscriptions: 'Suscripciones',
+      travel: 'Viajes',
+      marketplace: 'Marketplace',
+      other: 'Otros',
+      roiTitle: 'Retorno de Inversión',
+      roi1: '5X',
+      roi1Label: 'ROI a 3 años',
+      roi2: '18-24',
+      roi2Label: 'Meses para break-even',
+      roi3: '35%',
+      roi3Label: 'Margen proyectado',
+      roiText: 'Con una inversión inicial de 50-60K€, proyectamos alcanzar el punto de equilibrio en 18-24 meses y generar un retorno de 5X en 3 años, con múltiples fuentes de ingresos recurrentes y escalables.'
+    },
+    branding: {
+      title: 'Identidad de Marca',
+      subtitle: 'Una marca moderna, inclusiva y empoderadora',
+      colorsTitle: 'Paleta de Colores',
+      color1: 'Púrpura Real',
+      color1Desc: 'Empoderamiento',
+      color2: 'Rosa Suave',
+      color2Desc: 'Feminidad',
+      color3: 'Crema',
+      color3Desc: 'Calidez',
+      color4: 'Malva',
+      color4Desc: 'Serenidad',
+      valuesTitle: 'Valores de Marca',
+      value1: 'Empoderamiento',
+      value1Desc: 'Creemos en el poder de las mujeres unidas',
+      value2: 'Autenticidad',
+      value2Desc: 'Espacios para ser una misma sin filtros',
+      value3: 'Seguridad',
+      value3Desc: 'Protección y privacidad ante todo',
+      value4: 'Comunidad',
+      value4Desc: 'Juntas somos más fuertes',
+      voiceTitle: 'Tono de Voz',
+      voice1: 'Cercano y empático',
+      voice2: 'Inspirador y motivador',
+      voice3: 'Profesional pero accesible',
+      voice4: 'Inclusivo y diverso'
+    },
+    mockups: {
+      title: 'Diseño de la App',
+      subtitle: 'Interfaz intuitiva y hermosa, diseñada pensando en las mujeres',
+      scrollHint: 'Desliza para ver más →',
+      label1: 'Match de Amistad',
+      label2: 'Perfil',
+      label3: 'Test de Compatibilidad',
+      label4: 'Viajes',
+      label5: 'Mensajes',
+      label6: 'Punto Lila',
+      designTitle: 'Diseño Pensado para Mujeres',
+      design1Title: 'Colores Cálidos',
+      design1Text: 'Paleta suave que transmite confianza y bienestar',
+      design2Title: 'Navegación Intuitiva',
+      design2Text: 'Fácil de usar, sin complicaciones',
+      design3Title: 'Privacidad First',
+      design3Text: 'Control total sobre tu información y conexiones'
+    },
+    cta: {
+      title: 'Invierte en el Futuro de la Conexión Femenina',
+      subtitle: 'Juntos podemos crear la comunidad femenina más exclusiva y positiva del mundo digital',
+      benefit1: 'Únete a un movimiento que transformará la vida de millones de mujeres',
+      benefit2: 'Sé parte de una de las comunidades digitales más innovadoras',
+      benefit3: 'ROI proyectado de 5X en 3 años',
+      benefit4: 'Impacto social medible y sostenible',
+      investmentLabel: 'Inversión Inicial',
+      investmentValue: '50K - 60K€',
+      launchLabel: 'Plazo de Lanzamiento',
+      launchValue: '6 Meses',
+      roiLabel: 'ROI Proyectado',
+      roiValue: '5X en 3 años',
+      button: 'Apoya el Lanzamiento de HERCLUB',
+      tagline: 'Forma parte del cambio. Invierte en HERCLUB.',
+      thanksTitle: 'Gracias por tu Tiempo e Interés',
+      thanksText: 'Estamos emocionadas de compartir esta visión contigo y esperamos poder construir el futuro juntos.'
+    }
+  },
+  en: {
+    nav: {
+      home: 'Home',
+      problem: 'The Problem',
+      solution: 'The Solution',
+      features: 'Features',
+      market: 'Market',
+      business: 'Business Model',
+      investment: 'Investment',
+      roadmap: 'Roadmap',
+      financials: 'Projections',
+      branding: 'Branding',
+      mockups: 'Mockups',
+      cta: 'Join Us'
+    },
+    hero: {
+      title: 'HERCLUB',
+      tagline: 'The most exclusive women\'s community in the digital world',
+      description: 'Where women connect, grow and empower each other',
+      feature1: 'Friendship Match',
+      feature2: 'Mental Wellness',
+      feature3: 'Events & Travel',
+      feature4: 'Coaching & AI',
+      cta: 'Investor Proposal'
+    },
+    problem: {
+      title: 'The Problem',
+      subtitle: 'Women face unique challenges in the digital world',
+      card1Title: 'Unsafe Spaces',
+      card1Text: 'Traditional social media lacks exclusive and safe spaces for women.',
+      card2Title: 'Superficial Connections',
+      card2Text: 'Friendship apps fail to create deep and meaningful bonds.',
+      card3Title: 'Fragmentation',
+      card3Text: 'Women need multiple apps for wellness, friendship, events and personal development.'
+    },
+    solution: {
+      title: 'The Solution: HERCLUB',
+      subtitle: 'A comprehensive platform designed exclusively for women',
+      card1Title: 'Exclusive Community',
+      card1Text: 'A 100% female, verified and safe space where women can be themselves.',
+      card2Title: 'All-in-One',
+      card2Text: 'Friendship matching, mental wellness, travel, events and marketplace in one app.',
+      card3Title: 'Personalized AI',
+      card3Text: 'AI assistant that understands the emotional and social needs of each user.'
+    },
+    features: {
+      title: 'Key Features',
+      subtitle: 'Specifically designed for female wellness and empowerment',
+      friendship: {
+        title: 'Friendship Match',
+        desc: 'Smart algorithm',
+        p1: 'Matching based on interests, values and location',
+        p2: 'Profile verification for added security',
+        p3: 'Themed friendship groups',
+        p4: 'Reputation and trust system'
+      },
+      wellness: {
+        title: 'Mental Wellness',
+        desc: 'Emotional health',
+        p1: 'Guided meditations and mindfulness',
+        p2: 'AI-powered emotional journal',
+        p3: 'Support circles and therapy groups',
+        p4: 'Professional mental health resources'
+      },
+      travel: {
+        title: 'Travel & Events',
+        desc: 'Unique experiences',
+        p1: 'Women-only organized trips',
+        p2: 'Local events and networking',
+        p3: 'Development workshops and seminars',
+        p4: 'Wellness and growth experiences'
+      },
+      coaching: {
+        title: 'Coaching & AI',
+        desc: 'Personal development',
+        p1: 'AI-powered personalized virtual coach',
+        p2: 'Personal growth plans',
+        p3: 'Women-to-women mentoring',
+        p4: 'Exclusive educational content'
+      },
+      safety: {
+        title: 'Safe Point',
+        desc: 'Safe space',
+        p1: '24/7 helpline',
+        p2: 'Free legal advice',
+        p3: 'Support network against violence',
+        p4: 'Safety resources and guides'
+      },
+      marketplace: {
+        title: 'Marketplace',
+        desc: 'Female economy',
+        p1: 'Buy/sell between users',
+        p2: 'Women entrepreneurs services',
+        p3: 'Collaborations and partnerships',
+        p4: 'Reliable rating system'
+      }
+    },
+    market: {
+      title: 'Market Opportunity',
+      subtitle: 'A billion-dollar growing market with unmet demand',
+      stat1: '+50%',
+      stat1Label: 'of active digital audience are women',
+      stat2: '€20B',
+      stat2Label: 'wellness app market in Europe',
+      stat3: 'Global',
+      stat3Label: 'demand for safe women\'s spaces',
+      targetTitle: 'Main Target',
+      target1: 'Women aged 18 to 60',
+      target2: 'Urban and digital',
+      target3: 'Socially active',
+      target4: 'Interested in wellness',
+      target5: 'Seeking real connections',
+      target6: 'Value security',
+      whyTitle: 'Why now?',
+      why1Title: 'Growing demand',
+      why1Text: 'Women are looking for safe spaces to connect outside of romantic relationships.',
+      why2Title: 'Market fragmentation',
+      why2Text: 'Users need multiple apps. HERCLUB unifies everything.',
+      why3Title: 'Mental health crisis',
+      why3Text: '40% increase in demand for emotional wellness services.',
+      why4Title: 'Exclusive communities',
+      why4Text: 'Growth of membership and private digital club models.',
+      conclusionTitle: 'The Opportunity',
+      conclusionText: 'HERCLUB brings together community, mental health, travel and empowerment in one platform, targeting millions of women seeking authentic connections and personal growth.'
+    },
+    business: {
+      title: 'Business Model',
+      subtitle: 'Multiple recurring and scalable revenue streams',
+      freemium: {
+        title: 'Freemium',
+        price: 'Free',
+        f1: 'Basic profile',
+        f2: 'Limited matches',
+        f3: 'Access to free events',
+        f4: 'Basic content'
+      },
+      premium: {
+        title: 'Premium',
+        price: '€9.99/mo',
+        f1: 'Unlimited matches',
+        f2: 'Full wellness access',
+        f3: 'AI coach chat',
+        f4: 'Event discounts',
+        popular: 'Most Popular'
+      },
+      vip: {
+        title: 'VIP Club',
+        price: '€29.99/mo',
+        f1: 'Everything Premium',
+        f2: 'Exclusive VIP events',
+        f3: 'Group mentoring',
+        f4: 'Priority travel access',
+        f5: 'Private VIP community'
+      },
+      additional: {
+        title: 'Additional Revenue',
+        travel: 'Commission on trips and experiences (15-20%)',
+        marketplace: 'Marketplace commission (10%)',
+        events: 'Premium event ticket sales',
+        partnerships: 'Partnerships with wellness brands'
+      }
+    },
+    investment: {
+      title: 'Use of Investment',
+      subtitle: 'Initial investment: €50,000 - €60,000',
+      dev: {
+        title: 'Development',
+        amount: '€25K',
+        desc: 'Mobile app (iOS + Android)',
+        d1: 'Frontend and backend development',
+        d2: 'AI and algorithm integration',
+        d3: 'Payment and security system',
+        d4: 'Testing and optimization'
+      },
+      marketing: {
+        title: 'Marketing',
+        amount: '€15K',
+        desc: 'Launch campaign',
+        d1: 'Digital marketing and social media',
+        d2: 'Influencer marketing',
+        d3: 'Acquisition campaigns',
+        d4: 'Branding and content'
+      },
+      operations: {
+        title: 'Operations',
+        amount: '€12K',
+        desc: 'Infrastructure and team',
+        d1: 'Servers and hosting',
+        d2: 'Tools and licenses',
+        d3: 'Customer support',
+        d4: 'Legal and administrative'
+      },
+      reserve: {
+        title: 'Reserve',
+        amount: '€8K',
+        desc: 'Operating buffer',
+        d1: 'Contingencies',
+        d2: 'Emerging opportunities',
+        d3: 'Product iterations',
+        d4: 'Accelerated expansion'
+      }
+    },
+    roadmap: {
+      title: 'Roadmap',
+      subtitle: '18-month launch and growth plan',
+      phase1: {
+        title: 'PHASE 1: MVP',
+        time: 'Months 1-3',
+        m1: 'MVP development',
+        m2: 'Closed beta with 100 users',
+        m3: 'Feedback and adjustments',
+        m4: 'Launch preparation'
+      },
+      phase2: {
+        title: 'PHASE 2: Launch',
+        time: 'Months 4-6',
+        m1: 'Official launch',
+        m2: 'Marketing campaign',
+        m3: 'First 1,000 users',
+        m4: 'First in-person events'
+      },
+      phase3: {
+        title: 'PHASE 3: Growth',
+        time: 'Months 7-12',
+        m1: 'Expansion to 10,000 users',
+        m2: 'Marketplace launch',
+        m3: 'First organized trips',
+        m4: 'Brand partnerships'
+      },
+      phase4: {
+        title: 'PHASE 4: Scaling',
+        time: 'Months 13-18',
+        m1: 'International expansion',
+        m2: '50,000+ users',
+        m3: 'Series A funding',
+        m4: 'New premium features'
+      }
+    },
+    financials: {
+      title: 'Financial Projection',
+      subtitle: '3-year projected growth with scalable model',
+      year1: 'Year 1',
+      year2: 'Year 2',
+      year3: 'Year 3',
+      users: 'Users',
+      revenue: 'Revenue',
+      growth: 'Growth',
+      highlights: {
+        y1_1: 'Official launch',
+        y1_2: '10% premium conversion',
+        y1_3: 'First marketing campaign',
+        y1_4: 'First collaborations',
+        y2_1: 'International expansion',
+        y2_2: '15% premium conversion',
+        y2_3: 'Active marketplace',
+        y2_4: 'Revenue from events and travel',
+        y3_1: 'Market leader',
+        y3_2: '20% premium conversion',
+        y3_3: 'Multiple revenue streams',
+        y3_4: 'Break-even achieved'
+      },
+      breakdownTitle: 'Revenue Breakdown (Year 3)',
+      subscriptions: 'Subscriptions',
+      travel: 'Travel',
+      marketplace: 'Marketplace',
+      other: 'Other',
+      roiTitle: 'Return on Investment',
+      roi1: '5X',
+      roi1Label: '3-year ROI',
+      roi2: '18-24',
+      roi2Label: 'Months to break-even',
+      roi3: '35%',
+      roi3Label: 'Projected margin',
+      roiText: 'With an initial investment of €50-60K, we project reaching break-even in 18-24 months and generating a 5X return in 3 years, with multiple recurring and scalable revenue streams.'
+    },
+    branding: {
+      title: 'Brand Identity',
+      subtitle: 'A modern, inclusive and empowering brand',
+      colorsTitle: 'Color Palette',
+      color1: 'Royal Purple',
+      color1Desc: 'Empowerment',
+      color2: 'Soft Pink',
+      color2Desc: 'Femininity',
+      color3: 'Cream',
+      color3Desc: 'Warmth',
+      color4: 'Mauve',
+      color4Desc: 'Serenity',
+      valuesTitle: 'Brand Values',
+      value1: 'Empowerment',
+      value1Desc: 'We believe in the power of women united',
+      value2: 'Authenticity',
+      value2Desc: 'Spaces to be yourself without filters',
+      value3: 'Safety',
+      value3Desc: 'Protection and privacy above all',
+      value4: 'Community',
+      value4Desc: 'Together we are stronger',
+      voiceTitle: 'Tone of Voice',
+      voice1: 'Friendly and empathetic',
+      voice2: 'Inspiring and motivating',
+      voice3: 'Professional yet accessible',
+      voice4: 'Inclusive and diverse'
+    },
+    mockups: {
+      title: 'App Design',
+      subtitle: 'Intuitive and beautiful interface, designed with women in mind',
+      scrollHint: 'Swipe to see more →',
+      label1: 'Friendship Match',
+      label2: 'Profile',
+      label3: 'Compatibility Test',
+      label4: 'Travel',
+      label5: 'Messages',
+      label6: 'Safe Point',
+      designTitle: 'Design Made for Women',
+      design1Title: 'Warm Colors',
+      design1Text: 'Soft palette that conveys trust and wellness',
+      design2Title: 'Intuitive Navigation',
+      design2Text: 'Easy to use, no complications',
+      design3Title: 'Privacy First',
+      design3Text: 'Total control over your information and connections'
+    },
+    cta: {
+      title: 'Ready to be part of HERCLUB?',
+      subtitle: 'Join the most exclusive women\'s community in the digital world',
+      tagline: 'Together, unstoppable.',
+      button: 'Support the Project'
+    }
+  },
+  de: {
+    nav: {
+      home: 'Startseite',
+      problem: 'Das Problem',
+      solution: 'Die Lösung',
+      features: 'Funktionen',
+      market: 'Markt',
+      business: 'Geschäftsmodell',
+      investment: 'Investition',
+      roadmap: 'Roadmap',
+      financials: 'Prognose',
+      branding: 'Branding',
+      mockups: 'Mockups',
+      cta: 'Mitmachen'
+    },
+    hero: {
+      title: 'HERCLUB',
+      tagline: 'Die exklusivste Frauen-Community in der digitalen Welt',
+      description: 'Wo Frauen sich verbinden, wachsen und gemeinsam gestärkt werden',
+      feature1: 'Freundschafts-Match',
+      feature2: 'Mentales Wohlbefinden',
+      feature3: 'Events & Reisen',
+      feature4: 'Coaching & KI',
+      cta: 'Investoren-Angebot'
+    },
+    problem: {
+      title: 'Das Problem',
+      subtitle: 'Frauen stehen vor einzigartigen Herausforderungen in der digitalen Welt',
+      card1Title: 'Unsichere Räume',
+      card1Text: 'Traditionelle soziale Medien fehlen exklusive und sichere Räume für Frauen.',
+      card2Title: 'Oberflächliche Verbindungen',
+      card2Text: 'Freundschafts-Apps schaffen es nicht, tiefe und bedeutungsvolle Bindungen zu schaffen.',
+      card3Title: 'Fragmentierung',
+      card3Text: 'Frauen benötigen mehrere Apps für Wellness, Freundschaft, Events und persönliche Entwicklung.'
+    },
+    solution: {
+      title: 'Die Lösung: HERCLUB',
+      subtitle: 'Eine umfassende Plattform, die exklusiv für Frauen entwickelt wurde',
+      card1Title: 'Exklusive Community',
+      card1Text: 'Ein 100% weiblicher, verifizierter und sicherer Raum, in dem Frauen sie selbst sein können.',
+      card2Title: 'Alles in Einem',
+      card2Text: 'Freundschafts-Matching, mentales Wohlbefinden, Reisen, Events und Marktplatz in einer App.',
+      card3Title: 'Personalisierte KI',
+      card3Text: 'KI-Assistent, der die emotionalen und sozialen Bedürfnisse jeder Benutzerin versteht.'
+    },
+    features: {
+      title: 'Hauptfunktionen',
+      subtitle: 'Speziell für das Wohlbefinden und die Stärkung von Frauen entwickelt',
+      friendship: {
+        title: 'Freundschafts-Match',
+        desc: 'Intelligenter Algorithmus',
+        p1: 'Matching basierend auf Interessen, Werten und Standort',
+        p2: 'Profilüberprüfung für mehr Sicherheit',
+        p3: 'Thematische Freundschaftsgruppen',
+        p4: 'Reputations- und Vertrauenssystem'
+      },
+      wellness: {
+        title: 'Mentales Wohlbefinden',
+        desc: 'Emotionale Gesundheit',
+        p1: 'Geführte Meditationen und Achtsamkeit',
+        p2: 'KI-gestütztes emotionales Tagebuch',
+        p3: 'Unterstützungskreise und Therapiegruppen',
+        p4: 'Professionelle psychische Gesundheitsressourcen'
+      },
+      travel: {
+        title: 'Reisen & Events',
+        desc: 'Einzigartige Erlebnisse',
+        p1: 'Nur für Frauen organisierte Reisen',
+        p2: 'Lokale Events und Networking',
+        p3: 'Entwicklungs-Workshops und Seminare',
+        p4: 'Wellness- und Wachstumserlebnisse'
+      },
+      coaching: {
+        title: 'Coaching & KI',
+        desc: 'Persönliche Entwicklung',
+        p1: 'KI-gestützter personalisierter virtueller Coach',
+        p2: 'Persönliche Wachstumspläne',
+        p3: 'Mentoring von Frau zu Frau',
+        p4: 'Exklusive Bildungsinhalte'
+      },
+      safety: {
+        title: 'Sicherer Punkt',
+        desc: 'Sicherer Raum',
+        p1: '24/7-Helpline',
+        p2: 'Kostenlose Rechtsberatung',
+        p3: 'Unterstützungsnetzwerk gegen Gewalt',
+        p4: 'Sicherheitsressourcen und -leitfäden'
+      },
+      marketplace: {
+        title: 'Marktplatz',
+        desc: 'Weibliche Wirtschaft',
+        p1: 'Kaufen/Verkaufen zwischen Benutzerinnen',
+        p2: 'Dienstleistungen von Unternehmerinnen',
+        p3: 'Kooperationen und Partnerschaften',
+        p4: 'Zuverlässiges Bewertungssystem'
+      }
+    },
+    market: {
+      title: 'Marktchance',
+      subtitle: 'Ein wachsender Milliardenmarkt mit unerfüllter Nachfrage',
+      stat1: '+50%',
+      stat1Label: 'des aktiven digitalen Publikums sind Frauen',
+      stat2: '20Mrd€',
+      stat2Label: 'Wellness-App-Markt in Europa',
+      stat3: 'Global',
+      stat3Label: 'Nachfrage nach sicheren Frauenräumen',
+      targetTitle: 'Hauptzielgruppe',
+      target1: 'Frauen im Alter von 18 bis 60 Jahren',
+      target2: 'Urban und digital',
+      target3: 'Sozial aktiv',
+      target4: 'Interessiert an Wellness',
+      target5: 'Suchen echte Verbindungen',
+      target6: 'Schätzen Sicherheit',
+      whyTitle: 'Warum jetzt?',
+      why1Title: 'Wachsende Nachfrage',
+      why1Text: 'Frauen suchen nach sicheren Räumen, um sich außerhalb romantischer Beziehungen zu verbinden.',
+      why2Title: 'Marktfragmentierung',
+      why2Text: 'Benutzerinnen benötigen mehrere Apps. HERCLUB vereint alles.',
+      why3Title: 'Krise der psychischen Gesundheit',
+      why3Text: '40% Anstieg der Nachfrage nach emotionalen Wellness-Dienstleistungen.',
+      why4Title: 'Exklusive Communities',
+      why4Text: 'Wachstum von Mitgliedschafts- und privaten digitalen Club-Modellen.',
+      conclusionTitle: 'Die Chance',
+      conclusionText: 'HERCLUB vereint Community, psychische Gesundheit, Reisen und Empowerment auf einer Plattform, die sich an Millionen von Frauen richtet, die authentische Verbindungen und persönliches Wachstum suchen.'
+    },
+    business: {
+      title: 'Geschäftsmodell',
+      subtitle: 'Mehrere wiederkehrende und skalierbare Einnahmequellen',
+      freemium: {
+        title: 'Freemium',
+        price: 'Kostenlos',
+        f1: 'Basisprofil',
+        f2: 'Begrenzte Matches',
+        f3: 'Zugang zu kostenlosen Events',
+        f4: 'Basisinhalte'
+      },
+      premium: {
+        title: 'Premium',
+        price: '9,99€/Monat',
+        f1: 'Unbegrenzte Matches',
+        f2: 'Vollständiger Wellness-Zugang',
+        f3: 'Chat mit KI-Coach',
+        f4: 'Event-Rabatte',
+        popular: 'Am beliebtesten'
+      },
+      vip: {
+        title: 'VIP Club',
+        price: '29,99€/Monat',
+        f1: 'Alles Premium',
+        f2: 'Exklusive VIP-Events',
+        f3: 'Gruppen-Mentoring',
+        f4: 'Prioritätszugang zu Reisen',
+        f5: 'Private VIP-Community'
+      },
+      additional: {
+        title: 'Zusätzliche Einnahmen',
+        travel: 'Provision auf Reisen und Erlebnisse (15-20%)',
+        marketplace: 'Marktplatz-Provision (10%)',
+        events: 'Verkauf von Premium-Event-Tickets',
+        partnerships: 'Partnerschaften mit Wellness-Marken'
+      }
+    },
+    investment: {
+      title: 'Verwendung der Investition',
+      subtitle: 'Anfangsinvestition: 50.000€ - 60.000€',
+      dev: {
+        title: 'Entwicklung',
+        amount: '25K€',
+        desc: 'Mobile App (iOS + Android)',
+        d1: 'Frontend- und Backend-Entwicklung',
+        d2: 'KI- und Algorithmus-Integration',
+        d3: 'Zahlungs- und Sicherheitssystem',
+        d4: 'Testing und Optimierung'
+      },
+      marketing: {
+        title: 'Marketing',
+        amount: '15K€',
+        desc: 'Launch-Kampagne',
+        d1: 'Digitales Marketing und soziale Medien',
+        d2: 'Influencer-Marketing',
+        d3: 'Akquisitionskampagnen',
+        d4: 'Branding und Content'
+      },
+      operations: {
+        title: 'Betrieb',
+        amount: '12K€',
+        desc: 'Infrastruktur und Team',
+        d1: 'Server und Hosting',
+        d2: 'Tools und Lizenzen',
+        d3: 'Kundensupport',
+        d4: 'Legal und Verwaltung'
+      },
+      reserve: {
+        title: 'Reserve',
+        amount: '8K€',
+        desc: 'Betriebspuffer',
+        d1: 'Eventualitäten',
+        d2: 'Aufkommende Chancen',
+        d3: 'Produktiterationen',
+        d4: 'Beschleunigte Expansion'
+      }
+    },
+    roadmap: {
+      title: 'Roadmap',
+      subtitle: '18-Monats-Launch- und Wachstumsplan',
+      phase1: {
+        title: 'PHASE 1: MVP',
+        time: 'Monate 1-3',
+        m1: 'MVP-Entwicklung',
+        m2: 'Geschlossene Beta mit 100 Benutzerinnen',
+        m3: 'Feedback und Anpassungen',
+        m4: 'Launch-Vorbereitung'
+      },
+      phase2: {
+        title: 'PHASE 2: Launch',
+        time: 'Monate 4-6',
+        m1: 'Offizieller Launch',
+        m2: 'Marketing-Kampagne',
+        m3: 'Erste 1.000 Benutzerinnen',
+        m4: 'Erste persönliche Events'
+      },
+      phase3: {
+        title: 'PHASE 3: Wachstum',
+        time: 'Monate 7-12',
+        m1: 'Expansion auf 10.000 Benutzerinnen',
+        m2: 'Marktplatz-Launch',
+        m3: 'Erste organisierte Reisen',
+        m4: 'Markenpartnerschaften'
+      },
+      phase4: {
+        title: 'PHASE 4: Skalierung',
+        time: 'Monate 13-18',
+        m1: 'Internationale Expansion',
+        m2: '50.000+ Benutzerinnen',
+        m3: 'Series-A-Finanzierung',
+        m4: 'Neue Premium-Funktionen'
+      }
+    },
+    financials: {
+      title: 'Finanzprognose',
+      subtitle: '3-Jahres-Wachstumsprognose mit skalierbarem Modell',
+      year1: 'Jahr 1',
+      year2: 'Jahr 2',
+      year3: 'Jahr 3',
+      users: 'Benutzerinnen',
+      revenue: 'Umsatz',
+      growth: 'Wachstum',
+      highlights: {
+        y1_1: 'Offizieller Launch',
+        y1_2: '10% Premium-Konversion',
+        y1_3: 'Erste Marketing-Kampagne',
+        y1_4: 'Erste Kooperationen',
+        y2_1: 'Internationale Expansion',
+        y2_2: '15% Premium-Konversion',
+        y2_3: 'Aktiver Marktplatz',
+        y2_4: 'Einnahmen aus Events und Reisen',
+        y3_1: 'Marktführer',
+        y3_2: '20% Premium-Konversion',
+        y3_3: 'Mehrere Einnahmequellen',
+        y3_4: 'Break-even erreicht'
+      },
+      breakdownTitle: 'Umsatzaufschlüsselung (Jahr 3)',
+      subscriptions: 'Abonnements',
+      travel: 'Reisen',
+      marketplace: 'Marktplatz',
+      other: 'Sonstiges',
+      roiTitle: 'Return on Investment',
+      roi1: '5X',
+      roi1Label: '3-Jahres-ROI',
+      roi2: '18-24',
+      roi2Label: 'Monate bis Break-even',
+      roi3: '35%',
+      roi3Label: 'Prognostizierte Marge',
+      roiText: 'Mit einer Anfangsinvestition von 50-60K€ prognostizieren wir, den Break-even in 18-24 Monaten zu erreichen und in 3 Jahren eine 5X-Rendite zu erzielen, mit mehreren wiederkehrenden und skalierbaren Einnahmequellen.'
+    },
+    branding: {
+      title: 'Markenidentität',
+      subtitle: 'Eine moderne, inklusive und stärkende Marke',
+      colorsTitle: 'Farbpalette',
+      color1: 'Königliches Lila',
+      color1Desc: 'Empowerment',
+      color2: 'Sanftes Rosa',
+      color2Desc: 'Weiblichkeit',
+      color3: 'Creme',
+      color3Desc: 'Wärme',
+      color4: 'Malve',
+      color4Desc: 'Gelassenheit',
+      valuesTitle: 'Markenwerte',
+      value1: 'Empowerment',
+      value1Desc: 'Wir glauben an die Kraft vereinter Frauen',
+      value2: 'Authentizität',
+      value2Desc: 'Räume, um man selbst zu sein, ohne Filter',
+      value3: 'Sicherheit',
+      value3Desc: 'Schutz und Privatsphäre vor allem',
+      value4: 'Community',
+      value4Desc: 'Gemeinsam sind wir stärker',
+      voiceTitle: 'Tonalität',
+      voice1: 'Freundlich und empathisch',
+      voice2: 'Inspirierend und motivierend',
+      voice3: 'Professionell und zugänglich',
+      voice4: 'Inklusiv und vielfältig'
+    },
+    mockups: {
+      title: 'App-Design',
+      subtitle: 'Intuitive und schöne Oberfläche, mit Blick auf Frauen gestaltet',
+      scrollHint: 'Wischen Sie, um mehr zu sehen →',
+      label1: 'Freundschafts-Match',
+      label2: 'Profil',
+      label3: 'Kompatibilitätstest',
+      label4: 'Reisen',
+      label5: 'Nachrichten',
+      label6: 'Sicherer Punkt',
+      designTitle: 'Design für Frauen gemacht',
+      design1Title: 'Warme Farben',
+      design1Text: 'Sanfte Palette, die Vertrauen und Wohlbefinden vermittelt',
+      design2Title: 'Intuitive Navigation',
+      design2Text: 'Einfach zu bedienen, keine Komplikationen',
+      design3Title: 'Privatsphäre zuerst',
+      design3Text: 'Volle Kontrolle über Ihre Informationen und Verbindungen'
+    },
+    cta: {
+      title: 'Bereit, Teil von HERCLUB zu sein?',
+      subtitle: 'Treten Sie der exklusivsten Frauen-Community in der digitalen Welt bei',
+      tagline: 'Zusammen, unaufhaltsam.',
+      button: 'Projekt unterstützen'
+    }
+  }
+}
+
+export default translations
+
