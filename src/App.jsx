@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
+import { Routes, Route, Navigate, useParams, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useLanguage } from './context/LanguageContext'
 import Navigation from './components/Navigation'
 import LanguageSelector from './components/LanguageSelector'
 import Hero from './components/Hero'
@@ -16,9 +18,25 @@ import Mockups from './components/Mockups'
 import CTA from './components/CTA'
 import './App.css'
 
-function App() {
+function MainContent() {
+  const { lang } = useParams()
+  const navigate = useNavigate()
+  const { changeLanguage } = useLanguage()
   const [currentSection, setCurrentSection] = useState(0)
   const [showNav, setShowNav] = useState(false)
+
+  // Sincronizar idioma de la URL con el contexto
+  useEffect(() => {
+    const langMap = {
+      'es': 'es',
+      'en': 'en',
+      'de': 'de',
+      'it': 'it'
+    }
+    if (langMap[lang]) {
+      changeLanguage(langMap[lang])
+    }
+  }, [lang, changeLanguage])
 
   const sections = [
     { id: 'hero', component: Hero, title: 'Inicio' },
@@ -105,6 +123,17 @@ function App() {
         )}
       </div>
     </div>
+  )
+}
+
+// Componente principal con rutas
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to="/es" replace />} />
+      <Route path="/:lang" element={<MainContent />} />
+      <Route path="*" element={<Navigate to="/es" replace />} />
+    </Routes>
   )
 }
 

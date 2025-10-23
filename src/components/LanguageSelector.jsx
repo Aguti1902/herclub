@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import { Globe, ChevronDown } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 import './LanguageSelector.css'
 
 function LanguageSelector() {
-  const { language, changeLanguage } = useLanguage()
+  const { language } = useLanguage()
+  const navigate = useNavigate()
+  const { lang } = useParams()
   const [isOpen, setIsOpen] = useState(false)
 
   const languages = [
@@ -17,7 +20,7 @@ function LanguageSelector() {
   const currentLang = languages.find(lang => lang.code === language)
 
   const handleLanguageChange = (langCode) => {
-    changeLanguage(langCode)
+    navigate(`/${langCode}`)
     setIsOpen(false)
   }
 
