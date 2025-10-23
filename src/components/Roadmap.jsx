@@ -7,7 +7,7 @@ import './Roadmap.css'
 function Roadmap() {
   const { language } = useLanguage()
   const t = translations[language].roadmap
-  const phases = [
+  const phases = t.phasesList || [
     {
       phase: 'Fase 1',
       timeline: '0-2 meses',
@@ -54,7 +54,7 @@ function Roadmap() {
     }
   ]
 
-  const milestones = [
+  const milestones = t.milestones || [
     { month: 'Mes 1', goal: 'Diseño completado y desarrollo iniciado' },
     { month: 'Mes 2', goal: 'MVP funcional con match y eventos' },
     { month: 'Mes 3', goal: 'IA integrada y sistema de pagos activo' },

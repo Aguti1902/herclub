@@ -321,6 +321,60 @@ export const translations = {
     roadmap: {
       title: 'Roadmap',
       subtitle: 'Hoja de ruta clara hacia el éxito',
+      phasesList: [
+        {
+          phase: 'Fase 1',
+          timeline: '0-2 meses',
+          status: 'pending',
+          title: 'MVP y Funcionalidades Core',
+          items: [
+            'Diseño completo UX/UI',
+            'Desarrollo del sistema de match de amistad',
+            'Integración de eventos y meetups',
+            'Sistema de registro y perfiles',
+            'Chat en tiempo real',
+            'Panel de administración básico'
+          ]
+        },
+        {
+          phase: 'Fase 2',
+          timeline: '2-4 meses',
+          status: 'pending',
+          title: 'IA y Funcionalidades Premium',
+          items: [
+            'Psicología con IA y chat emocional',
+            'Carta astral con IA',
+            'Sistema de viajes y experiencias',
+            'Marketplace de servicios',
+            'Integración de pagos (Stripe/PayPal)',
+            'Coaching y constelaciones familiares'
+          ]
+        },
+        {
+          phase: 'Fase 3',
+          timeline: '4-6 meses',
+          status: 'pending',
+          title: 'Expansión y Lanzamiento Global',
+          items: [
+            'Multilenguaje (EN, ES, FR, IT)',
+            'DJ streaming y música en vivo',
+            'Punto Lila y recursos de apoyo',
+            'Asesoramiento de imagen',
+            'Deporte y salud (clases, dietas)',
+            'Cursos para influencers',
+            'Lanzamiento en App Store y Google Play',
+            'Campaña de marketing masiva'
+          ]
+        }
+      ],
+      milestones: [
+        { month: 'Mes 1', goal: 'Diseño completado y desarrollo iniciado' },
+        { month: 'Mes 2', goal: 'MVP funcional con match y eventos' },
+        { month: 'Mes 3', goal: 'IA integrada y sistema de pagos' },
+        { month: 'Mes 4', goal: 'Beta privada con 500 usuarias' },
+        { month: 'Mes 5', goal: 'Funcionalidades completas y testeo' },
+        { month: 'Mes 6', goal: 'Lanzamiento oficial en stores' }
+      ],
       phases: {
         current: {
           title: 'Fase Actual',
