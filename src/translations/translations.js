@@ -808,56 +808,113 @@ export const translations = {
     investment: {
       title: 'Investment Details',
       subtitle: 'Strategic and transparent use of your investment',
-      ask: {
-        title: 'Investment Sought',
-        amount: '€50,000 - €60,000',
-        equity: '15-20% equity',
-        description: 'To develop the MVP and launch in Spanish market'
-      },
-      useOfFunds: {
-        title: 'Use of Funds',
-        items: {
-          development: {
-            title: 'Development',
-            percentage: '40%',
-            description: 'iOS/Android App + Backend + AI'
-          },
-          marketing: {
-            title: 'Marketing',
-            percentage: '30%',
-            description: 'Initial user acquisition'
-          },
-          operations: {
-            title: 'Operations',
-            percentage: '20%',
-            description: 'Legal, servers, team'
-          },
-          reserve: {
-            title: 'Reserve',
-            percentage: '10%',
-            description: 'Contingency and adjustments'
-          }
+      totalTitle: 'Initial Investment',
+      totalAmount: '€50,000 - €60,000',
+      totalDescription: 'Capital needed to develop and launch HERCLUB in 6 months',
+      breakdown: [
+        {
+          category: 'App Development',
+          amount: '€35,000',
+          percentage: 58,
+          items: [
+            'Complete Frontend and Backend',
+            'AI Integration (psychology, astrology)',
+            'Payment and subscription system',
+            'Matching and events API',
+            'Database and security'
+          ]
+        },
+        {
+          category: 'Design and Branding',
+          amount: '€10,000',
+          percentage: 17,
+          items: [
+            'Complete UX/UI design',
+            'Brand identity',
+            'Graphic materials',
+            'App Store and Google Play launch',
+            'Website and landing page'
+          ]
+        },
+        {
+          category: 'Marketing and Launch',
+          amount: '€15,000',
+          percentage: 25,
+          items: [
+            'Ad campaigns (Instagram, TikTok, Facebook)',
+            'Influencer collaborations',
+            'Launch event',
+            'Community management',
+            'First 10,000 users'
+          ]
         }
-      },
-      milestones: {
-        title: 'Milestones with this Investment',
-        items: [
-          'Functional MVP in 4-5 months',
-          '1,000 users in first 6 months',
-          'Freemium/premium model validation',
-          'First in-person event in Madrid',
-          'Metrics for Series A'
-        ]
-      },
-      returns: {
-        title: 'Expected Returns',
-        description: 'With a conservative valuation of €5M in 3 years, the initial investment could multiply by 8-10x.'
-      }
+      ],
+      goalsTitle: 'Investment Goals',
+      goals: [
+        { number: '6', label: 'Months to complete MVP' },
+        { number: '10K', label: 'Users first year' },
+        { number: '€200K', label: 'Projected revenue year 1' },
+        { number: '5X', label: 'Projected ROI in 3 years' }
+      ]
     },
     // Roadmap
     roadmap: {
       title: 'Roadmap',
       subtitle: 'Clear path to success',
+      phasesList: [
+        {
+          phase: 'Phase 1',
+          timeline: '0-2 months',
+          status: 'pending',
+          title: 'MVP and Core Features',
+          items: [
+            'Complete UX/UI design',
+            'Friendship matching system development',
+            'Events and meetups integration',
+            'Registration and profile system',
+            'Real-time chat',
+            'Basic admin panel'
+          ]
+        },
+        {
+          phase: 'Phase 2',
+          timeline: '2-4 months',
+          status: 'pending',
+          title: 'AI and Premium Features',
+          items: [
+            'AI psychology and emotional chat',
+            'AI birth chart',
+            'Travel and experiences system',
+            'Services marketplace',
+            'Payment integration (Stripe/PayPal)',
+            'Coaching and family constellations'
+          ]
+        },
+        {
+          phase: 'Phase 3',
+          timeline: '4-6 months',
+          status: 'pending',
+          title: 'Expansion and Global Launch',
+          items: [
+            'Multilanguage (EN, ES, FR, IT)',
+            'DJ streaming and live music',
+            'Purple Point and support resources',
+            'Image consulting',
+            'Sports and health (classes, diets)',
+            'Courses for influencers',
+            'App Store and Google Play launch',
+            'Massive marketing campaign'
+          ]
+        }
+      ],
+      milestones: [
+        { month: 'Month 1', goal: 'Design completed and development started' },
+        { month: 'Month 2', goal: 'Functional MVP with matching and events' },
+        { month: 'Month 3', goal: 'Integrated AI and payment system' },
+        { month: 'Month 4', goal: 'Private beta with 500 users' },
+        { month: 'Month 5', goal: 'Complete features and testing' },
+        { month: 'Month 6', goal: 'Official launch in stores' }
+      ],
       phases: {
         current: {
           title: 'Current Phase',
@@ -915,85 +972,72 @@ export const translations = {
     financials: {
       title: 'Financial Projection',
       subtitle: 'Sustainable and scalable growth',
-      years: {
-        year1: 'Year 1',
-        year2: 'Year 2',
-        year3: 'Year 3'
-      },
-      metrics: {
+      projections: [
+        {
+          year: 'Year 1',
+          users: '10K',
+          revenue: '€200K',
+          growth: '+100%',
+          highlights: [
+            'Official launch',
+            '10% conversion to premium',
+            'First marketing campaign',
+            'First collaborations'
+          ]
+        },
+        {
+          year: 'Year 2',
+          users: '50K',
+          revenue: '€1.2M',
+          growth: '+500%',
+          highlights: [
+            'International expansion',
+            '15% conversion to premium',
+            'Active marketplace',
+            'Revenue from events and travel'
+          ]
+        },
+        {
+          year: 'Year 3',
+          users: '150K',
+          revenue: '€4.5M',
+          growth: '+300%',
+          highlights: [
+            'Market leader',
+            '20% conversion to premium',
+            'Multiple revenue sources',
+            'Break-even achieved'
+          ]
+        }
+      ],
+      labels: {
         users: 'Users',
         revenue: 'Revenue',
         growth: 'Growth'
-      },
-      highlights: {
-        title: 'Highlights',
-        breakeven: 'Break-even in 18 months',
-        margin: '60% gross margin',
-        retention: '75% retention rate'
-      },
-      breakdown: {
-        title: 'Revenue Breakdown',
-        subscriptions: 'Subscriptions',
-        travel: 'Travel',
-        events: 'Events',
-        partnerships: 'Partnerships'
-      },
-      roi: {
-        title: 'Projected ROI',
-        year2: 'Year 2',
-        year3: 'Year 3',
-        description: 'Estimated return on investment based on market valuation and projected growth.'
       }
     },
     // Branding
     branding: {
       title: 'Brand Identity',
       subtitle: 'A brand that empowers and connects',
-      mission: {
-        title: 'Mission',
-        description: 'Create the safest and most empowering digital space for women, where they can connect, grow and live unique experiences together.'
-      },
-      vision: {
-        title: 'Vision',
-        description: 'Be the largest and most influential women\'s digital community in the world, transforming how women connect and support each other.'
-      },
-      values: {
-        title: 'Values',
-        list: [
-          'Women\'s empowerment',
-          'Safety and trust',
-          'Authenticity',
-          'Inclusivity',
-          'Personal growth',
-          'Sisterhood'
-        ]
-      },
-      personality: {
-        title: 'Brand Personality',
-        traits: [
-          'Empathetic',
-          'Empowering',
-          'Modern',
-          'Warm',
-          'Aspirational',
-          'Inclusive'
-        ]
-      },
-      colors: {
-        title: 'Color Palette',
-        primary: {
-          name: 'Coral',
-          description: 'Feminine, warm and empowering'
-        },
-        secondary: {
-          name: 'Soft Purple',
-          description: 'Elegant and sophisticated'
-        },
-        accent: {
-          name: 'Cream',
-          description: 'Neutral and welcoming'
-        }
-      }
+      logoDescription: 'Two intertwined hearts symbolize connection and friendship between women',
+      colorsTitle: 'Color Palette',
+      colors: [
+        { name: 'Deep Purple', hex: '#5A3B66', description: 'Elegance and exclusivity' },
+        { name: 'Soft Pink', hex: '#F6C7CE', description: 'Femininity and warmth' },
+        { name: 'Dusty Coral', hex: '#E89BAA', description: 'Energy and vitality' },
+        { name: 'Cream White', hex: '#FFF8F6', description: 'Purity and clarity' },
+        { name: 'Lilac Grey', hex: '#A08DA5', description: 'Sophistication and balance' }
+      ],
+      valuesTitle: 'Brand Values',
+      values: [
+        'Authentic Connection',
+        'Women\'s Empowerment',
+        'Safety and Trust',
+        'Personal Growth',
+        'Inclusive Community',
+        'Innovation with Purpose'
+      ]
     },
     // Mockups
     mockups: {
@@ -1305,56 +1349,113 @@ export const translations = {
     investment: {
       title: 'Investitionsdetails',
       subtitle: 'Strategische und transparente Verwendung Ihrer Investition',
-      ask: {
-        title: 'Gesuchte Investition',
-        amount: '50.000€ - 60.000€',
-        equity: '15-20% Eigenkapital',
-        description: 'Zur Entwicklung des MVP und Markteinführung in Spanien'
-      },
-      useOfFunds: {
-        title: 'Mittelverwendung',
-        items: {
-          development: {
-            title: 'Entwicklung',
-            percentage: '40%',
-            description: 'iOS/Android-App + Backend + KI'
-          },
-          marketing: {
-            title: 'Marketing',
-            percentage: '30%',
-            description: 'Anfängliche Benutzerakquise'
-          },
-          operations: {
-            title: 'Betrieb',
-            percentage: '20%',
-            description: 'Rechtliches, Server, Team'
-          },
-          reserve: {
-            title: 'Reserve',
-            percentage: '10%',
-            description: 'Notfälle und Anpassungen'
-          }
+      totalTitle: 'Anfangsinvestition',
+      totalAmount: '50.000€ - 60.000€',
+      totalDescription: 'Benötigtes Kapital zur Entwicklung und Markteinführung von HERCLUB in 6 Monaten',
+      breakdown: [
+        {
+          category: 'App-Entwicklung',
+          amount: '35.000€',
+          percentage: 58,
+          items: [
+            'Vollständiges Frontend und Backend',
+            'KI-Integration (Psychologie, Astrologie)',
+            'Zahlungs- und Abonnementsystem',
+            'Matching- und Event-API',
+            'Datenbank und Sicherheit'
+          ]
+        },
+        {
+          category: 'Design und Branding',
+          amount: '10.000€',
+          percentage: 17,
+          items: [
+            'Vollständiges UX/UI-Design',
+            'Markenidentität',
+            'Grafikmaterialien',
+            'Start im App Store und Google Play',
+            'Website und Landing Page'
+          ]
+        },
+        {
+          category: 'Marketing und Launch',
+          amount: '15.000€',
+          percentage: 25,
+          items: [
+            'Werbekampagnen (Instagram, TikTok, Facebook)',
+            'Influencer-Kooperationen',
+            'Launch-Event',
+            'Community-Management',
+            'Erste 10.000 Benutzer'
+          ]
         }
-      },
-      milestones: {
-        title: 'Meilensteine mit dieser Investition',
-        items: [
-          'Funktionales MVP in 4-5 Monaten',
-          '1.000 Benutzer in den ersten 6 Monaten',
-          'Validierung des Freemium/Premium-Modells',
-          'Erste persönliche Veranstaltung in Madrid',
-          'Metriken für Series A'
-        ]
-      },
-      returns: {
-        title: 'Erwartete Renditen',
-        description: 'Mit einer konservativen Bewertung von 5 Mio. € in 3 Jahren könnte sich die Anfangsinvestition um das 8-10-fache multiplizieren.'
-      }
+      ],
+      goalsTitle: 'Investitionsziele',
+      goals: [
+        { number: '6', label: 'Monate bis MVP fertig' },
+        { number: '10K', label: 'Benutzer erstes Jahr' },
+        { number: '200.000€', label: 'Prognostizierte Einnahmen Jahr 1' },
+        { number: '5X', label: 'Prognostizierter ROI in 3 Jahren' }
+      ]
     },
     // Roadmap
     roadmap: {
       title: 'Roadmap',
       subtitle: 'Klarer Weg zum Erfolg',
+      phasesList: [
+        {
+          phase: 'Phase 1',
+          timeline: '0-2 Monate',
+          status: 'pending',
+          title: 'MVP und Kernfunktionen',
+          items: [
+            'Vollständiges UX/UI-Design',
+            'Entwicklung des Freundschafts-Matching-Systems',
+            'Integration von Events und Meetups',
+            'Registrierungs- und Profilsystem',
+            'Echtzeit-Chat',
+            'Basis-Admin-Panel'
+          ]
+        },
+        {
+          phase: 'Phase 2',
+          timeline: '2-4 Monate',
+          status: 'pending',
+          title: 'KI und Premium-Funktionen',
+          items: [
+            'KI-Psychologie und emotionaler Chat',
+            'KI-Geburtshoroskop',
+            'Reise- und Erlebnissystem',
+            'Dienstleistungsmarktplatz',
+            'Zahlungsintegration (Stripe/PayPal)',
+            'Coaching und Familienaufstellungen'
+          ]
+        },
+        {
+          phase: 'Phase 3',
+          timeline: '4-6 Monate',
+          status: 'pending',
+          title: 'Expansion und globaler Launch',
+          items: [
+            'Mehrsprachig (EN, ES, FR, IT)',
+            'DJ-Streaming und Live-Musik',
+            'Purple Point und Unterstützungsressourcen',
+            'Bildberatung',
+            'Sport und Gesundheit (Kurse, Diäten)',
+            'Kurse für Influencer',
+            'Start im App Store und Google Play',
+            'Massive Marketingkampagne'
+          ]
+        }
+      ],
+      milestones: [
+        { month: 'Monat 1', goal: 'Design abgeschlossen und Entwicklung gestartet' },
+        { month: 'Monat 2', goal: 'Funktionales MVP mit Matching und Events' },
+        { month: 'Monat 3', goal: 'Integrierte KI und Zahlungssystem' },
+        { month: 'Monat 4', goal: 'Private Beta mit 500 Benutzern' },
+        { month: 'Monat 5', goal: 'Vollständige Funktionen und Tests' },
+        { month: 'Monat 6', goal: 'Offizieller Start in den Stores' }
+      ],
       phases: {
         current: {
           title: 'Aktuelle Phase',
@@ -1412,85 +1513,72 @@ export const translations = {
     financials: {
       title: 'Finanzprognose',
       subtitle: 'Nachhaltiges und skalierbares Wachstum',
-      years: {
-        year1: 'Jahr 1',
-        year2: 'Jahr 2',
-        year3: 'Jahr 3'
-      },
-      metrics: {
+      projections: [
+        {
+          year: 'Jahr 1',
+          users: '10K',
+          revenue: '200.000€',
+          growth: '+100%',
+          highlights: [
+            'Offizieller Start',
+            '10% Umwandlung in Premium',
+            'Erste Marketingkampagne',
+            'Erste Kooperationen'
+          ]
+        },
+        {
+          year: 'Jahr 2',
+          users: '50K',
+          revenue: '1,2Mio€',
+          growth: '+500%',
+          highlights: [
+            'Internationale Expansion',
+            '15% Umwandlung in Premium',
+            'Aktiver Marktplatz',
+            'Einnahmen aus Events und Reisen'
+          ]
+        },
+        {
+          year: 'Jahr 3',
+          users: '150K',
+          revenue: '4,5Mio€',
+          growth: '+300%',
+          highlights: [
+            'Marktführer',
+            '20% Umwandlung in Premium',
+            'Mehrere Einnahmequellen',
+            'Break-even erreicht'
+          ]
+        }
+      ],
+      labels: {
         users: 'Benutzer',
         revenue: 'Umsatz',
         growth: 'Wachstum'
-      },
-      highlights: {
-        title: 'Höhepunkte',
-        breakeven: 'Break-even in 18 Monaten',
-        margin: '60% Bruttogewinnspanne',
-        retention: '75% Bindungsrate'
-      },
-      breakdown: {
-        title: 'Umsatzaufschlüsselung',
-        subscriptions: 'Abonnements',
-        travel: 'Reisen',
-        events: 'Events',
-        partnerships: 'Partnerschaften'
-      },
-      roi: {
-        title: 'Prognostizierter ROI',
-        year2: 'Jahr 2',
-        year3: 'Jahr 3',
-        description: 'Geschätzter Return on Investment basierend auf Marktbewertung und projiziertem Wachstum.'
       }
     },
     // Branding
     branding: {
       title: 'Markenidentität',
       subtitle: 'Eine Marke, die stärkt und verbindet',
-      mission: {
-        title: 'Mission',
-        description: 'Den sichersten und stärksten digitalen Raum für Frauen schaffen, wo sie sich verbinden, wachsen und gemeinsam einzigartige Erfahrungen erleben können.'
-      },
-      vision: {
-        title: 'Vision',
-        description: 'Die größte und einflussreichste digitale Frauengemeinschaft der Welt sein und die Art und Weise transformieren, wie Frauen sich verbinden und unterstützen.'
-      },
-      values: {
-        title: 'Werte',
-        list: [
-          'Frauen-Empowerment',
-          'Sicherheit und Vertrauen',
-          'Authentizität',
-          'Inklusivität',
-          'Persönliches Wachstum',
-          'Schwesternschaft'
-        ]
-      },
-      personality: {
-        title: 'Markenpersönlichkeit',
-        traits: [
-          'Empathisch',
-          'Stärkend',
-          'Modern',
-          'Warm',
-          'Inspirierend',
-          'Inklusiv'
-        ]
-      },
-      colors: {
-        title: 'Farbpalette',
-        primary: {
-          name: 'Koralle',
-          description: 'Weiblich, warm und stärkend'
-        },
-        secondary: {
-          name: 'Sanftes Lila',
-          description: 'Elegant und sophisticated'
-        },
-        accent: {
-          name: 'Creme',
-          description: 'Neutral und einladend'
-        }
-      }
+      logoDescription: 'Zwei verwobene Herzen symbolisieren Verbindung und Freundschaft zwischen Frauen',
+      colorsTitle: 'Farbpalette',
+      colors: [
+        { name: 'Tiefes Lila', hex: '#5A3B66', description: 'Eleganz und Exklusivität' },
+        { name: 'Sanftes Rosa', hex: '#F6C7CE', description: 'Weiblichkeit und Wärme' },
+        { name: 'Staubiges Koralle', hex: '#E89BAA', description: 'Energie und Vitalität' },
+        { name: 'Cremeweiß', hex: '#FFF8F6', description: 'Reinheit und Klarheit' },
+        { name: 'Fliedergrau', hex: '#A08DA5', description: 'Raffinesse und Balance' }
+      ],
+      valuesTitle: 'Markenwerte',
+      values: [
+        'Authentische Verbindung',
+        'Frauen-Empowerment',
+        'Sicherheit und Vertrauen',
+        'Persönliches Wachstum',
+        'Inklusive Gemeinschaft',
+        'Innovation mit Ziel'
+      ]
     },
     // Mockups
     mockups: {
