@@ -1,34 +1,54 @@
-import { Globe } from 'lucide-react'
+import { useState } from 'react'
+import { Globe, ChevronDown } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 import './LanguageSelector.css'
 
 function LanguageSelector() {
   const { language, changeLanguage } = useLanguage()
+  const [isOpen, setIsOpen] = useState(false)
 
   const languages = [
-    { code: 'es', label: 'ES', flag: '🇪🇸' },
-    { code: 'en', label: 'EN', flag: '🇬🇧' },
-    { code: 'de', label: 'DE', flag: '🇩🇪' }
+    { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' }
   ]
+
+  const currentLang = languages.find(lang => lang.code === language)
+
+  const handleLanguageChange = (langCode) => {
+    changeLanguage(langCode)
+    setIsOpen(false)
+  }
 
   return (
     <div className="language-selector">
-      <div className="language-icon">
-        <Globe size={20} />
-      </div>
-      <div className="language-buttons">
-        {languages.map((lang) => (
-          <button
-            key={lang.code}
-            className={`lang-btn ${language === lang.code ? 'active' : ''}`}
-            onClick={() => changeLanguage(lang.code)}
-            title={lang.label}
-          >
-            <span className="flag">{lang.flag}</span>
-            <span className="label">{lang.label}</span>
-          </button>
-        ))}
-      </div>
+      <button 
+        className="language-trigger"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <Globe size={18} />
+        <span className="current-lang">{currentLang.flag}</span>
+        <ChevronDown size={16} className={`chevron ${isOpen ? 'open' : ''}`} />
+      </button>
+      
+      {isOpen && (
+        <>
+          <div className="language-overlay" onClick={() => setIsOpen(false)} />
+          <div className="language-dropdown">
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                className={`lang-option ${language === lang.code ? 'active' : ''}`}
+                onClick={() => handleLanguageChange(lang.code)}
+              >
+                <span className="flag">{lang.flag}</span>
+                <span className="label">{lang.label}</span>
+                {language === lang.code && <span className="check">✓</span>}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   )
 }

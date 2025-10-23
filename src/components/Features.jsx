@@ -1,73 +1,43 @@
 import { motion } from 'framer-motion'
-import { Heart, Calendar, Brain, Sparkles, Plane, Home, Shield, Image, Dumbbell, GraduationCap, Music, Globe } from 'lucide-react'
+import { Heart, Calendar, Brain, Sparkles, Plane, Shield } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Features.css'
 
 function Features() {
+  const { language } = useLanguage()
+  const t = translations[language].features
+
   const features = [
     {
       icon: Heart,
-      title: 'Match de Amistad',
-      description: 'Conecta con otras mujeres según edad, ubicación, gustos y hobbies. Modo Tinder para amistad.'
-    },
-    {
-      icon: Calendar,
-      title: 'Eventos & Meetups',
-      description: 'Crea, descubre y asiste a eventos presenciales o virtuales cerca de ti.'
+      title: t.list.match.title,
+      description: t.list.match.description
     },
     {
       icon: Brain,
-      title: 'Psicología IA + Humana',
-      description: 'Chat con psicóloga virtual 24/7 y opción de contactar profesionales reales.'
+      title: t.list.wellness.title,
+      description: t.list.wellness.description
     },
     {
-      icon: Sparkles,
-      title: 'Coaching Personal',
-      description: 'Desarrollo personal, constelaciones familiares y sesiones guiadas.'
-    },
-    {
-      icon: Sparkles,
-      title: 'Carta Astral IA',
-      description: 'Cálculo automático de tu carta astral y conexión con astrólogas reales.'
+      icon: Calendar,
+      title: t.list.events.title,
+      description: t.list.events.description
     },
     {
       icon: Plane,
-      title: 'Viajes & Experiencias',
-      description: 'Descubre y únete a viajes grupales y experiencias exclusivas.'
+      title: t.list.travel.title,
+      description: t.list.travel.description
     },
     {
-      icon: Home,
-      title: 'Alojamientos',
-      description: 'Ofrece o reserva apartamentos entre miembros de la comunidad.'
+      icon: Sparkles,
+      title: t.list.coaching.title,
+      description: t.list.coaching.description
     },
     {
       icon: Shield,
-      title: 'Punto Lila',
-      description: 'Recursos de apoyo contra violencia de género, chat de emergencia y asistencia legal.'
-    },
-    {
-      icon: Image,
-      title: 'Asesoramiento de Imagen',
-      description: 'Servicios de cambio de imagen, estilo personal y consultoría de moda.'
-    },
-    {
-      icon: Dumbbell,
-      title: 'Deporte & Salud',
-      description: 'Clases online, dietas personalizadas, entrenamientos y rutinas fitness.'
-    },
-    {
-      icon: GraduationCap,
-      title: 'Cursos para Emprendedoras',
-      description: 'Formación práctica para influencers y mujeres que quieren lanzar su marca.'
-    },
-    {
-      icon: Music,
-      title: 'DJ Fridays & Saturdays',
-      description: 'Música en vivo tipo streaming con DJs reales y filtros por género musical.'
-    },
-    {
-      icon: Globe,
-      title: 'Multilenguaje',
-      description: 'Disponible en inglés, español, francés e italiano.'
+      title: t.list.safety.title,
+      description: t.list.safety.description
     }
   ]
 
@@ -81,9 +51,9 @@ function Features() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Funcionalidades Principales</h2>
+          <h2 className="section-title">{t.title}</h2>
           <p className="section-subtitle">
-            Una super-app todo-en-uno diseñada para la mujer moderna
+            {t.subtitle}
           </p>
         </motion.div>
 
@@ -107,16 +77,6 @@ function Features() {
           ))}
         </div>
 
-        <motion.div
-          className="features-highlight"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-        >
-          <h3>13 Funcionalidades en 1 Sola App</h3>
-          <p>HERCLUB elimina la necesidad de usar múltiples aplicaciones. Todo lo que una mujer moderna necesita, en un solo lugar.</p>
-        </motion.div>
       </div>
     </div>
   )

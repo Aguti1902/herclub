@@ -1,28 +1,33 @@
 import { motion } from 'framer-motion'
 import { Heart, Shield, Sparkles, Users } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Solution.css'
 
 function Solution() {
+  const { language } = useLanguage()
+  const t = translations[language].solution
+
   const solutions = [
     {
       icon: Users,
-      title: 'Comunidad Exclusiva',
-      description: 'Un club privado solo para mujeres donde crear amistades reales y duraderas.'
+      title: t.pillars.community.title,
+      description: t.pillars.community.description
     },
     {
       icon: Shield,
-      title: 'Espacio Seguro',
-      description: 'Entorno protegido y verificado donde las mujeres pueden ser auténticas.'
+      title: t.pillars.safety.title,
+      description: t.pillars.safety.description
     },
     {
       icon: Sparkles,
-      title: 'Todo en Uno',
-      description: 'Amistad + Bienestar + Eventos + Viajes + Coaching en una sola plataforma.'
+      title: t.pillars.growth.title,
+      description: t.pillars.growth.description
     },
     {
       icon: Heart,
-      title: 'Empoderamiento',
-      description: 'Herramientas y recursos para el crecimiento personal y profesional.'
+      title: t.pillars.experiences.title,
+      description: t.pillars.experiences.description
     }
   ]
 
@@ -36,9 +41,9 @@ function Solution() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">La Solución: HERCLUB</h2>
+          <h2 className="section-title">{t.title}</h2>
           <p className="section-subtitle">
-            La primera super-app femenina que fusiona conexión, bienestar y experiencias
+            {t.subtitle}
           </p>
         </motion.div>
 
@@ -69,21 +74,13 @@ function Solution() {
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          <h3>El Concepto</h3>
-          <div className="concept-formula">
-            <span className="concept-item">Tinder</span>
-            <span className="concept-plus">+</span>
-            <span className="concept-item">Meetup</span>
-            <span className="concept-plus">+</span>
-            <span className="concept-item">Calm</span>
-            <span className="concept-plus">+</span>
-            <span className="concept-item">Airbnb</span>
-            <span className="concept-plus">+</span>
-            <span className="concept-item">Masterclass</span>
+          <h3>{t.difference.title}</h3>
+          <div className="difference-points">
+            <p>✨ {t.difference.points.exclusive}</p>
+            <p>🤖 {t.difference.points.ai}</p>
+            <p>🛡️ {t.difference.points.safety}</p>
+            <p>💫 {t.difference.points.holistic}</p>
           </div>
-          <p className="concept-description">
-            = Una experiencia única diseñada exclusivamente para mujeres
-          </p>
         </motion.div>
 
         <motion.div
@@ -93,14 +90,8 @@ function Solution() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          <h3>Nuestra Visión</h3>
-          <p>
-            Crear la comunidad femenina más exclusiva y positiva del mundo digital, 
-            donde las mujeres puedan conectarse, apoyarse y crecer juntas.
-          </p>
-          <p className="vision-bold">
-            HERCLUB será más que una app: será un movimiento global de conexión, 
-            seguridad y empoderamiento femenino.
+          <p className="vision-text">
+            {t.description}
           </p>
         </motion.div>
       </div>

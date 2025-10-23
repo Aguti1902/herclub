@@ -1,28 +1,33 @@
 import { motion } from 'framer-motion'
-import { UserX, HeartCrack, Frown, AlertCircle } from 'lucide-react'
+import { UserX, Shield, Frown, AlertCircle } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Problem.css'
 
 function Problem() {
+  const { language } = useLanguage()
+  const t = translations[language].problem
+
   const problems = [
     {
       icon: UserX,
-      title: 'Soledad Digital',
-      description: 'Las mujeres tienen cientos de "amigos" online pero pocas amistades reales y significativas.'
+      title: t.issues.isolation.title,
+      description: t.issues.isolation.description
     },
     {
-      icon: HeartCrack,
-      title: 'Desconexión',
-      description: 'Falta de espacios seguros y exclusivos para conectar con otras mujeres sin propósitos románticos.'
+      icon: Shield,
+      title: t.issues.safety.title,
+      description: t.issues.safety.description
     },
     {
       icon: Frown,
-      title: 'Salud Mental',
-      description: 'Creciente necesidad de apoyo emocional, bienestar mental y desarrollo personal femenino.'
+      title: t.issues.mentalHealth.title,
+      description: t.issues.mentalHealth.description
     },
     {
       icon: AlertCircle,
-      title: 'Fragmentación',
-      description: 'Las mujeres deben usar múltiples apps para bienestar, networking, viajes y eventos.'
+      title: t.issues.fragmentation.title,
+      description: t.issues.fragmentation.description
     }
   ]
 
@@ -36,9 +41,9 @@ function Problem() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">El Problema</h2>
+          <h2 className="section-title">{t.title}</h2>
           <p className="section-subtitle">
-            Una generación de mujeres más conectadas que nunca... pero más solas
+            {t.subtitle}
           </p>
         </motion.div>
 
@@ -70,16 +75,16 @@ function Problem() {
           transition={{ delay: 0.4, duration: 0.6 }}
         >
           <div className="stat">
-            <h3>70%</h3>
-            <p>de mujeres reportan sentirse solas</p>
+            <h3>{t.impact.stat1.number}</h3>
+            <p>{t.impact.stat1.text}</p>
           </div>
           <div className="stat">
-            <h3>+50%</h3>
-            <p>del público digital activo</p>
+            <h3>{t.impact.stat2.number}</h3>
+            <p>{t.impact.stat2.text}</p>
           </div>
           <div className="stat">
-            <h3>20B€</h3>
-            <p>mercado de apps de bienestar en Europa</p>
+            <h3>{t.impact.stat3.number}</h3>
+            <p>{t.impact.stat3.text}</p>
           </div>
         </motion.div>
       </div>
