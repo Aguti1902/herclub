@@ -504,6 +504,14 @@ export const translations = {
       title: 'Mockups de la App',
       subtitle: 'Diseño pensado para mujeres',
       scrollHint: 'Desliza para ver más →',
+      labels: {
+        match: 'Match de Amistad',
+        events: 'Eventos & Meetups',
+        wellness: 'Bienestar Mental',
+        travel: 'Viajes',
+        messages: 'Mensajes',
+        puntoLila: 'Punto Lila'
+      },
       designs: {
         title: 'Diseño Pensado para Mujeres',
         features: [
@@ -1044,6 +1052,14 @@ export const translations = {
       title: 'App Mockups',
       subtitle: 'Design crafted for women',
       scrollHint: 'Swipe to see more →',
+      labels: {
+        match: 'Friendship Match',
+        events: 'Events & Meetups',
+        wellness: 'Mental Wellness',
+        travel: 'Travel',
+        messages: 'Messages',
+        puntoLila: 'Purple Point'
+      },
       designs: {
         title: 'Design Crafted for Women',
         features: [
@@ -1585,6 +1601,14 @@ export const translations = {
       title: 'App-Mockups',
       subtitle: 'Design für Frauen entwickelt',
       scrollHint: 'Wischen Sie, um mehr zu sehen →',
+      labels: {
+        match: 'Freundschafts-Match',
+        events: 'Events & Meetups',
+        wellness: 'Mentales Wohlbefinden',
+        travel: 'Reisen',
+        messages: 'Nachrichten',
+        puntoLila: 'Lila Punkt'
+      },
       designs: {
         title: 'Design für Frauen entwickelt',
         features: [

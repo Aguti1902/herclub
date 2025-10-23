@@ -68,7 +68,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">Match de Amistad</div>
+            <div className="mockup-label">{t.labels.match}</div>
           </motion.div>
 
           {/* Mockup 2: Eventos */}
@@ -135,7 +135,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">Eventos & Meetups</div>
+            <div className="mockup-label">{t.labels.events}</div>
           </motion.div>
 
           {/* Mockup 3: Bienestar */}
@@ -198,7 +198,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">Bienestar Mental</div>
+            <div className="mockup-label">{t.labels.wellness}</div>
           </motion.div>
 
           {/* Mockup 4: Viajes */}
@@ -251,7 +251,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">Viajes</div>
+            <div className="mockup-label">{t.labels.travel}</div>
           </motion.div>
 
           {/* Mockup 5: Chat */}
@@ -312,7 +312,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">Mensajes</div>
+            <div className="mockup-label">{t.labels.messages}</div>
           </motion.div>
 
           {/* Mockup 6: Punto Lila */}
@@ -359,7 +359,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">Punto Lila</div>
+            <div className="mockup-label">{t.labels.puntoLila}</div>
           </motion.div>
         </div>
 
