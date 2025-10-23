@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion'
 import { Euro, Code, Palette, TrendingUp, PieChart } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Investment.css'
 
 function Investment() {
+  const { language } = useLanguage()
+  const t = translations[language].investment
   const investmentBreakdown = [
     {
       icon: Code,
@@ -55,9 +59,9 @@ function Investment() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Inversión Requerida</h2>
+          <h2 className="section-title">{t.title}</h2>
           <p className="section-subtitle">
-            Plan detallado de uso de capital para el lanzamiento del MVP
+            {t.subtitle}
           </p>
         </motion.div>
 

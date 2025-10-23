@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion'
 import { CreditCard, Plane, ShoppingBag, Megaphone, GraduationCap, DollarSign } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './BusinessModel.css'
 
 function BusinessModel() {
+  const { language } = useLanguage()
+  const t = translations[language].businessModel
   const revenueStreams = [
     {
       icon: CreditCard,
@@ -46,9 +50,9 @@ function BusinessModel() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Modelo de Negocio</h2>
+          <h2 className="section-title">{t.title}</h2>
           <p className="section-subtitle">
-            Múltiples fuentes de ingresos diversificadas y escalables
+            {t.subtitle}
           </p>
         </motion.div>
 

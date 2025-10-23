@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion'
 import { Heart, Palette } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Branding.css'
 
 function Branding() {
+  const { language } = useLanguage()
+  const t = translations[language].branding
   const colors = [
     { name: 'Púrpura Profundo', hex: '#5A3B66', description: 'Elegancia y exclusividad' },
     { name: 'Rosa Suave', hex: '#F6C7CE', description: 'Feminidad y calidez' },
@@ -30,9 +34,9 @@ function Branding() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Identidad de Marca</h2>
+          <h2 className="section-title">{t.title}</h2>
           <p className="section-subtitle">
-            Una marca moderna, femenina y elegante que refleja nuestra comunidad
+            {t.subtitle}
           </p>
         </motion.div>
 

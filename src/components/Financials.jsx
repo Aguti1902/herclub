@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion'
 import { TrendingUp, Users, DollarSign } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Financials.css'
 
 function Financials() {
+  const { language } = useLanguage()
+  const t = translations[language].financials
   const projections = [
     {
       year: 'Año 1',
@@ -52,9 +56,9 @@ function Financials() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Proyección Financiera</h2>
+          <h2 className="section-title">{t.title}</h2>
           <p className="section-subtitle">
-            Crecimiento proyectado a 3 años con modelo escalable
+            {t.subtitle}
           </p>
         </motion.div>
 

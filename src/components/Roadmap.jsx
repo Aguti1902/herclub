@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion'
 import { CheckCircle2, Circle, Clock } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Roadmap.css'
 
 function Roadmap() {
+  const { language } = useLanguage()
+  const t = translations[language].roadmap
   const phases = [
     {
       phase: 'Fase 1',
@@ -69,9 +73,9 @@ function Roadmap() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Roadmap de Desarrollo</h2>
+          <h2 className="section-title">{t.title}</h2>
           <p className="section-subtitle">
-            Plan estratégico de 6 meses desde la inversión hasta el lanzamiento
+            {t.subtitle}
           </p>
         </motion.div>
 

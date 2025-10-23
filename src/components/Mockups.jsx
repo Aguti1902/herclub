@@ -1,8 +1,13 @@
 import { motion } from 'framer-motion'
 import { Heart, Calendar, Brain, Users, MapPin, Star, MessageCircle, Shield } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/translations'
 import './Mockups.css'
 
 function Mockups() {
+  const { language } = useLanguage()
+  const t = translations[language].mockups
+
   return (
     <div className="section mockups-section">
       <div className="container">
@@ -13,11 +18,11 @@ function Mockups() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">📱 Diseño de la App</h2>
+          <h2 className="section-title">{t.title}</h2>
           <p className="section-subtitle">
-            Una experiencia visual moderna, intuitiva y femenina
+            {t.subtitle}
           </p>
-          <p className="scroll-hint">← Desliza para ver todas las pantallas →</p>
+          <p className="scroll-hint">{t.scrollHint}</p>
         </motion.div>
 
         <div className="mockups-grid">
