@@ -7,22 +7,8 @@ import './Branding.css'
 function Branding() {
   const { language } = useLanguage()
   const t = translations[language].branding
-  const colors = [
-    { name: 'Púrpura Profundo', hex: '#5A3B66', description: 'Elegancia y exclusividad' },
-    { name: 'Rosa Suave', hex: '#F6C7CE', description: 'Feminidad y calidez' },
-    { name: 'Coral Empolvado', hex: '#E89BAA', description: 'Energía y vitalidad' },
-    { name: 'Blanco Crema', hex: '#FFF8F6', description: 'Pureza y claridad' },
-    { name: 'Gris Lila', hex: '#A08DA5', description: 'Sofisticación y balance' }
-  ]
-
-  const brandValues = [
-    'Conexión Auténtica',
-    'Empoderamiento Femenino',
-    'Seguridad y Confianza',
-    'Crecimiento Personal',
-    'Comunidad Inclusiva',
-    'Innovación con Propósito'
-  ]
+  const colors = t.colors
+  const brandValues = t.values
 
   return (
     <div className="section branding-section">
@@ -56,7 +42,7 @@ function Branding() {
             <h1 className="brand-logo-text">HERCLUB</h1>
           </div>
           <p className="logo-description">
-            Dos corazones entrelazados simbolizan la conexión y amistad entre mujeres
+            {t.logoDescription}
           </p>
         </motion.div>
 
@@ -70,7 +56,7 @@ function Branding() {
         >
           <div className="colors-header">
             <Palette size={40} />
-            <h3>Paleta de Colores</h3>
+            <h3>{t.colorsTitle}</h3>
           </div>
           <div className="colors-grid">
             {colors.map((color, index) => (
@@ -132,7 +118,7 @@ function Branding() {
           viewport={{ once: true }}
           transition={{ delay: 0.6, duration: 0.6 }}
         >
-          <h3>Valores de Marca</h3>
+          <h3>{t.valuesTitle}</h3>
           <div className="values-grid">
             {brandValues.map((value, index) => (
               <motion.div

@@ -480,51 +480,24 @@ export const translations = {
     branding: {
       title: 'Identidad de Marca',
       subtitle: 'Una marca que empodera y conecta',
-      mission: {
-        title: 'Misión',
-        description: 'Crear el espacio digital más seguro y empoderante para mujeres, donde puedan conectar, crecer y vivir experiencias únicas juntas.'
-      },
-      vision: {
-        title: 'Visión',
-        description: 'Ser la comunidad femenina digital más grande e influyente del mundo, transformando la forma en que las mujeres se conectan y se apoyan.'
-      },
-      values: {
-        title: 'Valores',
-        list: [
-          'Empoderamiento femenino',
-          'Seguridad y confianza',
-          'Autenticidad',
-          'Inclusividad',
-          'Crecimiento personal',
-          'Sororidad'
-        ]
-      },
-      personality: {
-        title: 'Personalidad de Marca',
-        traits: [
-          'Empática',
-          'Empodерadora',
-          'Moderna',
-          'Cálida',
-          'Aspiracional',
-          'Inclusiva'
-        ]
-      },
-      colors: {
-        title: 'Paleta de Colores',
-        primary: {
-          name: 'Coral',
-          description: 'Femenino, cálido y empoderador'
-        },
-        secondary: {
-          name: 'Púrpura Suave',
-          description: 'Elegante y sofisticado'
-        },
-        accent: {
-          name: 'Crema',
-          description: 'Neutro y acogedor'
-        }
-      }
+      logoDescription: 'Dos corazones entrelazados simbolizan la conexión y amistad entre mujeres',
+      colorsTitle: 'Paleta de Colores',
+      colors: [
+        { name: 'Púrpura Profundo', hex: '#5A3B66', description: 'Elegancia y exclusividad' },
+        { name: 'Rosa Suave', hex: '#F6C7CE', description: 'Feminidad y calidez' },
+        { name: 'Coral Empolvado', hex: '#E89BAA', description: 'Energía y vitalidad' },
+        { name: 'Blanco Crema', hex: '#FFF8F6', description: 'Pureza y claridad' },
+        { name: 'Gris Lila', hex: '#A08DA5', description: 'Sofisticación y balance' }
+      ],
+      valuesTitle: 'Valores de Marca',
+      values: [
+        'Conexión Auténtica',
+        'Empoderamiento Femenino',
+        'Seguridad y Confianza',
+        'Crecimiento Personal',
+        'Comunidad Inclusiva',
+        'Innovación con Propósito'
+      ]
     },
     // Mockups
     mockups: {
@@ -832,58 +805,6 @@ export const translations = {
       ],
       potential: 'Potential'
     },
-    investment: {
-      title: 'Investment Details',
-      subtitle: 'Strategic and transparent use of your investment',
-      ask: {
-            'Limited matches (5/month)',
-            'Access to free events',
-            'Basic wellness content'
-          ]
-        },
-        premium: {
-          title: 'Premium',
-          price: '€9.99/month',
-          features: [
-            'Unlimited matches',
-            'Access to all events',
-            'Advanced AI coaching',
-            'Premium wellness content',
-            'Travel priority'
-          ]
-        },
-        vip: {
-          title: 'VIP Club',
-          price: '€29.99/month',
-          features: [
-            'Everything in Premium',
-            'Exclusive VIP events',
-            'Travel discounts (20%)',
-            '1:1 sessions with coaches',
-            'Early access to new features'
-          ]
-        }
-      },
-      additional: {
-        title: 'Additional Revenue',
-        sources: [
-          'Commission on organized trips (15-20%)',
-          'Partnerships with wellness brands',
-          'Corporate events and companies',
-          'Services marketplace (wellness, coaching)'
-        ]
-      },
-      projections: {
-        title: 'Revenue Projections',
-        breakdown: {
-          subscriptions: 'Subscriptions',
-          travel: 'Travel',
-          events: 'Events',
-          partnerships: 'Partnerships'
-        }
-      }
-    },
-    // Investment
     investment: {
       title: 'Investment Details',
       subtitle: 'Strategic and transparent use of your investment',
