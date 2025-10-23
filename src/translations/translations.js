@@ -180,58 +180,89 @@ export const translations = {
     businessModel: {
       title: 'Modelo de Negocio',
       subtitle: 'Múltiples fuentes de ingreso escalables',
-      streams: {
-        freemium: {
-          title: 'Freemium',
+      revenueStreams: [
+        {
+          title: 'Membresías Premium',
+          description: 'Suscripciones mensuales con acceso a funciones exclusivas y eventos privados.',
+          potential: 'Alto'
+        },
+        {
+          title: 'Comisiones de Viajes',
+          description: 'Porcentaje sobre reservas de viajes, experiencias y alojamientos.',
+          potential: 'Alto'
+        },
+        {
+          title: 'Marketplace de Servicios',
+          description: 'Comisión por servicios de coaching, psicología, astrología e imagen.',
+          potential: 'Medio-Alto'
+        },
+        {
+          title: 'Publicidad Selectiva',
+          description: 'Campañas de marcas afines al público femenino (belleza, wellness, moda).',
+          potential: 'Medio'
+        },
+        {
+          title: 'Cursos y Eventos',
+          description: 'Formaciones presenciales y digitales de pago para emprendedoras.',
+          potential: 'Medio-Alto'
+        }
+      ],
+      pricingTitle: 'Estructura de Precios',
+      tiers: {
+        basic: {
+          name: 'Básica',
           price: 'Gratis',
           features: [
-            'Perfil básico',
-            'Matches limitados (5/mes)',
-            'Acceso a eventos gratuitos',
-            'Contenido básico de bienestar'
+            'Match de amistad limitado',
+            'Acceso a eventos públicos',
+            'Chat IA básico'
           ]
         },
         premium: {
-          title: 'Premium',
-          price: '9.99€/mes',
+          name: 'Premium',
+          price: '19.99€',
+          period: '/mes',
+          badge: 'Popular',
           features: [
-            'Matches ilimitados',
-            'Acceso a todos los eventos',
-            'Coaching con IA avanzado',
-            'Contenido premium de bienestar',
-            'Prioridad en viajes'
+            'Match ilimitado',
+            'Eventos exclusivos',
+            'Psicología y coaching',
+            'Carta astral completa',
+            'Descuentos en viajes'
           ]
         },
         vip: {
-          title: 'VIP Club',
-          price: '29.99€/mes',
+          name: 'VIP',
+          price: '49.99€',
+          period: '/mes',
           features: [
-            'Todo lo de Premium',
-            'Eventos exclusivos VIP',
-            'Descuentos en viajes (20%)',
-            'Sesiones 1:1 con coaches',
-            'Acceso anticipado a nuevas features'
+            'Todo Premium',
+            'Sesiones 1-on-1',
+            'Viajes VIP',
+            'Asesoría personalizada',
+            'Acceso anticipado'
           ]
         }
       },
-      additional: {
-        title: 'Ingresos Adicionales',
-        sources: [
-          'Comisión en viajes organizados (15-20%)',
-          'Partnerships con marcas de bienestar',
-          'Eventos corporativos y empresas',
-          'Marketplace de servicios (wellness, coaching)'
-        ]
-      },
-      projections: {
-        title: 'Proyecciones de Ingresos',
-        breakdown: {
-          subscriptions: 'Suscripciones',
-          travel: 'Viajes',
-          events: 'Eventos',
-          partnerships: 'Partnerships'
+      projectionTitle: 'Proyección de Ingresos',
+      projectionData: [
+        {
+          label: 'Año 1',
+          users: '10.000 usuarios',
+          revenue: '~200.000€'
+        },
+        {
+          label: 'Año 2',
+          users: '50.000 usuarios',
+          revenue: '~1.2M€'
+        },
+        {
+          label: 'Año 3',
+          users: '150.000 usuarios',
+          revenue: '~4.5M€'
         }
-      }
+      ],
+      potential: 'Potencial'
     },
     // Investment
     investment: {
@@ -646,12 +677,94 @@ export const translations = {
     businessModel: {
       title: 'Business Model',
       subtitle: 'Multiple scalable revenue streams',
-      streams: {
-        freemium: {
-          title: 'Freemium',
+      revenueStreams: [
+        {
+          title: 'Premium Memberships',
+          description: 'Monthly subscriptions with access to exclusive features and private events.',
+          potential: 'High'
+        },
+        {
+          title: 'Travel Commissions',
+          description: 'Percentage on bookings of trips, experiences and accommodations.',
+          potential: 'High'
+        },
+        {
+          title: 'Services Marketplace',
+          description: 'Commission on coaching, psychology, astrology and image services.',
+          potential: 'Medium-High'
+        },
+        {
+          title: 'Selective Advertising',
+          description: 'Campaigns from brands aligned with female audience (beauty, wellness, fashion).',
+          potential: 'Medium'
+        },
+        {
+          title: 'Courses and Events',
+          description: 'In-person and digital paid training for entrepreneurs.',
+          potential: 'Medium-High'
+        }
+      ],
+      pricingTitle: 'Pricing Structure',
+      tiers: {
+        basic: {
+          name: 'Basic',
           price: 'Free',
           features: [
-            'Basic profile',
+            'Limited friendship matching',
+            'Access to public events',
+            'Basic AI chat'
+          ]
+        },
+        premium: {
+          name: 'Premium',
+          price: '€19.99',
+          period: '/month',
+          badge: 'Popular',
+          features: [
+            'Unlimited matching',
+            'Exclusive events',
+            'Psychology and coaching',
+            'Complete birth chart',
+            'Travel discounts'
+          ]
+        },
+        vip: {
+          name: 'VIP',
+          price: '€49.99',
+          period: '/month',
+          features: [
+            'All Premium',
+            '1-on-1 sessions',
+            'VIP trips',
+            'Personalized consulting',
+            'Early access'
+          ]
+        }
+      },
+      projectionTitle: 'Revenue Projection',
+      projectionData: [
+        {
+          label: 'Year 1',
+          users: '10,000 users',
+          revenue: '~€200,000'
+        },
+        {
+          label: 'Year 2',
+          users: '50,000 users',
+          revenue: '~€1.2M'
+        },
+        {
+          label: 'Year 3',
+          users: '150,000 users',
+          revenue: '~€4.5M'
+        }
+      ],
+      potential: 'Potential'
+    },
+    investment: {
+      title: 'Investment Details',
+      subtitle: 'Strategic and transparent use of your investment',
+      ask: {
             'Limited matches (5/month)',
             'Access to free events',
             'Basic wellness content'
@@ -1112,58 +1225,89 @@ export const translations = {
     businessModel: {
       title: 'Geschäftsmodell',
       subtitle: 'Mehrere skalierbare Einnahmequellen',
-      streams: {
-        freemium: {
-          title: 'Freemium',
+      revenueStreams: [
+        {
+          title: 'Premium-Mitgliedschaften',
+          description: 'Monatliche Abonnements mit Zugang zu exklusiven Funktionen und privaten Events.',
+          potential: 'Hoch'
+        },
+        {
+          title: 'Reiseprovisionen',
+          description: 'Prozentsatz auf Buchungen von Reisen, Erlebnissen und Unterkünften.',
+          potential: 'Hoch'
+        },
+        {
+          title: 'Dienstleistungsmarktplatz',
+          description: 'Provision für Coaching-, Psychologie-, Astrologie- und Image-Dienste.',
+          potential: 'Mittel-Hoch'
+        },
+        {
+          title: 'Selektive Werbung',
+          description: 'Kampagnen von Marken, die auf das weibliche Publikum ausgerichtet sind (Schönheit, Wellness, Mode).',
+          potential: 'Mittel'
+        },
+        {
+          title: 'Kurse und Events',
+          description: 'Präsenz- und digitale bezahlte Schulungen für Unternehmerinnen.',
+          potential: 'Mittel-Hoch'
+        }
+      ],
+      pricingTitle: 'Preisstruktur',
+      tiers: {
+        basic: {
+          name: 'Basis',
           price: 'Kostenlos',
           features: [
-            'Basisprofil',
-            'Begrenzte Matches (5/Monat)',
-            'Zugang zu kostenlosen Events',
-            'Basis-Wellness-Inhalte'
+            'Begrenzte Freundschaftsmatches',
+            'Zugang zu öffentlichen Events',
+            'Basis-KI-Chat'
           ]
         },
         premium: {
-          title: 'Premium',
-          price: '9,99€/Monat',
+          name: 'Premium',
+          price: '19,99€',
+          period: '/Monat',
+          badge: 'Beliebt',
           features: [
             'Unbegrenzte Matches',
-            'Zugang zu allen Events',
-            'Erweitertes KI-Coaching',
-            'Premium-Wellness-Inhalte',
-            'Reise-Priorität'
+            'Exklusive Events',
+            'Psychologie und Coaching',
+            'Vollständiges Geburtshoroskop',
+            'Reiserabatte'
           ]
         },
         vip: {
-          title: 'VIP Club',
-          price: '29,99€/Monat',
+          name: 'VIP',
+          price: '49,99€',
+          period: '/Monat',
           features: [
             'Alles in Premium',
-            'Exklusive VIP-Events',
-            'Reiserabatte (20%)',
-            '1:1-Sitzungen mit Coaches',
-            'Früher Zugang zu neuen Funktionen'
+            '1:1-Sitzungen',
+            'VIP-Reisen',
+            'Persönliche Beratung',
+            'Früher Zugang'
           ]
         }
       },
-      additional: {
-        title: 'Zusätzliche Einnahmen',
-        sources: [
-          'Provision auf organisierte Reisen (15-20%)',
-          'Partnerschaften mit Wellness-Marken',
-          'Firmenveranstaltungen und Unternehmen',
-          'Dienstleistungsmarktplatz (Wellness, Coaching)'
-        ]
-      },
-      projections: {
-        title: 'Umsatzprognosen',
-        breakdown: {
-          subscriptions: 'Abonnements',
-          travel: 'Reisen',
-          events: 'Events',
-          partnerships: 'Partnerschaften'
+      projectionTitle: 'Umsatzprognose',
+      projectionData: [
+        {
+          label: 'Jahr 1',
+          users: '10.000 Benutzer',
+          revenue: '~200.000€'
+        },
+        {
+          label: 'Jahr 2',
+          users: '50.000 Benutzer',
+          revenue: '~1,2 Mio. €'
+        },
+        {
+          label: 'Jahr 3',
+          users: '150.000 Benutzer',
+          revenue: '~4,5 Mio. €'
         }
-      }
+      ],
+      potential: 'Potenzial'
     },
     // Investment
     investment: {
