@@ -1,31 +1,28 @@
 import { motion } from 'framer-motion'
 import { Heart, Shield, Sparkles, Users } from 'lucide-react'
-import { useLanguage } from '../context/LanguageContext'
 import './Solution.css'
 
 function Solution() {
-  const { t } = useLanguage()
-
   const solutions = [
     {
       icon: Users,
-      title: t('solution.card1Title'),
-      description: t('solution.card1Text')
+      title: 'Comunidad Exclusiva',
+      description: 'Un club privado solo para mujeres donde crear amistades reales y duraderas.'
     },
     {
       icon: Shield,
-      title: t('solution.card2Title'),
-      description: t('solution.card2Text')
+      title: 'Espacio Seguro',
+      description: 'Entorno protegido y verificado donde las mujeres pueden ser auténticas.'
     },
     {
       icon: Sparkles,
-      title: t('solution.card3Title'),
-      description: t('solution.card3Text')
+      title: 'Todo en Uno',
+      description: 'Amistad + Bienestar + Eventos + Viajes + Coaching en una sola plataforma.'
     },
     {
       icon: Heart,
-      title: t('solution.card4Title'),
-      description: t('solution.card4Text')
+      title: 'Empoderamiento',
+      description: 'Herramientas y recursos para el crecimiento personal y profesional.'
     }
   ]
 
@@ -39,9 +36,9 @@ function Solution() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">{t('solution.title')}</h2>
+          <h2 className="section-title">La Solución: HERCLUB</h2>
           <p className="section-subtitle">
-            {t('solution.subtitle')}
+            La primera super-app femenina que fusiona conexión, bienestar y experiencias
           </p>
         </motion.div>
 
@@ -72,7 +69,7 @@ function Solution() {
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          <h3>{t('solution.conceptTitle')}</h3>
+          <h3>El Concepto</h3>
           <div className="concept-formula">
             <span className="concept-item">Tinder</span>
             <span className="concept-plus">+</span>
@@ -85,7 +82,7 @@ function Solution() {
             <span className="concept-item">Masterclass</span>
           </div>
           <p className="concept-description">
-            {t('solution.conceptDescription')}
+            = Una experiencia única diseñada exclusivamente para mujeres
           </p>
         </motion.div>
 
@@ -96,12 +93,14 @@ function Solution() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          <h3>{t('solution.visionTitle')}</h3>
+          <h3>Nuestra Visión</h3>
           <p>
-            {t('solution.visionText1')}
+            Crear la comunidad femenina más exclusiva y positiva del mundo digital, 
+            donde las mujeres puedan conectarse, apoyarse y crecer juntas.
           </p>
           <p className="vision-bold">
-            {t('solution.visionText2')}
+            HERCLUB será más que una app: será un movimiento global de conexión, 
+            seguridad y empoderamiento femenino.
           </p>
         </motion.div>
       </div>
@@ -110,3 +109,6 @@ function Solution() {
 }
 
 export default Solution
+
+
+

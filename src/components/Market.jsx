@@ -1,36 +1,33 @@
 import { motion } from 'framer-motion'
 import { Target, TrendingUp, Globe, Users } from 'lucide-react'
-import { useLanguage } from '../context/LanguageContext'
 import './Market.css'
 
 function Market() {
-  const { t } = useLanguage()
-
   const marketData = [
     {
       icon: Users,
-      stat: t('market.stat1'),
-      label: t('market.stat1Label')
+      stat: '+50%',
+      label: 'del público digital activo son mujeres'
     },
     {
       icon: TrendingUp,
-      stat: t('market.stat2'),
-      label: t('market.stat2Label')
+      stat: '20B€',
+      label: 'mercado de apps de bienestar en Europa'
     },
     {
       icon: Globe,
-      stat: t('market.stat3'),
-      label: t('market.stat3Label')
+      stat: 'Global',
+      label: 'demanda de espacios femeninos seguros'
     }
   ]
 
   const targetAudience = [
-    t('market.target1'),
-    t('market.target2'),
-    t('market.target3'),
-    t('market.target4'),
-    t('market.target5'),
-    t('market.target6')
+    'Mujeres de 18 a 60 años',
+    'Urbanas y digitales',
+    'Activas socialmente',
+    'Interesadas en bienestar',
+    'Buscan conexiones reales',
+    'Valoran la seguridad'
   ]
 
   return (
@@ -43,9 +40,9 @@ function Market() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">{t('market.title')}</h2>
+          <h2 className="section-title">Oportunidad de Mercado</h2>
           <p className="section-subtitle">
-            {t('market.subtitle')}
+            Un mercado millonario en crecimiento con demanda insatisfecha
           </p>
         </motion.div>
 
@@ -80,7 +77,7 @@ function Market() {
             <div className="target-icon-wrapper">
               <Target size={50} />
             </div>
-            <h3>{t('market.targetTitle')}</h3>
+            <h3>Target Principal</h3>
             <div className="target-list">
               {targetAudience.map((item, index) => (
                 <motion.div
@@ -105,23 +102,23 @@ function Market() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3>{t('market.whyTitle')}</h3>
+            <h3>¿Por qué ahora?</h3>
             <div className="opportunity-points">
               <div className="opportunity-point">
-                <h4>{t('market.why1Title')}</h4>
-                <p>{t('market.why1Text')}</p>
+                <h4>Creciente demanda</h4>
+                <p>Las mujeres buscan espacios seguros para conectar fuera del ámbito romántico.</p>
               </div>
               <div className="opportunity-point">
-                <h4>{t('market.why2Title')}</h4>
-                <p>{t('market.why2Text')}</p>
+                <h4>Fragmentación del mercado</h4>
+                <p>Las usuarias necesitan múltiples apps. HERCLUB lo unifica todo.</p>
               </div>
               <div className="opportunity-point">
-                <h4>{t('market.why3Title')}</h4>
-                <p>{t('market.why3Text')}</p>
+                <h4>Crisis de salud mental</h4>
+                <p>Aumento del 40% en la demanda de servicios de bienestar emocional.</p>
               </div>
               <div className="opportunity-point">
-                <h4>{t('market.why4Title')}</h4>
-                <p>{t('market.why4Text')}</p>
+                <h4>Comunidades exclusivas</h4>
+                <p>Crecimiento del modelo de membresías y clubes privados digitales.</p>
               </div>
             </div>
           </motion.div>
@@ -134,9 +131,11 @@ function Market() {
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          <h3>{t('market.conclusionTitle')}</h3>
+          <h3>La Oportunidad</h3>
           <p>
-            {t('market.conclusionText')}
+            HERCLUB une comunidad, salud mental, viajes y empoderamiento en una sola plataforma, 
+            dirigida a un mercado de millones de mujeres que buscan conexiones auténticas y 
+            crecimiento personal.
           </p>
         </motion.div>
       </div>
@@ -145,3 +144,6 @@ function Market() {
 }
 
 export default Market
+
+
+

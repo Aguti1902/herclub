@@ -14,23 +14,9 @@
   margin: 0 auto;
   padding: 20px 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-
-.nav-container > *:first-child {
-  flex: 0 0 auto;
-}
-
-.nav-container > *:nth-child(2) {
-  flex: 1;
-  display: flex;
   justify-content: center;
-}
-
-.nav-container > *:last-child {
-  flex: 0 0 auto;
+  align-items: center;
+  gap: 60px;
 }
 
 .nav-logo {
@@ -79,17 +65,8 @@
 }
 
 @media (max-width: 1024px) {
-  .nav-container {
-    padding: 15px 20px;
-    gap: 15px;
-  }
-
   .nav-links {
     display: none;
-  }
-  
-  .nav-container > *:nth-child(2) {
-    justify-content: flex-end;
   }
 }
 

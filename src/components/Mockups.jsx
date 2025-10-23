@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion'
 import { Heart, Calendar, Brain, Users, MapPin, Star, MessageCircle, Shield } from 'lucide-react'
-import { useLanguage } from '../context/LanguageContext'
 import './Mockups.css'
 
 function Mockups() {
-  const { t } = useLanguage()
-
   return (
     <div className="section mockups-section">
       <div className="container">
@@ -16,11 +13,11 @@ function Mockups() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">{t('mockups.title')}</h2>
+          <h2 className="section-title">📱 Diseño de la App</h2>
           <p className="section-subtitle">
-            {t('mockups.subtitle')}
+            Una experiencia visual moderna, intuitiva y femenina
           </p>
-          <p className="scroll-hint">{t('mockups.scrollHint')}</p>
+          <p className="scroll-hint">← Desliza para ver todas las pantallas →</p>
         </motion.div>
 
         <div className="mockups-grid">
@@ -66,10 +63,10 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">{t('mockups.label1')}</div>
+            <div className="mockup-label">Match de Amistad</div>
           </motion.div>
 
-          {/* Mockup 2: Perfil */}
+          {/* Mockup 2: Eventos */}
           <motion.div
             className="phone-mockup"
             initial={{ opacity: 0, y: 50 }}
@@ -133,7 +130,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">{t('mockups.label2')}</div>
+            <div className="mockup-label">Eventos & Meetups</div>
           </motion.div>
 
           {/* Mockup 3: Bienestar */}
@@ -196,7 +193,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">{t('mockups.label3')}</div>
+            <div className="mockup-label">Bienestar Mental</div>
           </motion.div>
 
           {/* Mockup 4: Viajes */}
@@ -249,7 +246,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">{t('mockups.label4')}</div>
+            <div className="mockup-label">Viajes</div>
           </motion.div>
 
           {/* Mockup 5: Chat */}
@@ -310,7 +307,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">{t('mockups.label5')}</div>
+            <div className="mockup-label">Mensajes</div>
           </motion.div>
 
           {/* Mockup 6: Punto Lila */}
@@ -357,7 +354,7 @@ function Mockups() {
               </div>
               <div className="phone-bottom-bar"></div>
             </div>
-            <div className="mockup-label">{t('mockups.label6')}</div>
+            <div className="mockup-label">Punto Lila</div>
           </motion.div>
         </div>
 
@@ -368,19 +365,27 @@ function Mockups() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          <h3>{t('mockups.designTitle')}</h3>
+          <h3>Diseño Pensado para Mujeres</h3>
           <div className="design-features">
             <div className="design-feature">
-              <h4>{t('mockups.design1Title')}</h4>
-              <p>{t('mockups.design1Text')}</p>
+              <span className="feature-icon">🎨</span>
+              <h4>Colores Suaves</h4>
+              <p>Paleta femenina y moderna</p>
             </div>
             <div className="design-feature">
-              <h4>{t('mockups.design2Title')}</h4>
-              <p>{t('mockups.design2Text')}</p>
+              <span className="feature-icon">✨</span>
+              <h4>Interfaz Intuitiva</h4>
+              <p>Navegación simple y clara</p>
             </div>
             <div className="design-feature">
-              <h4>{t('mockups.design3Title')}</h4>
-              <p>{t('mockups.design3Text')}</p>
+              <span className="feature-icon">💫</span>
+              <h4>Experiencia Fluida</h4>
+              <p>Animaciones suaves</p>
+            </div>
+            <div className="design-feature">
+              <span className="feature-icon">🔒</span>
+              <h4>Privacidad</h4>
+              <p>Datos seguros y protegidos</p>
             </div>
           </div>
         </motion.div>

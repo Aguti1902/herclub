@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import LanguageSelector from './LanguageSelector'
 import './Navigation.css'
 
 function Navigation({ sections, currentSection, setCurrentSection, show }) {
@@ -28,7 +27,6 @@ function Navigation({ sections, currentSection, setCurrentSection, show }) {
                 </motion.button>
               ))}
             </div>
-            <LanguageSelector />
           </div>
         </motion.nav>
       )}

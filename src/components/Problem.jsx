@@ -1,31 +1,28 @@
 import { motion } from 'framer-motion'
 import { UserX, HeartCrack, Frown, AlertCircle } from 'lucide-react'
-import { useLanguage } from '../context/LanguageContext'
 import './Problem.css'
 
 function Problem() {
-  const { t } = useLanguage()
-  
   const problems = [
     {
       icon: UserX,
-      title: t('problem.card1Title'),
-      description: t('problem.card1Text')
+      title: 'Soledad Digital',
+      description: 'Las mujeres tienen cientos de "amigos" online pero pocas amistades reales y significativas.'
     },
     {
       icon: HeartCrack,
-      title: t('problem.card2Title'),
-      description: t('problem.card2Text')
+      title: 'Desconexión',
+      description: 'Falta de espacios seguros y exclusivos para conectar con otras mujeres sin propósitos románticos.'
     },
     {
       icon: Frown,
-      title: t('problem.card3Title'),
-      description: t('problem.card3Text')
+      title: 'Salud Mental',
+      description: 'Creciente necesidad de apoyo emocional, bienestar mental y desarrollo personal femenino.'
     },
     {
       icon: AlertCircle,
-      title: t('problem.card4Title'),
-      description: t('problem.card4Text')
+      title: 'Fragmentación',
+      description: 'Las mujeres deben usar múltiples apps para bienestar, networking, viajes y eventos.'
     }
   ]
 
@@ -39,9 +36,9 @@ function Problem() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">{t('problem.title')}</h2>
+          <h2 className="section-title">El Problema</h2>
           <p className="section-subtitle">
-            {t('problem.subtitle')}
+            Una generación de mujeres más conectadas que nunca... pero más solas
           </p>
         </motion.div>
 
@@ -73,16 +70,16 @@ function Problem() {
           transition={{ delay: 0.4, duration: 0.6 }}
         >
           <div className="stat">
-            <h3>{t('problem.stat1')}</h3>
-            <p>{t('problem.stat1Label')}</p>
+            <h3>70%</h3>
+            <p>de mujeres reportan sentirse solas</p>
           </div>
           <div className="stat">
-            <h3>{t('problem.stat2')}</h3>
-            <p>{t('problem.stat2Label')}</p>
+            <h3>+50%</h3>
+            <p>del público digital activo</p>
           </div>
           <div className="stat">
-            <h3>{t('problem.stat3')}</h3>
-            <p>{t('problem.stat3Label')}</p>
+            <h3>20B€</h3>
+            <p>mercado de apps de bienestar en Europa</p>
           </div>
         </motion.div>
       </div>

@@ -1,21 +1,22 @@
 import { motion } from 'framer-motion'
-import { Heart, Euro, Rocket, ArrowRight, TrendingUp } from 'lucide-react'
-import { useLanguage } from '../context/LanguageContext'
+import { Heart, Mail, Euro, Rocket, ArrowRight, TrendingUp } from 'lucide-react'
 import './CTA.css'
 
 function CTA() {
-  const { t } = useLanguage()
-
   const benefits = [
-    t('cta.benefit1'),
-    t('cta.benefit2'),
-    t('cta.benefit3'),
-    t('cta.benefit4')
+    'Únete a un movimiento que transformará la vida de millones de mujeres',
+    'Sé parte de una de las comunidades digitales más innovadoras',
+    'ROI proyectado de 5X en 3 años',
+    'Impacto social medible y sostenible'
   ]
 
   const handleDonation = () => {
     // Aquí se integraría con Stripe, PayPal o la pasarela de pago
     alert('Redirigiendo a la pasarela de pago...')
+  }
+
+  const handleContact = () => {
+    window.location.href = 'mailto:contacto@herclub.app?subject=Interés en invertir en HERCLUB'
   }
 
   return (
@@ -50,7 +51,7 @@ function CTA() {
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            {t('cta.title')}
+            Invierte en el Futuro de la Conexión Femenina
           </motion.h2>
 
           <motion.p
@@ -60,7 +61,7 @@ function CTA() {
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            {t('cta.subtitle')}
+            Juntos podemos crear la comunidad femenina más exclusiva y positiva del mundo digital
           </motion.p>
 
           <motion.div
@@ -95,24 +96,24 @@ function CTA() {
             <div className="summary-item">
               <Euro size={30} />
               <div>
-                <div className="summary-label">{t('cta.investmentLabel')}</div>
-                <div className="summary-value">{t('cta.investmentValue')}</div>
+                <div className="summary-label">Inversión Inicial</div>
+                <div className="summary-value">50K - 60K€</div>
               </div>
             </div>
             <div className="summary-divider"></div>
             <div className="summary-item">
               <Rocket size={30} />
               <div>
-                <div className="summary-label">{t('cta.launchLabel')}</div>
-                <div className="summary-value">{t('cta.launchValue')}</div>
+                <div className="summary-label">Plazo de Lanzamiento</div>
+                <div className="summary-value">6 Meses</div>
               </div>
             </div>
             <div className="summary-divider"></div>
             <div className="summary-item">
               <TrendingUp size={30} />
               <div>
-                <div className="summary-label">{t('cta.roiLabel')}</div>
-                <div className="summary-value">{t('cta.roiValue')}</div>
+                <div className="summary-label">ROI Proyectado</div>
+                <div className="summary-value">5X en 3 años</div>
               </div>
             </div>
           </motion.div>
@@ -126,7 +127,7 @@ function CTA() {
           >
             <button className="btn-primary" onClick={handleDonation}>
               <Euro size={24} />
-              <span>{t('cta.button')}</span>
+              <span>Apoya el Lanzamiento de HERCLUB</span>
               <ArrowRight size={20} />
             </button>
           </motion.div>
@@ -138,7 +139,7 @@ function CTA() {
             viewport={{ once: true }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            <p className="tagline">{t('cta.tagline')}</p>
+            <p className="tagline">Forma parte del cambio. Invierte en HERCLUB.</p>
           </motion.div>
 
           {/* Decoración de fondo */}
@@ -157,8 +158,8 @@ function CTA() {
           transition={{ delay: 1.2, duration: 0.6 }}
         >
           <Heart size={40} fill="currentColor" />
-          <h3>{t('cta.thanksTitle')}</h3>
-          <p>{t('cta.thanksText')}</p>
+          <h3>Gracias por tu Tiempo e Interés</h3>
+          <p>Estamos emocionadas de compartir esta visión contigo y esperamos poder construir el futuro juntos.</p>
         </motion.div>
       </div>
     </div>
@@ -166,3 +167,4 @@ function CTA() {
 }
 
 export default CTA
+
